@@ -1,0 +1,36 @@
+[
+    {
+        "artisenbois": {
+          "title": "Artisenbois",
+          "description": "Ce site web a été réalisé dans le cadre d'un projet perso, c'était le premier projet que je réalisais après la fin de formation. Le but était de créer un site de type vitrine.",
+          "stack": "HTML/CSS",
+          "stack_1": "Javascript",
+          "stack_2": "React",
+          "stack_3": "Vercel",
+          "stack_4": "Media Queries",
+          "link": "https://projetartisenbois.vercel.app/"
+        },
+        "todolist": {
+          "title": "Todolist",
+          "description": "Ce site web a été réalisé dans le cadre d'un projet perso. Le but était de créer un site qui mets en avant les opérations appelées CRUD (Create/Read/Update et Delete) .",
+          "stack": "HTML/CSS",
+          "stack_1": "Javascript",
+          "stack_2": "CRUD",
+          "stack_3": "Vercel",
+          "stack_4": "Media Queries",
+          "link": "https://todolist-with-javascript.vercel.app/"
+        },
+        "pokemon": {
+          "title": "Pokemon Finder",
+          "description": "Ce site web a été réalisé dans le cadre d'un projet perso. Le but était de créer un site avec la consommation et manipulation d'une API disponible en ligne, ainsi que des tests unitaires pour les functions.",
+          "stack": "HTML/Tailwind",
+          "stack_1": "Javascript",
+          "stack_2": "React",
+          "stack_3": "Pokebuildapi",
+          "stack_4": "Jest",
+          "stack_5": "Vercel",
+          "stack_6": "Media Queries",
+          "link": "https://pokemon-finders.vercel.app/"
+        }
+      }
+  ]

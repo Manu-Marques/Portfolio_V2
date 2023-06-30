@@ -1,0 +1,375 @@
+.App {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
+
+.home {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 200px;
+}
+
+.home-container {
+  height: 100vh;
+}
+
+.home-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.home-resume {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 192px 0 rgb(110, 13, 139);
+}
+
+.home-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  margin-left: 35px;
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.home-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.home-experience,
+.home-skills,
+.home-projets,
+.home-formations {
+  font-size: 4em;
+  font-weight: 500;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+  text-decoration: none;
+}
+
+.home-experience:hover,
+.home-skills:hover,
+.home-projets:hover,
+.home-formations:hover {
+  color: #fff;
+  text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+  cursor: pointer;
+}
+
+.home-experience:hover~.home-experience::after {
+  background-color: red;
+}
+
+.home-presentation {
+  color: #fff;
+  text-align: center;
+}
+
+.presentation-word {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-shadow: 1px -5px 2px, 0 0 1em blue, 0 0 0.2em blue;
+  text-decoration: none;
+}
+
+.home-img {
+  width: 55%;
+  height: 60%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 20px 0 #1f1ccd;
+  margin: 20px;
+}
+
+
+.home-experience,
+.home-skills,
+.home-projets,
+.home-formations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  border: 2px solid #ffffff;
+  transform: skewy(-9deg);
+  padding: 10px;
+}
+
+.home-experience::before,
+.home-skills::before,
+.home-projets::before,
+.home-formations::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -45px;
+  width: 40px;
+  height: 100%;
+  border: 2px solid #ffffff;
+  transform-origin: right;
+  transform: skewY(45deg);
+  z-index: -1;
+}
+
+.home-experience::after,
+.home-skills::after,
+.home-projets::after,
+.home-formations::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: -23px;
+  width: 100%;
+  height: 40px;
+  z-index: -1;
+  border: 2px solid #ffffff;
+  transform: skewX(45deg);
+}
+
+.home-projets {
+  width: 70%;
+}
+
+
+@media screen and (max-width: 1668px) {
+
+  .home-img {
+      border-radius: 40%;
+      width: 60%;
+  }
+
+  .home-presentation {
+      font-size: 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 1485px) {
+
+  .home-row {
+      justify-content: space-around;
+      flex-direction: column;
+      height: 800px;
+  }
+
+  .home-menu {
+      height: 400px;
+  }
+
+  .home-resume {
+      flex-direction: row;
+      height: 25%;
+      width: 60%;
+      justify-content: space-evenly;
+  }
+
+  .home-formations,
+  .home-skills,
+  .home-projets,
+  .home-experience {
+      font-size: 3em;
+  }
+
+  .home-presentation {
+      font-size: 25px;
+  }
+
+  .home-container {
+      height: 100%;
+  }
+
+  .home-img {
+      width: 22%;
+      height: 85%;
+  }
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+  .home-resume {
+      position: relative;
+      width: 97%;
+      box-shadow: none;
+  }
+
+}
+
+@media screen and (max-width: 830px) {
+
+  .home-formations,
+  .home-skills,
+  .home-projets,
+  .home-experience {
+      font-size: 2.5em;
+  }
+
+  .home-left,
+  .home-right {
+      height: 80%;
+  }
+
+  .home-menu{
+      width:750px ;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .home-formations,
+  .home-skills,
+  .home-projets,
+  .home-experience {
+      font-size: 2em;
+  }
+
+  .home-menu{
+      width:650px ;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .home-formations,
+  .home-skills,
+  .home-projets,
+  .home-experience {
+      font-size: 1.5em;
+  }
+
+  .home-menu{
+      width:550px ;
+  }
+
+  .home-right,
+  .home-left {
+      height: 70%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .home-menu{
+      width:450px ;
+  }
+
+  .home-right,
+  .home-left {
+      height: 60%;
+  }
+
+}
+
+@media screen and (max-width: 445px) {
+
+  .home-menu {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 97%;
+      height: 100%;
+      margin: 30px;
+      box-shadow: none;
+      border: 4px solid #ffffff;
+  }
+
+  .home-experience::after,
+  .home-skills::after,
+  .home-projets::after,
+  .home-formations::after {
+      content: none;
+  }
+
+  .home-experience::before,
+  .home-skills::before,
+  .home-projets::before,
+  .home-formations::before {
+      content: none;
+  }
+
+  .home-experience,
+  .home-skills,
+  .home-projets,
+  .home-formations {
+      transform: none;
+      border: none;
+      border-bottom: 2px solid white;
+  }
+
+  .home-formations{
+      border: none;
+  }
+
+
+  .home-presentation,
+  .presentation-word {
+      font-size: 20px;
+  }
+
+  .home-formations,
+  .home-skills,
+  .home-projets,
+  .home-experience {
+      font-size: 35px;
+  }
+
+  .home-row {
+      height: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .home-presentation,
+  .presentation-word {
+      font-size: 17px;
+  }
+
+  .home-formations,
+  .home-skills,
+  .home-projets,
+  .home-experience {
+      font-size: 20px;
+  }
+
+  .home-img {
+      width: 30%;
+      height: 50%;
+      margin: 10px;
+  }
+
+  .home-content {
+      margin: 10px;
+  }
+}

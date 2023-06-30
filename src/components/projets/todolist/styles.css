@@ -1,0 +1,121 @@
+.todolist-title {
+    margin-top: 0;
+    color: #fff;
+    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-decoration: underline;
+}
+
+.todolist-container {
+    display: flex;
+    justify-content: center;
+}
+
+.todolist-img {
+    width: 100%;
+    height: 100%;
+}
+
+.todolist-info {
+    width: 50%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.todolist-text {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.todolist-description {
+    border-top: 2px solid #ffffff;
+}
+
+.todolist-list {
+    padding-left: 0;
+}
+
+.todolist-item {
+    list-style: none;
+    font-size: 22px;
+}
+
+.todolist-word {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 1px -5px 2px, 0 0 1em blue, 0 0 0.2em blue;
+    text-decoration: none;
+}
+
+.todolist-visite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.todolist-link {
+    background: #fff;
+    color: #111;
+    max-width: 150px;
+    border-radius: 32px;
+    padding: 13px 32px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: .5s;
+    border: #ffffff 1px solid;
+}
+
+.todolist-link:hover {
+    color: transparent;
+    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    -webkit-text-stroke: 1px #fff;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .todolist-item {
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .todolist-text {
+        font-size: 20px;
+    }
+
+    .todolist{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todolist-title {
+        text-align: center;
+    }
+
+    .todolist-container {
+        display: block;
+    }
+
+    .todolist-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .todolist-container-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .todolist-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .todolist-info{
+        margin-top: 10px;
+    }
+}

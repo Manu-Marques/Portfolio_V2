@@ -1,0 +1,52 @@
+[
+    {
+        "oclock": {
+          "id": 1,
+          "title": "Développeur FullStack",
+          "company": "O'Clock",
+          "city": "Projet fin d'études",
+          "description": "- Développement en Front et Back",
+          "description_1": "- Utilisation de la méthode Scrum",
+          "description_2": "- Rédaction des documents personnels",
+          "description_3": "- Utilisation de la méthode Kanban",
+          "start": "Avril 2022",
+          "end": "Mai 2022"
+        },
+        "bus": {
+          "id": 2,
+          "title": "Chauffeur de Bus",
+          "company": "Stavo",
+          "city": "Plaisir",
+          "description": "- Transport de personnes",
+          "description_1": "- Respect des horaires",
+          "description_2": "- Respect des règles de sécurité et de conduite",
+          "description_3": "- Gestion de la relation client",
+          "start": "Décembre 2013",
+          "end": "Décembre 2021"
+        },
+        "hotel": {
+          "id": 3,
+          "title": "Réceptionniste",
+          "company": "Hotel F1",
+          "city": "Plaisir",
+          "description": "- Accueil des clients",
+          "description_1": "- Gestion des réservations et des chambres",
+          "description_2": "- Gestion des horaires de départ",
+          "description_3": "- Gestion des stocks",
+          "start": "Novembre 2010",
+          "end": "Novembre 2012"
+        },
+        "quick": {
+          "id": 4,
+          "title": "Équipier Polyvalent",
+          "company": "Quick",
+          "city": "Coignières",
+          "description": "- Travail en équipe",
+          "description_1": "- Gestion de la relation client",
+          "description_2": "- Préparation des commandes",
+          "description_3": "- Gestion des stocks",
+          "start": "Novembre 2009",
+          "end": "Octobre 2010"
+        }
+      }
+  ]

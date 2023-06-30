@@ -1,0 +1,190 @@
+.experience-main {
+    position: relative;
+    z-index: 5;
+    padding-bottom: 200px;
+}
+
+.active {
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.experience-title {
+    position: relative;
+    z-index: 6;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+
+.experience-table {
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 192px 0 rgb(110, 13, 139);
+}
+
+.experience-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.experience-subtitle {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-decoration: underline;
+}
+
+.experience-oclock,
+.experience-stavo,
+.experience-hotel,
+.experience-restaurant {
+    border: 2px solid #ffffff;
+    margin: 15px;
+}
+
+.experience-oclock-subtitle,
+.experience-stavo-subtitle,
+.experience-hotel-subtitle,
+.experience-restaurant-subtitle {
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.experience-oclock-list,
+.experience-stavo-list,
+.experience-hotel-list,
+.experience-restaurant-list {
+    padding-left: 0;
+}
+
+.experience-item {
+    font-size: 22px;
+    margin: 5px;
+    list-style: none;
+}
+
+.experience-row {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-year {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2px 10px 2px 10px;
+}
+
+@media screen and (max-width: 1220px) {
+
+    .experience-table {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+    .experience-table {
+        width: 90%;
+    }
+
+    .experience-item {
+        font-size: 15px;
+        margin: 8px;
+    }
+
+}
+
+@media screen and (max-width: 665px) {
+    .experience-table {
+        width: 100%;
+    }
+
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .experience-left {
+        margin-bottom: 20px;
+    }
+
+    .experience-right {
+        margin-top: 20px;
+    }
+
+    .experience-oclock,
+    .experience-stavo,
+    .experience-hotel,
+    .experience-restaurant {
+        margin: 10px;
+    }
+
+    .experience-oclock-subtitle,
+    .experience-stavo-subtitle,
+    .experience-hotel-subtitle,
+    .experience-restaurant-subtitle {
+        font-size: 1.2em;
+    }
+
+    .experience-oclock-list,
+    .experience-stavo-list,
+    .experience-hotel-list,
+    .experience-restaurant-list {
+        padding-left: 0;
+    }
+
+    .experience-item {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .experience-year {
+        font-size: 13px;
+        margin: 5px;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .experience-subtitle {
+        font-size: 1.5em;
+    }
+}

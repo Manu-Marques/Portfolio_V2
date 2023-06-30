@@ -1,0 +1,93 @@
+[
+    {
+        "stack": {
+          "front": {
+            "html": 
+              {
+                "name": "HTML"
+              },
+            "css": 
+              {
+                "name": "CSS"
+              },
+            "js": 
+              {
+                "name": "JavaScript"
+              },
+            "react": 
+              {
+                "name": "React"
+              },
+            "typescript": 
+              {
+                "name": "TypeScript"
+              },
+            "tailwind": 
+              {
+                "name": "Tailwind"
+              },
+            "bootstrap": 
+              {
+                "name": "Bootstrap"
+              }
+          },
+          "back": {
+            "node": 
+              {
+                "name": "Node.js"
+              },
+            "postgresql": 
+              {
+                "name": "PostgreSQL"
+              },
+            "express": 
+              {
+                "name": "Express"
+              }
+          },
+          "others": {
+            "git": 
+              {
+                "name": "Git"
+              }
+            ,
+            "jest": 
+              {
+                "name": "Test unitaire Jest"
+              },
+            "figma": 
+              {
+                "name": "Figma"
+              }
+          }
+        },
+        "savoir_faire": {
+          "description": "- Méthode Agile",
+          "description_1": "- Concevoir une maquette de présentation",
+          "description_2": "- Établir un cahier des charges",
+          "description_3": "- Planifier les étapes d'un projet",
+          "description_4": "- Analyser le besoin du client"
+        },
+        "savoir_etre": {
+          "description": "- Autonome",
+          "description_1": "- Travail en équipe",
+          "description_2": "- Capacité d'adaptation",
+          "description_3": "- Sens de communication",
+          "description_4": "- Curiosité"
+        },
+        "langues": {
+          "france": {
+            "title": "- Français",
+            "level": "Bilingue"
+          },
+          "anglais": {
+            "title": "- Anglais",
+            "level": "Niveau B2"
+          },
+          "portugais": {
+            "title": "- Portugais",
+            "level": "Langue maternelle"
+          }
+        }
+    }
+  ]

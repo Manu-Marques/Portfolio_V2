@@ -1,0 +1,17 @@
+.scroll-to-top {
+    position: fixed;
+    z-index: 6;
+    cursor: pointer;
+    right: 0;
+}
+
+.fa-1x {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 40px;
+    transition: all 0.3s ease-out;
+    float: right;
+    margin: 10px;
+}

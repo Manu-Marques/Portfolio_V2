@@ -1,0 +1,71 @@
+import "./styles.css";
+
+//Components
+import Projets from "../projets";
+import Skills from "../skills";
+import Experience from "../experience";
+import Formations from "../formations";
+import Contact from "../contact";
+import Footer from "../footer";
+import ScrollToTop from "../scrollToTop";
+import Arrow from "../arrow";
+
+//Data
+import ExperiencesData from "../../../src/data/experiences.json";
+import FormationsData from "../../../src/data/formations.json";
+import ProjetsData from "../../../src/data/projects.json";
+import SkillsData from "../../../src/data/skills.json";
+import PresentationData from "../../../src/data/presentation.json";
+
+//Images
+import photo from '../../../src/assets/photo.jpg';
+
+//React
+import { HashLink as Link } from "react-router-hash-link";
+
+
+export default function App() {
+  return (
+    <div className="App">
+      <div className="home">
+        <div className='home-container'>
+          <div className="home-row">
+            <div className='home-resume'>
+              <div className="home-me">
+                <h2 className='home-presentation'>Bonjour, je m'appelle <span className="presentation-word">Emanuel</span></h2>
+                <h2 className='home-presentation'>Je suis <span className="presentation-word">Développeur Web</span></h2>
+              </div>
+              <img className='home-img' src={photo} alt="moi" />
+            </div>
+            <div className="home-menu">
+              <div className="home-left">
+                <Link className='home-experience' to='#experience' smooth>
+                  <div >Expériences</div>
+                </Link>
+                <Link className='home-skills' to="#skills" smooth>
+                  <div >Compétences</div>
+                </Link>
+              </div>
+              <div className="home-right">
+                <Link className='home-projets' to="#projets" smooth>
+                  <div>Projets</div>
+                </Link>
+                <Link className='home-formations' to="#formations" smooth>
+                  <div>Formations</div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ScrollToTop />
+      <Projets />
+      <Skills />
+      <Experience />
+      <Formations />
+      <Arrow />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
