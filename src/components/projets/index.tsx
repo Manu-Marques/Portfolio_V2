@@ -3,7 +3,6 @@ import Artisenbois from './artisenbois';
 import Todolist from './todolist';
 import PokemonFinder from './pokemonFinder';
 import { useState, useEffect, useRef } from 'react';
-import ProjetsData from "../../../src/data/projects.json";
 
 
 export default function Projets() {

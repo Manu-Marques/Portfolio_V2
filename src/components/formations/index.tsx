@@ -5,15 +5,6 @@ import FormationsData from "../../../src/data/formations.json";
 
 export default function Formations() {
 
-    const [data, setData] = useState([]);
-
-
-    useEffect(() => {
-        fetch('http://localhost:5000/formations')
-            .then(response => response.json())
-            .then(data => setData(data))
-    }, []);
-
     interface Formation {
         oclock: {
             title: string,
@@ -72,7 +63,7 @@ export default function Formations() {
         <div ref={myRef} className={`formations-main ${isVisible ? 'active' : ''}`} id="formations">
             <h1 className='formations-title'>Formations</h1>
             <div className="formations-table">
-                {data.map((info:Formation, i) => (
+                {FormationsData.map((info:Formation, i) => (
                     <div key={i} className="formations-container">
                         <div className="formations-top">
                             <div className="formations-dev">

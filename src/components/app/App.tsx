@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./App.css";
 
 //Components
 import Projets from "../projets";

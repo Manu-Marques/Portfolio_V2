@@ -1,17 +1,10 @@
 import logo from '../../../assets/todolist.png';
 import './styles.css';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ProjetsData from "../../../../src/data/projects.json";
+
 
 export default function Todolist() {
-
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/projects')
-            .then(response => response.json())
-            .then(data => setData(data))
-    }, []);
 
     interface Todolist {
         todolist: {
@@ -28,7 +21,7 @@ export default function Todolist() {
 
     return (
         <div className="todolist">
-            {data.map((info: Todolist) => (
+            {ProjetsData.map((info: Todolist) => (
                 <><h1 className='todolist-title'>{info.todolist.title}</h1><div className="todolist-container">
                     <div className="todolist-container-img">
                         <img className='todolist-img' src={logo} alt="logo">

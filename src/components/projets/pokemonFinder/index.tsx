@@ -1,16 +1,11 @@
 import logo from '../../../assets/pokeball.jpg';
 import './styles.css';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ProjetsData from "../../../../src/data/projects.json";
+
 
 export default function PokemonFinder() {
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/projects')
-            .then(response => response.json())
-            .then(data => setData(data))
-    }, []);
 
     interface Pokemon {
         pokemon: {
@@ -29,7 +24,7 @@ export default function PokemonFinder() {
 
     return (
         <div className="pokemon">
-            {data.map((info: Pokemon) => (
+            {ProjetsData.map((info: Pokemon) => (
                 <><h1 className='pokemon-title'>{info.pokemon.title}</h1><div className="pokemon-container">
                     <div className="pokemon-container-img">
                         <img className='pokemon-img' src={logo} alt="logo">

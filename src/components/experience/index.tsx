@@ -5,13 +5,8 @@ import ExperiencesData from "../../../src/data/experiences.json";
 
 export default function Experience() {
 
-    const [data, setData] = useState([]);
+    console.log(ExperiencesData);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/experiences')
-            .then(response => response.json())
-            .then(data => setData(data))
-    }, []);
 
     interface Experience {
         oclock: {
@@ -78,7 +73,7 @@ export default function Experience() {
         <div ref={myRef} className={`experience-main ${isVisible ? 'active' : ''}`} id="experience">
             <h1 className='experience-title'>Expériences</h1>
             <div className="experience-table">
-                {data.map((info: Experience, i) => (
+                {ExperiencesData.map((info: Experience, i) => (
                     <div key={i} className="experience-container">
                         <div className="experience-left">
                             <><div className='experience-oclock'>

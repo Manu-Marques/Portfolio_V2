@@ -1,34 +1,27 @@
 import './styles.css';
 import logo from '../../../assets/logo.jpg';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import ProjetsData from "../../../../src/data/projects.json";
 
 export default function Artisenbois() {
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/projects')
-            .then(response => response.json())
-            .then(data => setData(data))
-    }, []);
 
-    interface Artisenbois {
-        artisenbois: {
-            title: string,
-            description: string,
-            stack: string,
-            stack_1: string,
-            stack_2: string,
-            stack_3: string,
-            stack_4: string,
-            link: string
-        },
-    }
+    // interface Artisenbois {
+    //     artisenbois: {
+    //         title: string,
+    //         description: string,
+    //         stack: string,
+    //         stack_1: string,
+    //         stack_2: string,
+    //         stack_3: string,
+    //         stack_4: string,
+    //         link: string
+    //     },
+    // }
 
     return (
         <div className="artisenbois">
-            {data.map((info:Artisenbois) => (
+            {ProjetsData.map((info) => (
                 <><h1 className='artisenbois-title'>{info.artisenbois.title}</h1><div className="artisenbois-container">
                     <div className="artisenbois-container-img">
                         <img className='artisenbois-img' src={logo} alt="logo">
