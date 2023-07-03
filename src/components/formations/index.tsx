@@ -1,5 +1,6 @@
 import './styles.css';
 import { useState, useEffect, useRef } from 'react';
+import FormationsData from "../../../src/data/formations.json";
 
 
 export default function Formations() {

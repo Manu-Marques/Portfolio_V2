@@ -1,5 +1,7 @@
 import "./styles.css";
 import { useState, useEffect, useRef } from "react";
+import SkillsData from "../../../src/data/skills.json";
+
 
 export default function Skills() {
 

@@ -10,13 +10,6 @@ import Footer from "../footer";
 import ScrollToTop from "../scrollToTop";
 import Arrow from "../arrow";
 
-//Data
-import ExperiencesData from "../../../src/data/experiences.json";
-import FormationsData from "../../../src/data/formations.json";
-import ProjetsData from "../../../src/data/projects.json";
-import SkillsData from "../../../src/data/skills.json";
-import PresentationData from "../../../src/data/presentation.json";
-
 //Images
 import photo from '../../../src/assets/photo.jpg';
 

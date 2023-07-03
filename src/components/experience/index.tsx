@@ -1,5 +1,7 @@
 import './styles.css';
 import { useState, useEffect, useRef } from 'react';
+import ExperiencesData from "../../../src/data/experiences.json";
+
 
 export default function Experience() {
 
