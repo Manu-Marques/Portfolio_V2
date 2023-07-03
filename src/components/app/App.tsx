@@ -14,10 +14,12 @@ import Arrow from "../arrow";
 import photo from '../../../src/assets/photo.jpg';
 
 //React
-import { HashLink as Link } from "react-router-hash-link";
-
+// import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 export default function App() {
+
+  
   return (
     <div className="App">
       <div className="home">
@@ -32,18 +34,18 @@ export default function App() {
             </div>
             <div className="home-menu">
               <div className="home-left">
-                <Link className='home-experience' to='#experience' smooth>
+                <Link className='home-experience' to='#experience' >
                   <div >Expériences</div>
                 </Link>
-                <Link className='home-skills' to="#skills" smooth>
+                <Link className='home-skills' to="#skills" >
                   <div >Compétences</div>
                 </Link>
               </div>
               <div className="home-right">
-                <Link className='home-projets' to="#projets" smooth>
+                <Link className='home-projets' to="#projets" >
                   <div>Projets</div>
                 </Link>
-                <Link className='home-formations' to="#formations" smooth>
+                <Link className='home-formations' to="#formations" >
                   <div>Formations</div>
                 </Link>
               </div>

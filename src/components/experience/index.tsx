@@ -5,8 +5,6 @@ import ExperiencesData from "../../../src/data/experiences.json";
 
 export default function Experience() {
 
-    console.log(ExperiencesData);
-
 
     interface Experience {
         oclock: {
