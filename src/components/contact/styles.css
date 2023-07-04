@@ -28,7 +28,7 @@
 }
 
 .contact-icon-envelope:hover {
-    width: 380px;
+    width: 400px;
 }
 
 .contact-icon-phone:hover {
@@ -87,7 +87,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
-    margin-left: 10px;
+    margin-left: 5px;
     transition: all 0.3s ease-out;
     color: white;
 }
@@ -124,7 +124,7 @@ a:link {
     }
 
     .contact-info {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .contact-container {
@@ -157,7 +157,7 @@ a:link {
     }
 
     .contact-icon-phone:hover {
-        width: 170px;
+        width: 180px;
     }
 
     .contact-icon-linkdin:hover,
@@ -166,8 +166,8 @@ a:link {
     }
 
     .contact-info {
-        font-size: 12px;
-        margin-left: 3px
+        font-size: 11px;
+        margin-left: 5px
     }
 
     .contact-container {

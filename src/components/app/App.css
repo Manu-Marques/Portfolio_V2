@@ -58,10 +58,15 @@
   height: 100%;
 }
 
+.home-contact{
+  margin: 10px;
+}
+
 .home-experience,
 .home-skills,
 .home-projets,
 .home-formations {
+  position: relative;
   font-size: 4em;
   font-weight: 500;
   color: transparent;
@@ -73,7 +78,8 @@
 .home-experience:hover,
 .home-skills:hover,
 .home-projets:hover,
-.home-formations:hover {
+.home-formations:hover,
+.home-contact-button:hover {
   color: #fff;
   text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
   cursor: pointer;
@@ -136,6 +142,7 @@
   transform: skewY(45deg);
   z-index: -1;
 }
+
 
 .home-experience::after,
 .home-skills::after,
