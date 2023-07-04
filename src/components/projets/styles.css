@@ -54,11 +54,16 @@
     font-size: 18px;
 }
 
+.btn.on {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
 .btn:hover {
     background-color: rgb(255, 255, 255);
     color: #000000;
     cursor: pointer;
-}
+} 
 
 .projets-contents {
     padding: 20px;

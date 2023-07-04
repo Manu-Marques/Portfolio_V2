@@ -2,9 +2,15 @@ import './styles.css';
 import logo from '../../../assets/logo.jpg';
 import { Link } from 'react-router-dom';
 import ProjetsData from "../../../../src/data/projects.json";
+import { useState } from 'react';
 
 export default function Artisenbois() {
 
+    const [project, setProject] = useState('artisenbois');
+
+    const handleProject = (project: string) => {
+        setProject(project);
+    }
 
     return (
         <div className="artisenbois">
@@ -28,9 +34,14 @@ export default function Artisenbois() {
                             </ul>
                         </div>
                     </div>
-                </div><div className="artisenbois-visite">
+                </div>
+                    <div className="artisenbois-visite">
                         <Link to={info.artisenbois.link} target="_blank" className="artisenbois-link">Visiter le site</Link>
-                    </div></>
+                    </div>
+                    <div className="artisenbois-rework">
+                    <button className="artisenbois-button" onClick={() => handleProject('rework')}>Avant/Après</button>
+                    </div>
+                </>
             ))}
         </div>
     );
