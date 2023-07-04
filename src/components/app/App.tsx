@@ -22,9 +22,6 @@ export default function App() {
 
   return (
     <div className="App">
-              {/* <ScrollLink className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
-                <div className="home-contact-button">Contact</div>
-              </ScrollLink> */}
       <div className="home">
         <div className='home-container'>
           <div className="home-row">
@@ -70,9 +67,7 @@ export default function App() {
         <Formations />
       </Element>
       <Arrow />
-      <Element name="contact">
         <Contact />
-      </Element>
       <Footer />
     </div>
   );

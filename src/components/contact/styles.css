@@ -35,9 +35,12 @@
     width: 250px;
 }
 
-.contact-icon-linkdin:hover,
+.contact-icon-linkdin:hover {
+    width: 160px;
+}
+
 .contact-icon-git:hover {
-    width: 170px;
+    width: 140px;
 }
 
 .contact-envelope,
@@ -118,9 +121,12 @@ a:link {
         width: 200px;
     }
 
-    .contact-icon-linkdin:hover,
+    .contact-icon-linkdin:hover {
+        width: 135px;
+    }
+
     .contact-icon-git:hover {
-        width: 140px;
+        width: 130px;
     }
 
     .contact-info {
@@ -162,7 +168,11 @@ a:link {
 
     .contact-icon-linkdin:hover,
     .contact-icon-git:hover {
-        width: 125px;
+        width: 122px;
+    }
+
+    .contact-icon-git:hover {
+        width: 115px;
     }
 
     .contact-info {
