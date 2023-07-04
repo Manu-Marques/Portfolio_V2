@@ -7,24 +7,10 @@ import ProjetsData from "../../../../src/data/projects.json";
 export default function PokemonFinder() {
 
 
-    interface Pokemon {
-        pokemon: {
-            title: string,
-            description: string,
-            stack: string,
-            stack_1: string,
-            stack_2: string,
-            stack_3: string,
-            stack_4: string,
-            stack_5: string,
-            stack_6: string,
-            link: string
-        },
-    }
 
     return (
         <div className="pokemon">
-            {ProjetsData.map((info: Pokemon) => (
+            {ProjetsData.map((info) => (
                 <><h1 className='pokemon-title'>{info.pokemon.title}</h1><div className="pokemon-container">
                     <div className="pokemon-container-img">
                         <img className='pokemon-img' src={logo} alt="logo">

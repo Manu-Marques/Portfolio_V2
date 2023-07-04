@@ -1,69 +1,16 @@
 import './styles.css';
-import { useState, useEffect, useRef } from 'react';
 import FormationsData from "../../../src/data/formations.json";
 
 
 export default function Formations() {
 
-    interface Formation {
-        oclock: {
-            title: string,
-            level: string,
-            school: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_1_2: string,
-            description_2: string,
-            description_2_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        },
-        couturier: {
-            title: string,
-            level: string,
-            school: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        },
-        chavanne: {
-            title: string,
-            level: string,
-            school: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        }
-    }
 
-    const myRef = useRef(null);
-    const [isVisible, setVisible] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            const entry = entries[0];
-            setVisible(entry.isIntersecting);
-        });
-        if (myRef.current) {
-            observer.observe(myRef.current);
-        }
-    }, []);
 
     return (
-        <div ref={myRef} className={`formations-main ${isVisible ? 'active' : ''}`} id="formations">
+        <div className="formations-main"  id="formations">
             <h1 className='formations-title'>Formations</h1>
             <div className="formations-table">
-                {FormationsData.map((info:Formation, i) => (
+                {FormationsData.map((info, i) => (
                     <div key={i} className="formations-container">
                         <div className="formations-top">
                             <div className="formations-dev">

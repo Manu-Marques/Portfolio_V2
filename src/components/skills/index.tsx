@@ -1,5 +1,4 @@
 import "./styles.css";
-import { useState, useEffect, useRef } from "react";
 import SkillsData from "../../../src/data/skills.json";
 
 
@@ -7,105 +6,9 @@ export default function Skills() {
 
 
 
-    // interface Skills {
-    //     stack: {
-    //         front: {
-    //             front: string;
-    //             html: {
-    //                 name: string;
-    //             }
-    //             css: {
-    //                 name: string;
-    //             }
-    //             js: {
-    //                 name: string;
-    //             }
-    //             react: {
-    //                 name: string;
-    //             }
-    //             typescript: {
-    //                 name: string;
-    //             }
-    //             tailwind: {
-    //                 name: string;
-    //             }
-    //             bootstrap: {
-    //                 name: string;
-    //             }
-    //         }
-    //         back: {
-    //             back: string;
-    //             node: {
-    //                 name: string;
-    //             }
-    //             postgresql: {
-    //                 name: string;
-    //             }
-    //             express: {
-    //                 name: string;
-    //             }
-    //         }
-    //         others: {
-    //             others: string;
-    //             git: {
-    //                 name: string;
-    //             }
-    //             jest: {
-    //                 name: string;
-    //             }
-    //             figma: {
-    //                 name: string;
-    //             }
-    //         },
-    //     }
-    //     savoir_faire: {
-    //         description: string;
-    //         description_1: string;
-    //         description_2: string;
-    //         description_3: string;
-    //         description_4: string;
-    //     },
-    //     savoir_etre: {
-    //         description: string;
-    //         description_1: string;
-    //         description_2: string;
-    //         description_3: string;
-    //         description_4: string;
-    //     },
-    //     langues: {
-    //         france: {
-    //             title: string;
-    //             level: string;
-    //         },
-    //         anglais: {
-    //             title: string;
-    //             level: string;
-    //         },
-    //         portugais: {
-    //             title: string;
-    //             level: string;
-    //         }
-    //     }
-    // }
-
-
-
-    const myRef = useRef(null);
-    const [isVisible, setVisible] = useState(false);
-
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            const entry = entries[0];
-            setVisible(entry.isIntersecting);
-        });
-        if (myRef.current) {
-            observer.observe(myRef.current);
-        }
-    }, []);
 
     return (
-        <div ref={myRef} className={`skills-main ${isVisible ? 'active' : ''}`} id="skills">
+        <div  className="skills-main" id="skills">
             <h1 className="skills-title">Compétences</h1>
             <div className="skills-table">
                 {SkillsData.map((info) => (

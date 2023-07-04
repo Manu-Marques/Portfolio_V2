@@ -14,12 +14,12 @@ import Arrow from "../arrow";
 import photo from '../../../src/assets/photo.jpg';
 
 //React
-// import { HashLink as Link } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link as ScrollLink, Element } from 'react-scroll';
 
 export default function App() {
 
-  
+
   return (
     <div className="App">
       <div className="home">
@@ -34,30 +34,38 @@ export default function App() {
             </div>
             <div className="home-menu">
               <div className="home-left">
-                <Link className='home-experience' to='#experience' >
-                  <div >Expériences</div>
-                </Link>
-                <Link className='home-skills' to="#skills" >
-                  <div >Compétences</div>
-                </Link>
+                <ScrollLink className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+                  <div>Expériences</div>
+                </ScrollLink>
+                <ScrollLink className="home-skills" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                  <div>Compétences</div>
+                </ScrollLink>
               </div>
               <div className="home-right">
-                <Link className='home-projets' to="#projets" >
+                <ScrollLink className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
                   <div>Projets</div>
-                </Link>
-                <Link className='home-formations' to="#formations" >
+                </ScrollLink>
+                <ScrollLink className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
                   <div>Formations</div>
-                </Link>
+                </ScrollLink>
               </div>
             </div>
           </div>
         </div>
       </div>
       <ScrollToTop />
-      <Projets />
-      <Skills />
-      <Experience />
-      <Formations />
+      <Element name="projets">
+        <Projets />
+      </Element>
+      <Element name="skills">
+        <Skills />
+      </Element>
+      <Element name="experience">
+        <Experience />
+      </Element>
+      <Element name="formations">
+        <Formations />
+      </Element>
       <Arrow />
       <Contact />
       <Footer />

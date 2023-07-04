@@ -1,77 +1,18 @@
 import './styles.css';
-import { useState, useEffect, useRef } from 'react';
 import ExperiencesData from "../../../src/data/experiences.json";
 
 
 export default function Experience() {
 
 
-    interface Experience {
-        oclock: {
-            title: string,
-            company: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        },
-        bus: {
-            title: string,
-            company: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        },
-        hotel: {
-            title: string,
-            company: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        },
-        quick: {
-            title: string,
-            company: string,
-            city: string,
-            description: string,
-            description_1: string,
-            description_2: string,
-            description_3: string,
-            start: string,
-            end: string
-        }
-    }
 
-    const myRef = useRef(null);
-    const [isVisible, setVisible] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            const entry = entries[0];
-            setVisible(entry.isIntersecting);
-        });
-        if (myRef.current) {
-            observer.observe(myRef.current);
-        }
-    }, []);
 
 
     return (
-        <div ref={myRef} className={`experience-main ${isVisible ? 'active' : ''}`} id="experience">
+        <div  className="experience-main" id="experience">
             <h1 className='experience-title'>Expériences</h1>
             <div className="experience-table">
-                {ExperiencesData.map((info: Experience, i) => (
+                {ExperiencesData.map((info, i) => (
                     <div key={i} className="experience-container">
                         <div className="experience-left">
                             <><div className='experience-oclock'>

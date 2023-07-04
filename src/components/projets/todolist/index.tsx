@@ -6,22 +6,10 @@ import ProjetsData from "../../../../src/data/projects.json";
 
 export default function Todolist() {
 
-    interface Todolist {
-        todolist: {
-            title: string,
-            description: string,
-            stack: string,
-            stack_1: string,
-            stack_2: string,
-            stack_3: string,
-            stack_4: string,
-            link: string
-        }
-    }
 
     return (
         <div className="todolist">
-            {ProjetsData.map((info: Todolist) => (
+            {ProjetsData.map((info) => (
                 <><h1 className='todolist-title'>{info.todolist.title}</h1><div className="todolist-container">
                     <div className="todolist-container-img">
                         <img className='todolist-img' src={logo} alt="logo">

@@ -2,7 +2,7 @@ import './styles.css'
 import Artisenbois from './artisenbois';
 import Todolist from './todolist';
 import PokemonFinder from './pokemonFinder';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 
 
 export default function Projets() {
@@ -12,22 +12,9 @@ export default function Projets() {
         setProject(project);
     }
 
-    const myRef = useRef(null);
-    const [isVisible, setVisible] = useState(false);
-
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            const entry = entries[0];
-            setVisible(entry.isIntersecting);
-        });
-        if (myRef.current) {
-            observer.observe(myRef.current);
-        }
-    }, []);
 
     return (
-        <div ref={myRef} className={`projets-main ${isVisible ? 'active' : ''}`} id="projets">
+        <div  className="projets-main " id="projets">
             <h1 className="projets-title">Projets</h1>
             <div className="projets-table">
                 <div className="projets-btn">
