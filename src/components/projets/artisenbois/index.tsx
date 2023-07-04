@@ -39,7 +39,28 @@ export default function Artisenbois() {
                         <Link to={info.artisenbois.link} target="_blank" className="artisenbois-link">Visiter le site</Link>
                     </div>
                     <div className="artisenbois-rework">
-                    <button className="artisenbois-button" onClick={() => handleProject('rework')}>Avant/Après</button>
+                    <button className="artisenbois-button" onClick={() => handleProject('rework')}>Changements Avant/Après</button>
+                    </div>
+                    <div className="artisenbois-rework-container">
+                        {project === 'rework' && (
+                            <><div className="artisenbois-rework-container-img">
+                                <img className='artisenbois-rework-img' src={logo} alt="logo">
+                                </img>
+                            </div><div className="artisenbois-rework-info">
+                                    <h2 className="artisenbois-rework-subtitle">Résumé du projet</h2>
+                                    <p className="artisenbois-rework-text">{}</p>
+                                    <div className="artisenbois-rework-description">
+                                        <h2 className="artisenbois-rework-subtitle">Outils de développement utilisés</h2>
+                                        <ul className="artisenbois-rework-list">
+                                            <li className="artisenbois-rework-item">Design <span className="artisenbois-rework-word">{}</span></li>
+                                            <li className="artisenbois-rework-item">Langage <span className="artisenbois-rework-word">{}</span></li>
+                                            <li className="artisenbois-rework-item">Framework <span className="artisenbois-rework-word">{}</span></li>
+                                            <li className="artisenbois-rework-item">Deploiement avec <span className="artisenbois-rework-word">{}</span></li>
+                                            <li className="artisenbois-rework-item">Responsive avec <span className="artisenbois-rework-word">{}</span></li>
+                                        </ul>
+                                    </div>
+                                </div></>
+                        )}
                     </div>
                 </>
             ))}
