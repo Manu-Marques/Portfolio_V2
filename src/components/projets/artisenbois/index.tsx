@@ -46,20 +46,14 @@ function scrollToContent(project: string) {
                     <div className="artisenbois-rework" id='contenu'>
                         {project === 'rework' && (
                             <div className="artisenbois-rework-container">
-                                <><div className="artisenbois-rework-container-img">
-                                    <img className='artisenbois-rework-img' src={logo} alt="logo">
-                                    </img>
-                                </div><div className="artisenbois-rework-info">
-                                        <h2 className="artisenbois-rework-subtitle">Résumé du projet</h2>
-                                        <p className="artisenbois-rework-text">{ }</p>
+                                <>
+                                <div className="artisenbois-rework-info">
                                         <div className="artisenbois-rework-description">
-                                            <h2 className="artisenbois-rework-subtitle">Outils de développement utilisés</h2>
                                             <ul className="artisenbois-rework-list">
-                                                <li className="artisenbois-rework-item">Design <span className="artisenbois-rework-word">{ }</span></li>
-                                                <li className="artisenbois-rework-item">Langage <span className="artisenbois-rework-word">{ }</span></li>
-                                                <li className="artisenbois-rework-item">Framework <span className="artisenbois-rework-word">{ }</span></li>
-                                                <li className="artisenbois-rework-item">Deploiement avec <span className="artisenbois-rework-word">{ }</span></li>
-                                                <li className="artisenbois-rework-item">Responsive avec <span className="artisenbois-rework-word">{ }</span></li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Réduction des composants</span> : Diminution de moitié du nombre de composants nécessaires pour le projet, ce qui simplifie la structure globale et rend le code plus concis et maintenable.</li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Routes dynamiques</span> : Utilisation de routes dynamiques pour gérer le rendu des différents contenus du projet, ce qui réduit le nombre de routes nécessaires et facilite l'ajout ou la modification de nouvelles fonctionnalités. <span className="artisenbois-rework-word">{ }</span></li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Optimisation et légèreté</span> : Réduction de la taille et de la complexité du projet, ce qui le rend plus léger et plus performant. L'optimisation permet également d'améliorer les temps de chargement et l'expérience utilisateur. <span className="artisenbois-rework-word">{ }</span></li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Facilité d'optimisation</span> : La simplification du projet rend l'optimisation plus facile et plus efficace. Avec une structure plus claire et moins de dépendances, il est plus simple d'identifier les zones d'amélioration et d'appliquer des optimisations ciblées. <span className="artisenbois-rework-word">{ }</span></li>
                                             </ul>
                                         </div>
                                     </div></>
