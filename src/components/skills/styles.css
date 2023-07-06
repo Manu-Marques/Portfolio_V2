@@ -123,6 +123,13 @@
     
 }
 
+@media screen and (max-width: 1260px) {
+
+    .skills-main {
+        padding-bottom: 100px;
+    }
+}
+
 @media screen and (max-width: 1130px) {
     .skills-table {
         width: 70%;

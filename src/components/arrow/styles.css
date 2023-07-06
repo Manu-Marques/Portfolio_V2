@@ -1,8 +1,9 @@
 .scroll-to-top {
     position: fixed;
-    z-index: 6;
+    z-index: 7;
     cursor: pointer;
     right: 0;
+    bottom: 0;
 }
 
 .fa-1x {

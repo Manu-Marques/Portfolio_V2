@@ -63,7 +63,7 @@
     background-color: rgb(255, 255, 255);
     color: #000000;
     cursor: pointer;
-} 
+}
 
 .projets-contents {
     padding: 20px;
@@ -77,6 +77,10 @@
 @media screen and (max-width: 1260px) {
     .projets-table {
         width: 99%;
+    }
+
+    .projets-main {
+        padding-bottom: 100px;
     }
 
 }

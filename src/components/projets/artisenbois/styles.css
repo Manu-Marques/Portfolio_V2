@@ -149,3 +149,13 @@
     }
 
 }
+
+@media screen and (max-width: 460px) {
+    .artisenbois-visite{
+        flex-direction: column;
+    }
+
+    .artisenbois-link {
+        margin-bottom: 20px;
+    }
+}
