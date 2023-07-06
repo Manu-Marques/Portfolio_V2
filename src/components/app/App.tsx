@@ -28,7 +28,7 @@ export default function App() {
             <div className='home-resume'>
               <div className="home-me">
                 <h2 className='home-presentation'>Bonjour, je m'appelle <span className="presentation-word">Emanuel</span></h2>
-                <h2 className='home-presentation'>Je suis <span className="presentation-word">Développeur Web</span></h2>
+                <h2 className='home-presentation'>Je suis un <span className="presentation-word">Développeur Web</span> qui aspire constamment à monter en compétences et à relever de nouveaux défis. </h2>
               </div>
               <img className='home-img' src={photo} alt="moi" />
             </div>
