@@ -17,14 +17,7 @@
   height: 100vh;
 }
 
-.home-row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-
-.home-resume {
+.home-me {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,11 +28,17 @@
 
 .home-menu {
   display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
+.home-resume{
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 1000px;
-  height: 500px;
-  margin-left: 35px;
+  width: 100%;
+  height: 100%;
 }
 
 .home-left {
@@ -67,9 +66,11 @@
 .home-experience,
 .home-skills,
 .home-projets,
-.home-formations {
+.home-formations,
+.home-prestation,
+.home-contact {
   position: relative;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 500;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
@@ -81,15 +82,14 @@
 .home-skills:hover,
 .home-projets:hover,
 .home-formations:hover,
-.home-contact-button:hover {
+.home-prestation:hover,
+.home-contact:hover,
+.home-contact-button:hover{
   color: #fff;
   text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
   cursor: pointer;
 }
 
-.home-experience:hover~.home-experience::after {
-  background-color: red;
-}
 
 .home-presentation {
   color: #fff;
@@ -105,12 +105,14 @@
   text-decoration: none;
 }
 
-.home-img {
+.home-image{
   width: 55%;
+}
+
+.home-img {
+  width: 50%;
   height: 60%;
   object-fit: cover;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 20px 0 #1f1ccd;
   margin: 20px;
 }
 
@@ -118,21 +120,27 @@
 .home-experience,
 .home-skills,
 .home-projets,
-.home-formations {
+.home-formations,
+.home-prestation,
+.home-contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   position: relative;
-  border: 2px solid #ffffff;
-  transform: skewy(-9deg);
-  padding: 10px;
+  padding: 20px;
 }
 
-.home-experience::before,
+.home-category {
+  
+}
+
+ /* .home-experience::before,
 .home-skills::before,
 .home-projets::before,
-.home-formations::before {
+.home-formations::before,
+.home-prestation::before,
+.home-contact::before{
   content: "";
   position: absolute;
   top: -2px;
@@ -143,13 +151,15 @@
   transform-origin: right;
   transform: skewY(45deg);
   z-index: -1;
-}
+}  */
 
 
-.home-experience::after,
+ /* .home-experience::after,
 .home-skills::after,
 .home-projets::after,
-.home-formations::after {
+.home-formations::after,
+.home-prestation::after,
+.home-contact::after {
   content: "";
   position: absolute;
   top: -45px;
@@ -159,11 +169,7 @@
   z-index: -1;
   border: 2px solid #ffffff;
   transform: skewX(45deg);
-}
-
-.home-projets {
-  width: 70%;
-}
+}  */
 
 
 @media screen and (max-width: 1668px) {
