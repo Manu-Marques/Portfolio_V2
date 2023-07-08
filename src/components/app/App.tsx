@@ -12,7 +12,7 @@ import ScrollToTop from "../scrollToTop";
 import Arrow from "../arrow";
 
 //Images
-import photo from '../../../src/assets/Moi.png';
+import photo from '../../../src/assets/Moi.jpg';
 
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';
