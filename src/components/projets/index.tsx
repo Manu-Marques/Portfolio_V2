@@ -2,6 +2,7 @@ import './styles.css'
 import Artisenbois from './artisenbois';
 import Todolist from './todolist';
 import PokemonFinder from './pokemonFinder';
+import Planetes from './planetes';
 import { useState } from 'react';
 
 
@@ -23,11 +24,13 @@ export default function Projets() {
                     <button className={`btn ${activeTab === 1 ? "on" : ""}`} onClick={() => bothFunctions('artisenbois', (1))}>ArtisenBois</button>
                     <button className={`btn ${activeTab === 2 ? "on" : ""}`}  onClick={() => bothFunctions('todolist', (2))}>ToDoList</button>
                     <button className={`btn ${activeTab === 3 ? "on" : ""}`} onClick={() => bothFunctions('pokemonfinder', (3))}>Pokemon Finder</button>
+                    <button className={`btn ${activeTab === 4 ? "on" : ""}`} onClick={() => bothFunctions('planetes', (4))}>Planetes</button>
                 </div>
                 <div className="projets-contents">
                     {project === 'artisenbois' && <Artisenbois />}
                     {project === 'todolist' && <Todolist />}
                     {project === 'pokemonfinder' && <PokemonFinder />}
+                    {project === 'planetes' && <Planetes />}
                 </div>
             </div>
         </div>

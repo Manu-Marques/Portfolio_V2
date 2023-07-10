@@ -1,25 +1,25 @@
-.artisenbois-title {
+.planetes-title {
     margin-top: 0;
     color: #fff;
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
     text-decoration: underline;
 }
 
-.artisenbois-container {
+.planetes-container {
     display: flex;
     justify-content: center;
 }
 
-.artisenbois-container-img {
+.planetes-container-img {
     display: flex;
     align-items: center;
 }
 
-.artisenbois-img {
+.planetes-img {
     width: 100%;
 }
 
-.artisenbois-info {
+.planetes-info {
     width: 50%;
     height: 100%;
     border: 2px solid #ffffff;
@@ -27,44 +27,44 @@
     text-align: center;
 }
 
-.artisenbois-text {
+.planetes-text {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 22px;
 }
 
-.artisenbois-subtitle {
+.planetes-subtitle {
     font-size: 25px;
 }
 
-.artisenbois-description {
+.planetes-description {
     border-top: 2px solid #ffffff;
 }
 
-.artisenbois-list {
+.planetes-list {
     padding-left: 0;
 }
 
-.artisenbois-item {
+.planetes-item {
     list-style: none;
     font-size: 22px;
 }
 
-.artisenbois-word {
+.planetes-word {
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     text-shadow: 1px -5px 2px, 0 0 1em blue, 0 0 0.2em blue;
     text-decoration: none;
 }
 
-.artisenbois-visite {
+.planetes-visite {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
 }
 
-.artisenbois-link {
+.planetes-link {
     background: #fff;
     color: #111;
     max-width: 150px;
@@ -76,14 +76,14 @@
     border: #ffffff 1px solid;
 }
 
-.artisenbois-link:hover {
+.planetes-link:hover {
     color: transparent;
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
     -webkit-text-stroke: 1px #fff;
     background-color: transparent;
 }
 
-.artisenbois-rework-container {
+.planetes-rework-container{
     display: flex;
     justify-content: space-evenly;
     border-top: 1px solid;
@@ -92,74 +92,19 @@
     align-items: center;
 }
 
-.artisenbois-rework-list {
+.planetes-rework-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.artisenbois-rework-item {
+.planetes-rework-item {
     margin-bottom: 1rem;
     font-size: 20px;
 }
 
-.artisenbois-rework-word {
+.planetes-rework-word {
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
     text-decoration: underline;
     font-size: 21px;
-}
-
-
-@media screen and (max-width: 960px) {
-
-    .artisenbois {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .artisenbois-item {
-        font-size: 20px;
-    }
-
-    .artisenbois-text {
-        font-size: 20px;
-    }
-
-    .artisenbois-title {
-        text-align: center;
-    }
-
-    .artisenbois-container {
-        display: block;
-    }
-
-    .artisenbois-info {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .artisenbois-container-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .artisenbois-img {
-        width: 50%;
-        height: 50%;
-    }
-
-    .artisenbois-info {
-        margin-top: 10px;
-    }
-
-}
-
-@media screen and (max-width: 460px) {
-    .artisenbois-visite {
-        flex-direction: column;
-    }
-
-    .artisenbois-link {
-        margin-bottom: 20px;
-    }
 }

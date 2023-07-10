@@ -10,7 +10,8 @@ export default function Todolist() {
     return (
         <div className="todolist">
             {ProjetsData.map((info) => (
-                <><h1 className='todolist-title'>{info.todolist.title}</h1><div className="todolist-container">
+                <><h1 className='todolist-title'>{info.todolist.title}</h1>
+                <div className="todolist-container">
                     <div className="todolist-container-img">
                         <img className='todolist-img' src={logo} alt="logo">
                         </img>
