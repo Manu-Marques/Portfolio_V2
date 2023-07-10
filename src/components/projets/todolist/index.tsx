@@ -25,8 +25,7 @@ export default function Todolist() {
                                 <li className="todolist-item">Design <span className="todolist-word">{info.todolist.stack}</span></li>
                                 <li className="todolist-item">Langage <span className="todolist-word">{info.todolist.stack_1}</span></li>
                                 <li className="todolist-item">Utilisation de la méthode <span className="todolist-word">{info.todolist.stack_2}</span></li>
-                                <li className="todolist-item">Deploiement avec <span className="todolist-word">{info.todolist.stack_3}</span></li>
-                                <li className="todolist-item">Responsive avec <span className="todolist-word">{info.todolist.stack_4}</span></li>
+                                <li className="todolist-item">Responsive avec <span className="todolist-word">{info.todolist.stack_3}</span></li>
                             </ul>
                         </div>
                     </div>

@@ -6,30 +6,27 @@
           "stack": "HTML/CSS",
           "stack_1": "Javascript",
           "stack_2": "React",
-          "stack_3": "Vercel",
-          "stack_4": "Media Queries",
+          "stack_3": "Media Queries",
           "link": "https://projetartisenbois.vercel.app/"
         },
         "todolist": {
           "title": "Todolist",
-          "description": "Ce site web a été créé dans le cadre d'un projet personnel axé sur les opérations CRUD (Create/Read/Update/Delete). L'objectif principal était de concevoir une application web qui permettrait aux utilisateurs d'effectuer ces différentes opérations sur des données spécifiques. L'accent a été mis sur la convivialité de l'interface utilisateur et sur la mise en œuvre efficace des fonctionnalités CRUD.",
+          "description": "Ce site web a été créé dans le cadre d'un projet personnel axé sur les opérations CRUD (Create/Read/Update/Delete). L'objectif principal était de concevoir une application web qui permettrait aux utilisateurs d'effectuer ces différentes opérations sur des données spécifiques.",
           "stack": "HTML/CSS",
           "stack_1": "Javascript",
           "stack_2": "CRUD",
-          "stack_3": "Vercel",
-          "stack_4": "Media Queries",
+          "stack_3": "Media Queries",
           "link": "https://todolist-with-javascript.vercel.app/"
         },
         "pokemon": {
           "title": "Pokemon Finder",
-          "description": "Ce site web personnel a été créé pour consommer et manipuler une API en ligne. L'objectif principal était d'interagir avec l'API, récupérer des données et les afficher dynamiquement sur le site. Des tests unitaires ont également été mis en place pour garantir la fiabilité et le bon fonctionnement du code.",
+          "description": "Ce site web personnel a été créé pour consommer et manipuler une API en ligne. L'objectif était de récupérer des données et les afficher dynamiquement sur le site. Des tests unitaires ont également été mis en place pour garantir la fiabilité et le bon fonctionnement du code.",
           "stack": "HTML/Tailwind",
           "stack_1": "Javascript",
           "stack_2": "React",
           "stack_3": "Pokebuildapi",
           "stack_4": "Jest",
-          "stack_5": "Vercel",
-          "stack_6": "Media Queries",
+          "stack_5": "Media Queries",
           "link": "https://pokemon-finders.vercel.app/"
         },
         "planetes": {

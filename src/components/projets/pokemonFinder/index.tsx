@@ -28,8 +28,7 @@ export default function PokemonFinder() {
                                     <li className="pokemon-item">Framework <span className="pokemon-word">{info.pokemon.stack_2}</span></li>
                                     <li className="pokemon-item">API <span className="pokemon-word">{info.pokemon.stack_3}</span></li>
                                     <li className="pokemon-item">Tests unitaires <span className="pokemon-word">{info.pokemon.stack_4}</span></li>
-                                    <li className="pokemon-item">Deploiement avec <span className="pokemon-word">{info.pokemon.stack_5}</span></li>
-                                    <li className="pokemon-item">Responsive avec <span className="pokemon-word">{info.pokemon.stack_6}</span></li>
+                                    <li className="pokemon-item">Responsive avec <span className="pokemon-word">{info.pokemon.stack_5}</span></li>
                                 </ul>
                             </div>
                         </div>

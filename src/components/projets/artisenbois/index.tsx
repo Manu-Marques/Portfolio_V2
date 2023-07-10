@@ -34,8 +34,7 @@ export default function Artisenbois() {
                                     <li className="artisenbois-item">Design <span className="artisenbois-word">{info.artisenbois.stack}</span></li>
                                     <li className="artisenbois-item">Langage <span className="artisenbois-word">{info.artisenbois.stack_1}</span></li>
                                     <li className="artisenbois-item">Framework <span className="artisenbois-word">{info.artisenbois.stack_2}</span></li>
-                                    <li className="artisenbois-item">Deploiement avec <span className="artisenbois-word">{info.artisenbois.stack_3}</span></li>
-                                    <li className="artisenbois-item">Responsive avec <span className="artisenbois-word">{info.artisenbois.stack_4}</span></li>
+                                    <li className="artisenbois-item">Responsive avec <span className="artisenbois-word">{info.artisenbois.stack_3}</span></li>
                                 </ul>
                             </div>
                         </div>
