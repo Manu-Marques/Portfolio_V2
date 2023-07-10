@@ -20,8 +20,6 @@ export default function Planetes() {
         setProject(project === 'coming' ? '' : 'coming');
     }
 
-
-
     return (
         <div className="planetes">
             {ProjetsData.map((info) => (
@@ -47,7 +45,7 @@ export default function Planetes() {
                         </div>
                     </div>
                     <div className="planetes-visite">
-                        <Link to={info.planetes.link} className="planetes-link">Visiter le projet</Link>
+                        <Link to={info.planetes.link} target="_blank"  className="planetes-link">Visiter le projet</Link>
                         <button className="planetes-button" onClick={() => scrollToContent('coming')}>Ajouts à venir</button>
                     </div>
                     <div className="planetes-coming" id='contenu'>

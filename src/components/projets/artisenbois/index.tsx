@@ -44,7 +44,7 @@ export default function Artisenbois() {
                         </div>
                     </div>
                     <div className="artisenbois-visite">
-                        <Link to={info.artisenbois.link} className="artisenbois-link">Visiter le site</Link>
+                        <Link to={info.artisenbois.link} target="_blank"  className="artisenbois-link">Visiter le site</Link>
                         <button className="artisenbois-button" onClick={() => scrollToContent('rework')}>Changements Avant/Après</button>
                     </div>
                     <div className="artisenbois-rework" id='contenu'>
