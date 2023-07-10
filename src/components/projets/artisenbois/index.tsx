@@ -16,6 +16,10 @@ export default function Artisenbois() {
         setProject(project);
     }
 
+    function toggle() {
+        setProject(project === 'coming' ? '' : 'coming');
+    }
+
     return (
         <div className="artisenbois">
             {ProjetsData.map((info) => (
@@ -40,7 +44,7 @@ export default function Artisenbois() {
                         </div>
                     </div>
                     <div className="artisenbois-visite">
-                        <Link to={info.artisenbois.link} target="_blank" className="artisenbois-link">Visiter le site</Link>
+                        <Link to={info.artisenbois.link} className="artisenbois-link">Visiter le site</Link>
                         <button className="artisenbois-button" onClick={() => scrollToContent('rework')}>Changements Avant/Après</button>
                     </div>
                     <div className="artisenbois-rework" id='contenu'>
@@ -48,12 +52,15 @@ export default function Artisenbois() {
                             <div className="artisenbois-rework-container">
                                 <>
                                     <div className="artisenbois-rework-info">
+                                        <div className="artisenbois-rework-cross">
+                                            <button className="artisenbois-rework-cross-btn" onClick={toggle}>X</button>
+                                        </div>
                                         <div className="artisenbois-rework-description">
                                             <ul className="artisenbois-rework-list">
                                                 <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Réduction des composants</span> : Diminution de moitié du nombre de composants nécessaires pour le projet, ce qui simplifie la structure globale et rend le code plus concis et maintenable.</li>
-                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Routes dynamiques</span> : Utilisation de routes dynamiques pour gérer le rendu des différents contenus du projet, ce qui réduit le nombre de routes nécessaires et facilite l'ajout ou la modification de nouvelles fonctionnalités. <span className="artisenbois-rework-word">{ }</span></li>
-                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Optimisation et légèreté</span> : Réduction de la taille et de la complexité du projet, ce qui le rend plus léger et plus performant. L'optimisation permet également d'améliorer les temps de chargement et l'expérience utilisateur. <span className="artisenbois-rework-word">{ }</span></li>
-                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Facilité d'optimisation</span> : La simplification du projet rend l'optimisation plus facile et plus efficace. Avec une structure plus claire et moins de dépendances, il est plus simple d'identifier les zones d'amélioration et d'appliquer des optimisations ciblées. <span className="artisenbois-rework-word">{ }</span></li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Routes dynamiques</span> : Utilisation de routes dynamiques pour gérer le rendu des différents contenus du projet, ce qui réduit le nombre de routes nécessaires et facilite l'ajout ou la modification de nouvelles fonctionnalités.</li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Optimisation et légèreté</span> : Réduction de la taille et de la complexité du projet, ce qui le rend plus léger et plus performant. L'optimisation permet également d'améliorer les temps de chargement et l'expérience utilisateur.</li>
+                                                <li className="artisenbois-rework-item"><span className="artisenbois-rework-word">Facilité d'optimisation</span> : La simplification du projet rend l'optimisation plus facile et plus efficace. Avec une structure plus claire et moins de dépendances, il est plus simple d'identifier les zones d'amélioration et d'appliquer des optimisations ciblées.</li>
                                             </ul>
                                         </div>
                                     </div></>

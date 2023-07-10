@@ -83,7 +83,7 @@
     background-color: transparent;
 }
 
-.planetes-rework-container{
+.planetes-coming-container{
     display: flex;
     justify-content: space-evenly;
     border-top: 1px solid;
@@ -92,18 +92,24 @@
     align-items: center;
 }
 
-.planetes-rework-list {
+.planetes-coming-cross{
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.planetes-coming-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.planetes-rework-item {
+.planetes-coming-item {
     margin-bottom: 1rem;
     font-size: 20px;
 }
 
-.planetes-rework-word {
+.planetes-coming-word {
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
     text-decoration: underline;
     font-size: 21px;

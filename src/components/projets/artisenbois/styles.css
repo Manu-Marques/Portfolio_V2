@@ -92,6 +92,12 @@
     align-items: center;
 }
 
+.artisenbois-rework-cross{
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
 .artisenbois-rework-list {
     list-style: none;
     padding: 0;
