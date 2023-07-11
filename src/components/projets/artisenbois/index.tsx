@@ -23,6 +23,7 @@ export default function Artisenbois() {
     return (
         <div className="artisenbois">
             {ProjetsData.map((info) => (
+            <div key={info.artisenbois.id}>
                 <><h1 className='artisenbois-title'>{info.artisenbois.title}</h1>
                     <div className="artisenbois-container">
                         <div className="artisenbois-container-img">
@@ -68,6 +69,7 @@ export default function Artisenbois() {
                         )}
                     </div>
                 </>
+            </div>
             ))}
         </div>
     );

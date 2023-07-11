@@ -1,6 +1,7 @@
 [
     {
         "artisenbois": {
+          "id": 1,  
           "title": "Artisenbois V2",
           "description": "Ce site web a été créé dans le cadre d'un projet personnel, marquant ainsi mon premier projet après avoir terminé ma formation. L'objectif principal était de créer un site vitrine, mettant en valeur mes compétences et mes réalisations.",
           "stack": "HTML/CSS",
@@ -10,6 +11,7 @@
           "link": "https://projetartisenbois.vercel.app/"
         },
         "todolist": {
+          "id": 2,
           "title": "Todolist",
           "description": "Ce site web a été créé dans le cadre d'un projet personnel axé sur les opérations CRUD (Create/Read/Update/Delete). L'objectif principal était de concevoir une application web qui permettrait aux utilisateurs d'effectuer ces différentes opérations sur des données spécifiques.",
           "stack": "HTML/CSS",
@@ -19,6 +21,7 @@
           "link": "https://to-do-list-with-javascript.vercel.app/"
         },
         "pokemon": {
+          "id": 3,
           "title": "Pokemon Finder",
           "description": "Ce site web personnel a été créé pour consommer et manipuler une API en ligne. L'objectif était de récupérer des données et les afficher dynamiquement sur le site. Des tests unitaires ont également été mis en place pour garantir la fiabilité et le bon fonctionnement du code.",
           "stack": "HTML/Tailwind",

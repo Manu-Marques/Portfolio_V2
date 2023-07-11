@@ -12,7 +12,7 @@ export default function Skills() {
             <h1 className="skills-title">Compétences</h1>
             <div className="skills-table">
                 {SkillsData.map((info) => (
-                    <div className="skills-container">
+                    <div key={info.id} className="skills-container">
                         <div className="skills-stack">
                             <h1 className="skills-subtitle">Stack</h1>
                             <div className="skills-stack-list">

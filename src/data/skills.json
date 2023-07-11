@@ -1,93 +1,98 @@
 [
-    {
-        "stack": {
-          "front": {
-            "html": 
-              {
-                "name": "HTML"
-              },
-            "css": 
-              {
-                "name": "CSS"
-              },
-            "js": 
-              {
-                "name": "JavaScript"
-              },
-            "react": 
-              {
-                "name": "React"
-              },
-            "typescript": 
-              {
-                "name": "TypeScript"
-              },
-            "tailwind": 
-              {
-                "name": "Tailwind"
-              },
-            "bootstrap": 
-              {
-                "name": "Bootstrap"
-              }
-          },
-          "back": {
-            "node": 
-              {
-                "name": "Node.js"
-              },
-            "postgresql": 
-              {
-                "name": "PostgreSQL"
-              },
-            "express": 
-              {
-                "name": "Express"
-              }
-          },
-          "others": {
-            "git": 
-              {
-                "name": "Git"
-              }
-            ,
-            "jest": 
-              {
-                "name": "Test unitaire Jest"
-              },
-            "figma": 
-              {
-                "name": "Figma"
-              }
-          }
+  {
+    "id": 1,
+    "stack": {
+      "front": {
+        "html": {
+          "id": 1,
+          "name": "HTML"
         },
-        "savoir_faire": {
-          "description": "- Méthode Agile",
-          "description_1": "- Concevoir une maquette de présentation",
-          "description_2": "- Établir un cahier des charges",
-          "description_3": "- Planifier les étapes d'un projet",
-          "description_4": "- Analyser le besoin du client"
+        "css": {
+          "id": 2,
+          "name": "CSS"
         },
-        "savoir_etre": {
-          "description": "- Autonome",
-          "description_1": "- Travail en équipe",
-          "description_2": "- Capacité d'adaptation",
-          "description_3": "- Sens de communication",
-          "description_4": "- Curiosité"
+        "js": {
+          "id": 3,
+          "name": "JavaScript"
         },
-        "langues": {
-          "france": {
-            "title": "- Français",
-            "level": "Bilingue"
-          },
-          "anglais": {
-            "title": "- Anglais",
-            "level": "Niveau B2"
-          },
-          "portugais": {
-            "title": "- Portugais",
-            "level": "Langue maternelle"
-          }
+        "react": {
+          "id": 4,
+          "name": "React"
+        },
+        "typescript": {
+          "id": 5,
+          "name": "TypeScript"
+        },
+        "tailwind": {
+          "id": 6,
+          "name": "Tailwind"
+        },
+        "bootstrap": {
+          "id": 7,
+          "name": "Bootstrap"
         }
+      },
+      "back": {
+        "node": {
+          "id": 8,
+          "name": "Node.js"
+        },
+        "postgresql": {
+          "id": 9,
+          "name": "PostgreSQL"
+        },
+        "express": {
+          "id": 10,
+          "name": "Express"
+        }
+      },
+      "others": {
+        "git": {
+          "id": 11,
+          "name": "Git"
+        },
+        "jest": {
+          "id": 12,
+          "name": "Test unitaire Jest"
+        },
+        "figma": {
+          "id": 13,
+          "name": "Figma"
+        }
+      }
+    },
+    "savoir_faire": {
+      "id": 14,
+      "description": "- Méthode Agile",
+      "description_1": "- Concevoir une maquette de présentation",
+      "description_2": "- Établir un cahier des charges",
+      "description_3": "- Planifier les étapes d'un projet",
+      "description_4": "- Analyser le besoin du client"
+    },
+    "savoir_etre": {
+      "id": 15,
+      "description": "- Autonome",
+      "description_1": "- Travail en équipe",
+      "description_2": "- Capacité d'adaptation",
+      "description_3": "- Sens de communication",
+      "description_4": "- Curiosité"
+    },
+    "langues": {
+      "france": {
+        "id": 16,
+        "title": "- Français",
+        "level": "Bilingue"
+      },
+      "anglais": {
+        "id": 17,
+        "title": "- Anglais",
+        "level": "Niveau B2"
+      },
+      "portugais": {
+        "id": 18,
+        "title": "- Portugais",
+        "level": "Langue maternelle"
+      }
     }
-  ]
+  }
+]
