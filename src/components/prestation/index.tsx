@@ -1,7 +1,8 @@
 import "./styles.css";
 
-
 export default function Prestation() {
+
+
   return (
     <div className="container">
       <div className="prestation-main">
@@ -19,7 +20,7 @@ export default function Prestation() {
             <div className="prestation-services">
               <h2 className="prestation-services-subtitle">Mes services</h2>
             </div>
-            <div className="line"></div>
+            <div className="line1"></div>
             <div className="line2"></div>
             <div className="lines">
               <div className="line3"></div>
