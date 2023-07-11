@@ -10,7 +10,9 @@ export default function Contact() {
                         <div className="contact-envelope">
                             <i className="fa fa-envelope fa-2x"></i>
                         </div>
+                        <Link to="mailto:le.marques.emanuel@gmail.com" target="_blank">
                         <span className="contact-info">le.marques.emanuel@gmail.com</span>
+                        </Link>
                     </div>
                     <div className="contact-icon-phone">
                         <div className="contact-phone">
