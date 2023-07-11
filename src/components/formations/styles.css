@@ -1,21 +1,7 @@
 .formations-main{
     position: relative;
     z-index: 5;
-    padding-bottom: 20px;
-}
-
-.active {
-    animation-duration: 3s;
-    animation-name: fadeIn;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    padding-bottom: 200px;
 }
 
 .formations-title {
@@ -29,8 +15,6 @@
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
 }
 
-
-
 .formations-table {
     margin: 0 auto;
     width: 60%;
@@ -42,7 +26,7 @@
     padding: 20px;
     color: #fff;
     border: 4px solid #ffffff;
-    box-shadow: 0 0 192px 0 #1f1ccd;
+    box-shadow: 0 0 192px 0 rgb(110, 13, 139);
 }
 
 .formations-dev,

@@ -4,10 +4,8 @@ import FormationsData from "../../../src/data/formations.json";
 
 export default function Formations() {
 
-
-
     return (
-        <div className="formations-main"  id="formations">
+        <div className="formations-main">
             <h1 className='formations-title'>Formations</h1>
             <div className="formations-table">
                 {FormationsData.map((info, i) => (
