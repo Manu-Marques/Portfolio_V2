@@ -38,22 +38,6 @@
   height: 100%;
 }
 
-.home-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-
-.home-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-
 .home-contact{
   display: flex;
   justify-content: center;
@@ -67,7 +51,7 @@
 .home-prestation,
 .home-contact {
   position: relative;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 500;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
@@ -128,50 +112,21 @@
   padding: 20px;
 }
 
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+}
 
- /* .home-experience::before,
-.home-skills::before,
-.home-projets::before,
-.home-formations::before,
-.home-prestation::before,
-.home-contact::before{
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -45px;
-  width: 40px;
-  height: 100%;
-  border: 2px solid #ffffff;
-  transform-origin: right;
-  transform: skewY(45deg);
-  z-index: -1;
-}  */
-
-
- /* .home-experience::after,
-.home-skills::after,
-.home-projets::after,
-.home-formations::after,
-.home-prestation::after,
-.home-contact::after {
-  content: "";
-  position: absolute;
-  top: -45px;
-  left: -23px;
-  width: 100%;
-  height: 40px;
-  z-index: -1;
-  border: 2px solid #ffffff;
-  transform: skewX(45deg);
-}  */
+.home-items{
+  display: flex;
+}
 
 
 @media screen and (max-width: 1668px) {
-
-  .home-img {
-      border-radius: 40%;
-      width: 60%;
-  }
 
   .home-presentation {
       font-size: 20px;
@@ -188,37 +143,28 @@
       height: 800px;
   }
 
-  .home-menu {
-      height: 400px;
-  }
-
-  .home-resume {
-      flex-direction: row;
-      height: 25%;
-      width: 60%;
-      justify-content: space-evenly;
-  }
-
-  .home-formations,
+  .home-experience,
   .home-skills,
   .home-projets,
-  .home-experience {
-      font-size: 3em;
+  .home-formations,
+  .home-prestation,
+  .home-contact {
+      font-size: 1.2em;
+      padding: 10px;
   }
 
+  .home-me {
+      width: 100%;
+  }
+
+
   .home-presentation {
-      font-size: 25px;
+      font-size: 20px;
   }
 
   .home-container {
       height: 100%;
   }
-
-  .home-img {
-      width: 22%;
-      height: 85%;
-  }
-
 
 }
 
@@ -230,6 +176,11 @@
       box-shadow: none;
   }
 
+  .home-img {
+      width: 70%;
+      margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 830px) {
@@ -237,18 +188,46 @@
   .home-formations,
   .home-skills,
   .home-projets,
-  .home-experience {
-      font-size: 2.5em;
+  .home-experience,
+  .home-prestation,
+  .home-contact {
+      font-size: 1.5em;
   }
 
-  .home-left,
-  .home-right {
-      height: 80%;
+
+  .hamburger-btn {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background-color: white;
+  }
+
+  .home-items {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid #ffffff;
+  }
+
+  .home-items a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .menu-open {
+    display: block;
   }
 
   .home-menu{
-      width:750px ;
+    padding: 5px;
   }
+
+
+
 
 }
 
