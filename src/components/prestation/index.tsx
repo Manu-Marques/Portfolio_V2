@@ -1,6 +1,29 @@
 import "./styles.css";
+import { useEffect, useRef } from "react";
 
 export default function Prestation() {
+
+  const linesRef = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+        } else {
+          entry.target.classList.remove('appear');
+        }
+      });
+    });
+
+    linesRef.current.forEach((line) => {
+      observer.observe(line);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
 
   return (
@@ -20,12 +43,11 @@ export default function Prestation() {
             <div className="prestation-services">
               <h2 className="prestation-services-subtitle">Mes services</h2>
             </div>
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="lines">
-              <div className="line3"></div>
-              <div className="line4"></div>
-              <div className="line5"></div>
+            <div className="line1" ref={(el) => linesRef.current.push(el as HTMLDivElement)}></div>
+      <div className="line2" ref={(el) => linesRef.current.push(el as HTMLDivElement)}></div>            <div className="lines">
+      <div className="line3" ref={(el) => linesRef.current.push(el as HTMLDivElement)}></div>
+      <div className="line4" ref={(el) => linesRef.current.push(el as HTMLDivElement)}></div>
+      <div className="line5" ref={(el) => linesRef.current.push(el as HTMLDivElement)}></div>
             </div>
             <div className="prestation-section">
               <div className="prestation-design">

@@ -95,7 +95,10 @@
     margin: 10px;
 }
 
-.line1 {
+
+
+
+.line1.appear {
     width: 3px;
     height: 40px;
     background-color: rgb(255, 255, 255);
@@ -103,7 +106,7 @@
     animation: line1-appear 2s ease-in-out forwards;
 }
 
-.line2 {
+.line2.appear {
     width: 67%;
     height: 3px;
     background-color: rgb(255, 255, 255);
@@ -113,9 +116,9 @@
     animation: line2-appear 2s ease-in-out forwards;
 }
 
-.line3,
-.line4,
-.line5 {
+.line3.appear,
+.line4.appear,
+.line5.appear {
     width: 3px;
     height: 40px;
     background-color: rgb(255, 255, 255);
