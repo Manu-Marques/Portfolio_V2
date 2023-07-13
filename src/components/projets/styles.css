@@ -7,8 +7,8 @@
 .projets-title {
     position: relative;
     z-index: 5;
-    text-align: center;
     font-size: 3em;
+    text-align: center;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;

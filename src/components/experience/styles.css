@@ -19,7 +19,6 @@
     width: 60%;
     position: relative;
     z-index: 1;
-    padding-top: 20px;
 }
 
 .experience-container {
@@ -176,4 +175,12 @@
     .experience-subtitle {
         font-size: 1.5em;
     }
+}
+
+@media screen and (max-width: 460px) {
+
+    .experience-title {
+        font-size: 2.5em;
+    }
+
 }
