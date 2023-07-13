@@ -70,7 +70,7 @@
 
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 585px) {
     .btn {
         padding: 8px 10px;
         font-size: 0.8em;
@@ -78,9 +78,13 @@
 
 }
 
-@media screen and (max-width: 320px) {
+@media  screen and (max-width: 390px) {
     .btn {
-        padding: 6px 8px;
+        padding: 6px 2px;
         font-size: 0.8em;
     }
+}
+
+@media screen and (max-width: 320px) {
+
 }

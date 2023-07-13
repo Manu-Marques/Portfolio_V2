@@ -33,6 +33,10 @@
     padding-right: 10px;
 }
 
+.todolist-subtitle {
+    text-decoration: underline;
+}
+
 .todolist-description {
     border-top: 2px solid #ffffff;
 }

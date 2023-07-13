@@ -20,12 +20,12 @@ export default function Todolist() {
                         <h2 className="todolist-subtitle">Résumé du projet</h2>
                         <p className="todolist-text">{info.todolist.description}</p>
                         <div className="todolist-description">
-                            <h2 className="todolist-subtitle">Outils de développement utilisés</h2>
+                            <h2 className="todolist-subtitle">Outils utilisés</h2>
                             <ul className="todolist-list">
                                 <li className="todolist-item">Design <span className="todolist-word">{info.todolist.stack}</span></li>
                                 <li className="todolist-item">Langage <span className="todolist-word">{info.todolist.stack_1}</span></li>
-                                <li className="todolist-item">Utilisation de la méthode <span className="todolist-word">{info.todolist.stack_2}</span></li>
-                                <li className="todolist-item">Responsive avec <span className="todolist-word">{info.todolist.stack_3}</span></li>
+                                <li className="todolist-item">Méthode <span className="todolist-word">{info.todolist.stack_2}</span></li>
+                                <li className="todolist-item">Responsive <span className="todolist-word">{info.todolist.stack_3}</span></li>
                             </ul>
                         </div>
                     </div>

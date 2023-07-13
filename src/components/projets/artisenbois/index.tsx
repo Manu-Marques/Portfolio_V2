@@ -34,12 +34,12 @@ export default function Artisenbois() {
                             <h2 className="artisenbois-subtitle">Résumé du projet</h2>
                             <p className="artisenbois-text">{info.artisenbois.description}</p>
                             <div className="artisenbois-description">
-                                <h2 className="artisenbois-subtitle">Outils de développement utilisés</h2>
+                                <h2 className="artisenbois-subtitle">Outils utilisés</h2>
                                 <ul className="artisenbois-list">
                                     <li className="artisenbois-item">Design <span className="artisenbois-word">{info.artisenbois.stack}</span></li>
                                     <li className="artisenbois-item">Langage <span className="artisenbois-word">{info.artisenbois.stack_1}</span></li>
                                     <li className="artisenbois-item">Framework <span className="artisenbois-word">{info.artisenbois.stack_2}</span></li>
-                                    <li className="artisenbois-item">Responsive avec <span className="artisenbois-word">{info.artisenbois.stack_3}</span></li>
+                                    <li className="artisenbois-item">Responsive <span className="artisenbois-word">{info.artisenbois.stack_3}</span></li>
                                 </ul>
                             </div>
                         </div>

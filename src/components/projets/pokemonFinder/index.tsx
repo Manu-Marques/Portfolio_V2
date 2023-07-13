@@ -21,14 +21,14 @@ export default function PokemonFinder() {
                             <h2 className="pokemon-subtitle">Résumé du projet</h2>
                             <p className="pokemon-text">{info.pokemon.description}</p>
                             <div className="pokemon-description">
-                                <h2 className="pokemon-subtitle">Outils de développement utilisés</h2>
+                                <h2 className="pokemon-subtitle">Outils utilisés</h2>
                                 <ul className="pokemon-list">
                                     <li className="pokemon-item">Design <span className="pokemon-word">{info.pokemon.stack}</span></li>
                                     <li className="pokemon-item">Langage <span className="pokemon-word">{info.pokemon.stack_1}</span></li>
                                     <li className="pokemon-item">Framework <span className="pokemon-word">{info.pokemon.stack_2}</span></li>
                                     <li className="pokemon-item">API <span className="pokemon-word">{info.pokemon.stack_3}</span></li>
                                     <li className="pokemon-item">Tests unitaires <span className="pokemon-word">{info.pokemon.stack_4}</span></li>
-                                    <li className="pokemon-item">Responsive avec <span className="pokemon-word">{info.pokemon.stack_5}</span></li>
+                                    <li className="pokemon-item">Responsive <span className="pokemon-word">{info.pokemon.stack_5}</span></li>
                                 </ul>
                             </div>
                         </div>

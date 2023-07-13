@@ -34,7 +34,7 @@
 }
 
 .planetes-subtitle {
-    font-size: 25px;
+    text-decoration: underline;
 }
 
 .planetes-description {
@@ -113,4 +113,57 @@
     text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
     text-decoration: underline;
     font-size: 21px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .planetes-item {
+        font-size: 20px;
+    }
+
+    .planetes-text {
+        font-size: 20px;
+    }
+
+    .planetes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planetes-title {
+        text-align: center;
+    }
+
+    .planetes-container {
+        display: block;
+    }
+
+    .planetes-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .planetes-container-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .planetes-img {
+        width: 60%;
+    }
+
+    .planetes-info {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .planetes-visite {
+        flex-direction: column;
+    }
+
+    .planetes-link {
+        margin-bottom: 20px;
+    }
 }

@@ -33,6 +33,10 @@
     padding-right: 10px;
 }
 
+.pokemon-subtitle {
+    text-decoration: underline;
+}
+
 .pokemon-description {
     border-top: 2px solid #ffffff;
 }
@@ -110,12 +114,11 @@
 
     .pokemon-container-img {
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 
     .pokemon-img {
         width: 50%;
-        height: 50%;
     }
 
     .pokemon-info {
