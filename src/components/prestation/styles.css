@@ -163,4 +163,14 @@
     }
   }
 
+  @media screen and (max-width: 1260px) {
+
+    .prestation-section {
+        flex-direction: column;
+    }
+
+  }
+
+  
+
   

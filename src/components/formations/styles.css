@@ -211,3 +211,11 @@
     }
 }
 
+@media screen and (max-width: 320px) {
+
+    .formations-item {
+        font-size: 17px;
+    }
+
+
+}

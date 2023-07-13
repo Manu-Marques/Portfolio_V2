@@ -166,4 +166,16 @@
     .planetes-link {
         margin-bottom: 20px;
     }
+
+    .planetes-text {
+        font-size: 18px;
+    }
+
+    .planetes-item {
+        font-size: 18px;
+    }
+
+    .planetes-img {
+        width: 100%;
+    }
 }

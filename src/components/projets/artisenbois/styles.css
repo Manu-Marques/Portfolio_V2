@@ -141,7 +141,7 @@
     }
 
     .artisenbois-info {
-        width: 100%;
+        width: 99%;
         margin-left: 0;
     }
 
@@ -169,4 +169,24 @@
     .artisenbois-link {
         margin-bottom: 20px;
     }
+    .artisenbois-img {
+        width: 100%;
+    }
+    .artisenbois-text {
+        font-size: 18px;
+    }
+
+    .artisenbois-item {
+        font-size: 18px;
+    }
+    
+    .artisenbois-rework-item {
+        font-size: 18px;
+    }
+    
+
+}
+
+@media screen and (max-width: 320px) {
+
 }

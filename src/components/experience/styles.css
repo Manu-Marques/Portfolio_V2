@@ -184,3 +184,10 @@
     }
 
 }
+
+@media screen and (max-width: 320px) {
+
+    .experience-item {
+        font-size: 17px;
+    }
+}
