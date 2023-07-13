@@ -195,3 +195,28 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 500px) {
+
+    .formations-title {
+        font-size: 2em;
+    }
+
+    .formations-subtitle {
+        font-size: 1.2em;
+    }
+
+    .formations-level {
+        font-size: 15px;
+    }
+
+    .formations-item {
+        margin: 5px;
+    }
+
+    .formations-year {
+        font-size: 15px;
+        margin: 5px;
+    }
+}
+

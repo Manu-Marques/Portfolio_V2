@@ -86,5 +86,7 @@
 }
 
 @media screen and (max-width: 320px) {
-
+    .projets-title {
+        font-size: 2.5em;
+      }
 }

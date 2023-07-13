@@ -4,19 +4,6 @@
     padding-bottom: 200px;
 }
 
-.active {
-    animation-duration: 3s;
-    animation-name: fadeIn;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .skills-title {
     position: relative;
@@ -30,7 +17,7 @@
 }
 
 .skills-table {
-    margin: 60px auto;
+    margin: 0 auto;
     width: 80%;
     position: relative;
     z-index: 5;
@@ -204,6 +191,10 @@
 
     .skills-item-icon{
         justify-content: center;
+    }
+
+    .skills-title {
+        font-size: 2.5em;
     }
 
 }

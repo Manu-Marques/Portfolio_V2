@@ -331,7 +331,7 @@
   }
 
   .home-me{
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -346,10 +346,6 @@
     margin: 10px;
   }
 
-  .home-presentation,
-  .presentation-word {
-    font-size: 40px;
-  }
 
   .home-me{
     width: 90%;
