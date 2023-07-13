@@ -41,9 +41,9 @@ export default function App() {
     <div className="App">
       <div className="home">
         <div className='home-container'>
-            <button className="hamburger-btn" onClick={toggleMenu}>
-              <span className="burger-bar"></span>
-            </button>
+          <button className={`hamburger-btn ${isMobile ? 'menu-open' : ''}`} onClick={toggleMenu}>
+            <span className="burger-bar"></span>
+          </button>
           <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
             <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Expériences</div>
