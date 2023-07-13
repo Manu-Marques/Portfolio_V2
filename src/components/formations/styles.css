@@ -104,14 +104,6 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 1610px) {
-
-    .formations-table {
-        margin: 50px auto;
-    }
-    
-}
-
 @media screen and (max-width: 1260px) {
 
     .formations-main {
@@ -195,10 +187,10 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 460px) {
 
     .formations-title {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .formations-subtitle {

@@ -27,7 +27,6 @@ export default function Prestation() {
 
 
   return (
-    <div className="container">
       <div className="prestation-main">
         <h1 className="prestation-title">Prestations</h1>
         <div className="prestation-table">
@@ -66,6 +65,5 @@ export default function Prestation() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
