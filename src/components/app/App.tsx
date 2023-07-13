@@ -27,28 +27,40 @@ export default function App() {
     setIsMobile(!isMobile);
   };
 
+  useEffect(() => {
+    if (isMobile) {
+      const closeNav = document.getElementById('close-nav');
+      if (closeNav) {
+        closeNav.click();
+      }
+    }
+  }, [isMobile]);
+
+
   return (
     <div className="App">
       <div className="home">
         <div className='home-container'>
-            <button className="hamburger-btn" onClick={toggleMenu}></button>
-          <div className={`home-items ${isMobile ? 'menu-open' : ''}`}>
-            <ScrollLink className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+            <button className="hamburger-btn" onClick={toggleMenu}>
+              <span className="burger-bar"></span>
+            </button>
+          <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
+            <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Expériences</div>
             </ScrollLink>
-            <ScrollLink className="home-skills" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+            <ScrollLink onClick={() => setIsMobile(false)} className="home-skills" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Compétences</div>
             </ScrollLink>
-            <ScrollLink className="home-prestation" to="prestation" spy={true} smooth={true} offset={-50} duration={500}>
+            <ScrollLink onClick={() => setIsMobile(false)} className="home-prestation" to="prestation" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Prestations</div>
             </ScrollLink>
-            <ScrollLink className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
+            <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Projets</div>
             </ScrollLink>
-            <ScrollLink className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
+            <ScrollLink onClick={() => setIsMobile(false)} className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Formations</div>
             </ScrollLink>
-            <ScrollLink className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+            <ScrollLink onClick={() => setIsMobile(false)} className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
               <div className="home-category">Contact</div>
             </ScrollLink>
           </div>
