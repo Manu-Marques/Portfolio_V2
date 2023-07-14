@@ -37,7 +37,6 @@
 }
 
 .formations-subtitle {
-    font-size: 30px;
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
@@ -126,10 +125,6 @@
         margin: 5px;
     }
 
-    .formations-subtitle {
-        font-size: 1.2em;
-    }
-
     .formations-level {
         font-size: 15px;
     }
@@ -150,10 +145,6 @@
 
     .formations-table {
         width: 90%;
-    }
-
-    .formations-subtitle {
-        font-size: 1.5em;
     }
 
     .formations-level {
@@ -191,15 +182,15 @@
         padding: 0;
     }
 
+    .formations-subtitle {
+        font-size: 1.5em;
+    }
+
 }
 @media screen and (max-width: 460px) {
 
     .formations-title {
         font-size: 2.5em;
-    }
-
-    .formations-subtitle {
-        font-size: 1.2em;
     }
 
     .formations-level {

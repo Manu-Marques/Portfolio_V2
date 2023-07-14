@@ -69,7 +69,6 @@
 }
 
 .skills-subtitle {
-    font-size: 30px;
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
@@ -142,10 +141,6 @@
         margin: 5px;
     }
 
-    .skills-subtitle {
-        font-size: 2em;
-    }
-
     .skills-item {
         text-align: center;
         font-size: 20px;
@@ -183,6 +178,10 @@
     .skills-item {
         font-size: 18px;
         text-align: initial;
+    }
+
+    .skills-subtitle {
+        font-size: 1.5em;
     }
 }
 

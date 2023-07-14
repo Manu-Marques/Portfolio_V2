@@ -41,7 +41,6 @@
 }
 
 .experience-subtitle {
-    font-size: 30px;
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
@@ -164,15 +163,16 @@
         padding: 2px 5px 2px 5px;
     }
 
-    .experience-subtitle {
-        font-size: 1.5em;
-    }
 }
 
 @media screen and (max-width: 500px) {
 
     .experience-item {
         font-size: 17px;
+    }
+
+    .experience-subtitle {
+        font-size: 1.5em;
     }
 
 }

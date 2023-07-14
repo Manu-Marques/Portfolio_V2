@@ -4,7 +4,8 @@
     cursor: pointer;
     right: 0;
     bottom: 0;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 .fa-1x {
@@ -15,5 +16,4 @@
     font-size: 40px;
     transition: all 0.3s ease-out;
     float: right;
-    margin: 10px;
 }
