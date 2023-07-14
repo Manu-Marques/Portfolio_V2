@@ -117,12 +117,6 @@
         width: 80%;
     }
 
-    .formations-dev,
-    .formations-bus,
-    .formations-commerce {
-        margin: 5px;
-    }
-
     .formations-item {
         margin: 5px;
     }
@@ -187,6 +181,17 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+
+    .formations-item {
+        font-size: 17px;
+    }
+
+    .formations-container {
+        padding: 0;
+    }
+
+}
 @media screen and (max-width: 460px) {
 
     .formations-title {
@@ -211,11 +216,3 @@
     }
 }
 
-@media screen and (max-width: 320px) {
-
-    .formations-item {
-        font-size: 17px;
-    }
-
-
-}

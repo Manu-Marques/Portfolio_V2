@@ -124,5 +124,19 @@
     .pokemon-info {
         margin-top: 10px;
     }
+}
 
+@media screen and (max-width: 500px) {
+
+    .pokemon-item {
+        font-size: 18px;
+    }
+
+    .pokemon-text {
+        font-size: 18px;
+    }
+
+    .pokemon-img {
+        width: 100%;
+    }
 }

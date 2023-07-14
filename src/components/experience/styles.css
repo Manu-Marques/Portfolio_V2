@@ -132,14 +132,6 @@
         flex-direction: column;
     }
 
-    .experience-left {
-        margin-bottom: 20px;
-    }
-
-    .experience-right {
-        margin-top: 20px;
-    }
-
     .experience-oclock,
     .experience-stavo,
     .experience-hotel,
@@ -175,6 +167,14 @@
     .experience-subtitle {
         font-size: 1.5em;
     }
+}
+
+@media screen and (max-width: 500px) {
+
+    .experience-item {
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (max-width: 460px) {

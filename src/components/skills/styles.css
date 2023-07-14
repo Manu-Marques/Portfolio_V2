@@ -176,20 +176,20 @@
         flex-direction: column;
     }
 
-    .skills-subtitle {
-        font-size: 1.5em;
-    }
+}
 
+@media screen and (max-width: 500px) {
+
+    .skills-item {
+        font-size: 18px;
+        text-align: initial;
+    }
 }
 
 @media screen and (max-width: 460px) {
 
     .skills-stack-list{
         flex-direction: column;
-    }
-
-    .skills-item-icon{
-        justify-content: center;
     }
 
     .skills-title {

@@ -127,3 +127,20 @@
         margin-top: 10px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    
+    .todolist-text {
+        font-size: 18px;
+    }
+
+    .todolist-item {
+        font-size: 18px;
+    }
+
+    .todolist-img {
+        width: 100%;
+    }
+
+
+}

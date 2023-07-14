@@ -172,10 +172,18 @@
     }
 
     .planetes-item {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .planetes-img {
         width: 100%;
+    }
+
+    .planetes-coming-word{
+        font-size: 18px;
+    }
+
+    .planetes-coming-item{
+        font-size: 17px;
     }
 }
