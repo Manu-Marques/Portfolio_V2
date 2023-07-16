@@ -13,6 +13,7 @@ import Arrow from "../arrow";
 
 //Images
 import photo from '../../../src/assets/Moi.jpg';
+import logo from '../../../src/assets/logo.png';
 
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';
@@ -41,28 +42,33 @@ export default function App() {
     <div className="App">
       <div className="home">
         <div className='home-container'>
-          <button className={`hamburger-btn ${isMobile ? 'menu-open' : ''}`} onClick={toggleMenu}>
-            <span className="burger-bar"></span>
-          </button>
+            <button className={`hamburger-btn ${isMobile ? 'menu-open' : ''}`} onClick={toggleMenu}>
+              <span className="burger-bar"></span>
+            </button>
           <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
-            <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
-              <div className="home-category">Expériences</div>
-            </ScrollLink>
-            <ScrollLink onClick={() => setIsMobile(false)} className="home-skills" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
-              <div className="home-category">Compétences</div>
-            </ScrollLink>
-            <ScrollLink onClick={() => setIsMobile(false)} className="home-prestation" to="prestation" spy={true} smooth={true} offset={-50} duration={500}>
-              <div className="home-category">Prestations</div>
-            </ScrollLink>
-            <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
-              <div className="home-category">Projets</div>
-            </ScrollLink>
-            <ScrollLink onClick={() => setIsMobile(false)} className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
-              <div className="home-category">Formations</div>
-            </ScrollLink>
-            <ScrollLink onClick={() => setIsMobile(false)} className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
-              <div className="home-category">Contact</div>
-            </ScrollLink>
+            <div className="home-logo">
+              <img className='home-logo-img' src={logo} alt="logo" />
+            </div>
+            <div className="home-nav">
+              <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+                <div className="home-category">Expériences</div>
+              </ScrollLink>
+              <ScrollLink onClick={() => setIsMobile(false)} className="home-skills" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                <div className="home-category">Compétences</div>
+              </ScrollLink>
+              <ScrollLink onClick={() => setIsMobile(false)} className="home-prestation" to="prestation" spy={true} smooth={true} offset={-50} duration={500}>
+                <div className="home-category">Prestations</div>
+              </ScrollLink>
+              <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
+                <div className="home-category">Projets</div>
+              </ScrollLink>
+              <ScrollLink onClick={() => setIsMobile(false)} className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
+                <div className="home-category">Formations</div>
+              </ScrollLink>
+              <ScrollLink onClick={() => setIsMobile(false)} className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                <div className="home-category">Contact</div>
+              </ScrollLink>
+            </div>
           </div>
           <div className='home-resume'>
             <div className="home-image">

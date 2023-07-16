@@ -1,5 +1,5 @@
 import './styles.css';
-import logo from '../../../assets/logo.jpg';
+import logo from '../../../assets/artisenbois.jpg';
 import { Link } from 'react-router-dom';
 import ProjetsData from "../../../../src/data/projects.json";
 import { useState } from 'react';
