@@ -23,7 +23,6 @@
   display: flex;
   justify-content: space-between;
   height: 155px;
-  margin-bottom: 50px;
 }
 
 .home-logo{
@@ -315,6 +314,10 @@
     width: 100%;
   }
 
+  .home-image{
+    width: 700px
+  }
+
   .home-img,
   .home-me{
     width: 50%;
@@ -346,14 +349,14 @@
   .home-me{
     width: 80%;
   }
+
+  .home-image {
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 320px) {
 
-  .home-img {
-    width: 50%;
-    margin: 10px;
-  }
 
   .home-content {
     margin: 10px;
