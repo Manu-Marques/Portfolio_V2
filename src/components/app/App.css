@@ -5,6 +5,8 @@
   flex-direction: column;
   scroll-snap-type: y mandatory;
   overflow: hidden;
+  background-color: #000000;
+
 }
 
 .home {
