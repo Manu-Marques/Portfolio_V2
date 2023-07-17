@@ -1,5 +1,6 @@
 import "./styles.css";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Prestation() {
 
@@ -62,6 +63,11 @@ export default function Prestation() {
                 <p className="prestation-follow-text">Je vous accompagne tout au long de votre projet, de la conception à la mise en ligne de votre site internet. Je vous propose également un accompagnement une fois votre site web en ligne afin de le mettre régulierement à jour.</p>
               </div>
             </div>
+            <div className="prestation-contact">
+              <h2 className="prestation-contact-title">Vous souhaitez créer un site internet ?</h2>
+              <p className="prestation-contact-text">N'hésitez pas à me contacter pour discuter de votre projet.</p>
+              <Link className="prestation-contact-btn" to="mailto:wbspprtmarques@gmail.com">E-mail Pro</Link>
+              </div>
           </div>
         </div>
       </div>

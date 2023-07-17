@@ -11,7 +11,7 @@
     text-align: center;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
 }
 
 .projets-table {

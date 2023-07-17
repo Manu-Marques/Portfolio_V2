@@ -1,7 +1,7 @@
 .artisenbois-title {
     margin-top: 0;
     color: #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -4px 2px rgb(117, 125, 38), 0 0 1em rgb(212, 255, 0), 0 0 0.2em rgb(61, 63, 6);
     text-decoration: underline;
 }
 
@@ -53,7 +53,6 @@
 .artisenbois-word {
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px, 0 0 1em blue, 0 0 0.2em blue;
     text-decoration: none;
 }
 
@@ -78,8 +77,7 @@
 
 .artisenbois-link:hover {
     color: transparent;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #e5fa00;
     background-color: transparent;
 }
 
@@ -110,7 +108,7 @@
 }
 
 .artisenbois-rework-word {
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -2px 2px rgb(117, 125, 38), 0 0 1em rgb(212, 255, 0), 0 0 0.2em rgb(61, 63, 6);
     text-decoration: underline;
     font-size: 21px;
 }

@@ -11,7 +11,7 @@
     font-size: 3em;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
 }
 
 .prestation-table {
@@ -40,7 +40,7 @@
   font-size: 2em;
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -3px 2px rgb(5, 5, 5), 0 0 0.2em rgb(212, 255, 0), 0 0 0em rgb(61, 63, 6);
     margin: 0;
 }
 
@@ -52,7 +52,7 @@
 .prestation-services-subtitle {
     border: 2px solid #ffffff;
     color: #ffffff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -3px 2px rgb(5, 5, 5), 0 0 0.2em rgb(212, 255, 0), 0 0 0em rgb(61, 63, 6);
     padding: 10px;
     margin-bottom: 15px;
     margin-top: 10px;
@@ -79,7 +79,7 @@
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -3px 2px rgb(5, 5, 5), 0 0 0.2em rgb(212, 255, 0), 0 0 0em rgb(61, 63, 6);
     text-decoration: underline;
     margin: 0;
     margin-bottom: 15px;
@@ -162,6 +162,42 @@
       height: 40px;
     }
   }
+
+  .prestation-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .prestation-contact-text {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px;
+  }
+
+  .prestation-contact-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000000;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+
+  }
+
+  .prestation-contact-btn:hover {
+    cursor: pointer;
+    color: yellow;
+    background-color: #000000;
+  }
+
+
 
   @media screen and (max-width: 1450px) {
     .prestation-table {

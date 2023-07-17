@@ -24,7 +24,7 @@
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
     color: white;
-    border: 2px solid white;
+    border: 2px solid rgb(238, 255, 0);
 }
 
 .contact-icon-envelope:hover {
@@ -58,7 +58,7 @@
 }
 
 .contact-icon-envelope:hover .contact-envelope {
-    background: rgb(110, 13, 139);
+    background: rgb(216, 14, 14);
 }
 
 .contact-icon-phone:hover .contact-phone {

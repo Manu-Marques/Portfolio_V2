@@ -11,7 +11,7 @@
     font-size: 3em;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
 }
 
 .experience-table {
@@ -43,7 +43,7 @@
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(110, 13, 139), 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px -3px 2px rgb(5, 5, 5), 0 0 0.2em rgb(212, 255, 0), 0 0 0em rgb(61, 63, 6);
     text-decoration: underline;
 }
 
