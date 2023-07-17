@@ -18,6 +18,7 @@ import logo from '../../../src/assets/logo.png';
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';
 import { useState, useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 
 export default function App() {
@@ -42,9 +43,9 @@ export default function App() {
     <div className="App">
       <div className="home">
         <div className='home-container'>
-            <button className={`hamburger-btn ${isMobile ? 'menu-open' : ''}`} onClick={toggleMenu}>
-              <span className="burger-bar"></span>
-            </button>
+          <button className={`hamburger-btn ${isMobile ? 'menu-open' : ''}`} onClick={toggleMenu}>
+            <span className="burger-bar"></span>
+          </button>
           <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
             <div className="home-logo">
               <img className='home-logo-img' src={logo} alt="logo" />
@@ -75,8 +76,16 @@ export default function App() {
               <img className='home-img' src={photo} alt="moi" />
             </div>
             <div className="home-me">
-              <h2 className='home-presentation'>Bonjour, je m'appelle <span className="presentation-word">Emanuel</span></h2>
-              <h2 className='home-presentation'>Je suis un <span className="presentation-word">Développeur Web</span> qui aspire constamment à monter en compétences et à relever de nouveaux défis. </h2>
+              <TypeAnimation
+                style={{ whiteSpace: 'pre-line', display: 'block' }}
+                sequence={[
+                  `Bonjour je m'appel Emanuel\n  
+                  Je suis un Développeur Web qui aspire constamment à monter en compétences et à relever de nouveaux défis.`,
+                  
+                ]}
+                wrapper="h2"
+                className="home-presentation"
+              />
             </div>
           </div>
         </div>

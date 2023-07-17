@@ -38,8 +38,6 @@
 }
 
 .home-me {
-  display: flex;
-  flex-direction: column;
   width: 50%;
 }
 
@@ -190,10 +188,6 @@
     box-shadow: none;
   }
 
-  .home-img {
-    width: 70%;
-    margin: 0;
-  }
 
 }
 
