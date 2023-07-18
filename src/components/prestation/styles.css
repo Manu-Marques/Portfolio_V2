@@ -236,6 +236,14 @@
         text-align: center;
     }
 
+    .prestation-whyme-subtitle {
+        padding-top: 0;
+    }
+
+    .prestation-services{
+        padding-top: 0;
+    }
+
     .prestation-web-subtitle,
     .prestation-whyme-subtitle {
         font-size: 1.5em;
