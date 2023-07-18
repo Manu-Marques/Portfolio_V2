@@ -224,9 +224,16 @@
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 760px) {
     .prestation-table {
-        width: 100%;
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .prestation-contact-title,
+    .prestation-contact-text {
+        text-align: center;
     }
 
     .prestation-web-subtitle,
