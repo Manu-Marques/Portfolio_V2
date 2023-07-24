@@ -18,7 +18,7 @@ import logo from '../../../src/assets/logo.png';
 
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 
@@ -26,8 +26,6 @@ export default function App() {
 
   const [loading, setLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
-
-  const pageRef = useRef();
 
   const toggleMenu = () => {
     setIsMobile(!isMobile);
