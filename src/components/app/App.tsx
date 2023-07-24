@@ -45,6 +45,7 @@ export default function App() {
       setLoading(false);
     }, 2000);
   }, []);
+
   
     
   return (
@@ -57,7 +58,7 @@ export default function App() {
             </button>
             <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
               <div className="home-logo">
-                <img className='home-logo-img' src={logo} alt="logo" />
+                <img className='home-logo-img' src={logo} loading="lazy" alt="logo" />
               </div>
               <div className="home-nav">
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
