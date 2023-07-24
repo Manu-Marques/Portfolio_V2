@@ -11,6 +11,7 @@ import Footer from "../footer";
 import ScrollToTop from "../scrollToTop";
 import Arrow from "../arrow";
 import Loader from "../loader";
+import PlaceHolder from "../placeHolder";
 
 //Images
 import photo from '../../../src/assets/Moi.jpg';
@@ -24,7 +25,16 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function App() {
 
+  //Loading
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  //Mobile menu
   const [isMobile, setIsMobile] = useState(false);
 
   const toggleMenu = () => {
@@ -40,18 +50,25 @@ export default function App() {
     }
   }, [isMobile]);
 
+  //Placeholder
+  const [isPlaceHolder, setIsPlaceHolder] = useState(false);
+
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    const image = new Image();
+    image.src = photo;
+    image.onload = () => {
+      setIsPlaceHolder(true);
+    };
   }, []);
 
-  
-    
+
+
+
+
   return (
     <div className="App">
       {loading ? <Loader /> : (
-      <><div className="home">
+        <><div className="home">
           <div className='home-container'>
             <button className={`hamburger-btn ${isMobile ? 'menu-open' : ''}`} onClick={toggleMenu}>
               <span className="burger-bar"></span>
@@ -83,7 +100,11 @@ export default function App() {
             </div>
             <div className='home-resume'>
               <div className="home-image">
+                {isPlaceHolder ? (
                 <img className='home-img' src={photo} alt="moi" />
+                ) : (
+                  <PlaceHolder width={200} height={150} />
+                )}
               </div>
               <div className="home-me">
                 <TypeAnimation

@@ -3,10 +3,6 @@ import SkillsData from "../../../src/data/skills.json";
 
 
 export default function Skills() {
-
-
-
-
     return (
         <div className="skills-main" id="skills">
             <h1 className="skills-title">Compétences</h1>

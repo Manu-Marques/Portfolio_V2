@@ -5,9 +5,6 @@ import ProjetsData from "../../../../src/data/projects.json";
 
 
 export default function PokemonFinder() {
-
-
-
     return (
         <div className="pokemon">
             {ProjetsData.map((info) => (
