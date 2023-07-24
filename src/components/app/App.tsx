@@ -13,7 +13,7 @@ import Arrow from "../arrow";
 import Loader from "../loader";
 
 //Images
-import photo from '../../../src/assets/moi.jpg';
+import photo from '../../../src/assets/Moi.jpg';
 import logo from '../../../src/assets/logo.png';
 
 //React
