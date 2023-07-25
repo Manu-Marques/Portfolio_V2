@@ -1,5 +1,17 @@
 [
     {
+      "dev" : {
+        "id": 1,
+        "title": "Développeur Front-End",
+        "company": "Web support Marques",
+        "city": "Maurepas",
+        "description": "- Mission réalisée pour la société Artisenbois",
+        "description_1": "- Réalisation de maquettes sur Figma",
+        "description_2": "- Documentation technique avec le client",
+        "description_3": "- Passage de la version V1 à V2",
+        "start": "Mai 2023",
+        "end": "Aujourd'hui"
+      },
         "oclock": {
           "id": 1,
           "title": "Développeur FullStack",
@@ -35,18 +47,6 @@
           "description_3": "- Gestion des stocks",
           "start": "Novembre 2010",
           "end": "Novembre 2012"
-        },
-        "quick": {
-          "id": 4,
-          "title": "Équipier Polyvalent",
-          "company": "Quick",
-          "city": "Coignières",
-          "description": "- Travail en équipe",
-          "description_1": "- Gestion de la relation client",
-          "description_2": "- Préparation des commandes",
-          "description_3": "- Gestion des stocks",
-          "start": "Novembre 2009",
-          "end": "Octobre 2010"
         }
       }
   ]

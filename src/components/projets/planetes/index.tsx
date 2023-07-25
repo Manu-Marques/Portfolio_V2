@@ -30,7 +30,7 @@ export default function Planetes() {
                             </img>
                         </div>
                         <div className="planetes-info">
-                            <h2 className="planetes-subtitle">Résumé du projet</h2>
+                            <h2 className="planetes-subtitle">Résumé</h2>
                             <p className="planetes-text">{info.planetes.description}</p>
                             <div className="planetes-description">
                                 <h2 className="planetes-subtitle">Outils utilisés</h2>

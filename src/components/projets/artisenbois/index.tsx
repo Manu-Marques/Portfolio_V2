@@ -31,7 +31,7 @@ export default function Artisenbois() {
                             </img>
                         </div>
                         <div className="artisenbois-info">
-                            <h2 className="artisenbois-subtitle">Résumé du projet</h2>
+                            <h2 className="artisenbois-subtitle">Résumé</h2>
                             <p className="artisenbois-text">{info.artisenbois.description}</p>
                             <div className="artisenbois-description">
                                 <h2 className="artisenbois-subtitle">Outils utilisés</h2>

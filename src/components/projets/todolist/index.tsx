@@ -17,7 +17,7 @@ export default function Todolist() {
                         </img>
                     </div>
                     <div className="todolist-info">
-                        <h2 className="todolist-subtitle">Résumé du projet</h2>
+                        <h2 className="todolist-subtitle">Résumé</h2>
                         <p className="todolist-text">{info.todolist.description}</p>
                         <div className="todolist-description">
                             <h2 className="todolist-subtitle">Outils utilisés</h2>

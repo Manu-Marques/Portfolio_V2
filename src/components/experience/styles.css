@@ -50,7 +50,7 @@
 .experience-oclock,
 .experience-stavo,
 .experience-hotel,
-.experience-restaurant {
+.experience-dev {
     border: 2px solid #ffffff;
     margin: 15px;
 }
@@ -58,7 +58,7 @@
 .experience-oclock-subtitle,
 .experience-stavo-subtitle,
 .experience-hotel-subtitle,
-.experience-restaurant-subtitle {
+.experience-dev-subtitle {
     font-size: 22px;
     text-align: center;
     text-decoration: underline;
@@ -67,7 +67,7 @@
 .experience-oclock-list,
 .experience-stavo-list,
 .experience-hotel-list,
-.experience-restaurant-list {
+.experience-dev-list {
     padding-left: 0;
 }
 
@@ -133,21 +133,21 @@
     .experience-oclock,
     .experience-stavo,
     .experience-hotel,
-    .experience-restaurant {
+    .experience-dev {
         margin: 10px;
     }
 
     .experience-oclock-subtitle,
     .experience-stavo-subtitle,
     .experience-hotel-subtitle,
-    .experience-restaurant-subtitle {
+    .experience-dev-subtitle {
         font-size: 1.2em;
     }
 
     .experience-oclock-list,
     .experience-stavo-list,
     .experience-hotel-list,
-    .experience-restaurant-list {
+    .experience-dev-list {
         padding-left: 0;
     }
 

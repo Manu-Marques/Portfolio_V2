@@ -10,6 +10,19 @@ export default function Experience() {
                 {ExperiencesData.map((info, i) => (
                     <div key={i} className="experience-container">
                         <div className="experience-left">
+                            <div className="experience-dev">
+                                <h1 className='experience-subtitle'>{info.dev.title}</h1>
+                                <h1 className='experience-dev-subtitle'>{info.dev.company} - {info.dev.city}</h1>
+                                <ul className='experience-dev-list'>
+                                    <li className='experience-item'>{info.dev.description}</li>
+                                    <li className='experience-item'>{info.dev.description_1}</li>
+                                    <li className='experience-item'>{info.dev.description_2}</li>
+                                    <li className='experience-item'>{info.dev.description_3}</li>
+                                </ul>
+                                <div className="experience-row">
+                                    <p className='experience-year'>{info.dev.start} à {info.dev.end} </p>
+                                </div>
+                            </div>
                             <><div className='experience-oclock'>
                                 <h1 className='experience-subtitle'>{info.oclock.title}</h1>
                                 <h1 className='experience-oclock-subtitle'>{info.oclock.company} - {info.oclock.city}</h1>
@@ -22,7 +35,11 @@ export default function Experience() {
                                 <div className="experience-row">
                                     <p className='experience-year'>{info.oclock.start} à {info.oclock.end}</p>
                                 </div>
-                            </div><div className="experience-stavo">
+                            </div>
+                                </>
+                        </div>
+                        <div className="experience-right">
+                            <div className="experience-stavo">
                                     <h1 className='experience-subtitle'>{info.bus.title}</h1>
                                     <h1 className='experience-stavo-subtitle'>{info.bus.company} - {info.bus.city}</h1>
                                     <ul className='experience-stavo-list'>
@@ -34,9 +51,7 @@ export default function Experience() {
                                     <div className="experience-row">
                                         <p className='experience-year'>{info.bus.start} à {info.bus.end}</p>
                                     </div>
-                                </div></>
-                        </div>
-                        <div className="experience-right">
+                                </div>
                             <div className="experience-hotel">
                                 <h1 className='experience-subtitle'>{info.hotel.title}</h1>
                                 <h1 className='experience-hotel-subtitle'>{info.hotel.company} - {info.hotel.city}</h1>
@@ -48,19 +63,6 @@ export default function Experience() {
                                 </ul>
                                 <div className="experience-row">
                                     <p className='experience-year'>{info.hotel.start} à {info.hotel.end}</p>
-                                </div>
-                            </div>
-                            <div className="experience-restaurant">
-                                <h1 className='experience-subtitle'>{info.quick.title}</h1>
-                                <h1 className='experience-restaurant-subtitle'>{info.quick.company} - {info.quick.city}</h1>
-                                <ul className='experience-restaurant-list'>
-                                    <li className='experience-item'>{info.quick.description}</li>
-                                    <li className='experience-item'>{info.quick.description_1}</li>
-                                    <li className='experience-item'>{info.quick.description_2}</li>
-                                    <li className='experience-item'>{info.quick.description_3}</li>
-                                </ul>
-                                <div className="experience-row">
-                                    <p className='experience-year'>{info.quick.start} à {info.quick.end} </p>
                                 </div>
                             </div>
                         </div>

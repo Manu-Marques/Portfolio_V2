@@ -3,7 +3,7 @@
         "artisenbois": {
           "id": 1,  
           "title": "Artisenbois V2",
-          "description": "Ce site web a été créé dans le cadre d'un projet personnel, marquant ainsi mon premier projet après avoir terminé ma formation. L'objectif principal était de créer un site vitrine, mettant en valeur mes compétences et mes réalisations.",
+          "description": "Site web crée pour une mission professionnelle. L'objectif était de créer un site web pour un artisan qui souhaitait mettre en avant ses créations. J'ai donc développé un site web responsive avec un design moderne et épuré. Il manque la data à jour, car le client n'a pas encore fourni les informations nécessaires.",
           "stack": "HTML/CSS",
           "stack_1": "Javascript",
           "stack_2": "React",

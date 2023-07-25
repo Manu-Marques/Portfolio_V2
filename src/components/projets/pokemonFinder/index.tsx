@@ -15,7 +15,7 @@ export default function PokemonFinder() {
                             </img>
                         </div>
                         <div className="pokemon-info">
-                            <h2 className="pokemon-subtitle">Résumé du projet</h2>
+                            <h2 className="pokemon-subtitle">Résumé</h2>
                             <p className="pokemon-text">{info.pokemon.description}</p>
                             <div className="pokemon-description">
                                 <h2 className="pokemon-subtitle">Outils utilisés</h2>
