@@ -306,6 +306,15 @@
   }
 
   .home-image{
+    order: 2;
+  }
+
+  .home-me{
+    height: 150px;
+    order: 1;
+  }  
+
+  .home-image{
     width: 700px
   }
 
