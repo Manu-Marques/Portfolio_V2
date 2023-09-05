@@ -10,7 +10,7 @@
         "description_2": "- Réalisation de maquettes sur Figma",
         "description_3": "- Transition de la version V1 à V2",
         "start": "Mai 2023",
-        "end": "Aujourd'hui"
+        "end": "Juillet 2023"
       },
         "oclock": {
           "id": 1,
@@ -36,17 +36,17 @@
           "start": "Décembre 2013",
           "end": "Décembre 2021"
         },
-        "hotel": {
+        "stage": {
           "id": 3,
-          "title": "Réceptionniste",
-          "company": "Hotel F1",
-          "city": "Plaisir",
-          "description": "- Accueil des clients",
-          "description_1": "- Gestion des réservations et des chambres",
-          "description_2": "- Gestion des horaires de départ",
-          "description_3": "- Gestion des stocks",
-          "start": "Novembre 2010",
-          "end": "Novembre 2012"
+          "title": "Développeur Front-End",
+          "company": "THREEVISION",
+          "city": "Paris",
+          "description": "- Utilisation de HTML, CSS et JavaScript pour le développement web front-end",
+          "description_1": "- Collaboré avec l'équipe pour mettre en œuvre des corrections et des améliorations sur la maquette existante sur Figma",
+          "description_2": "- Utilisation de Webflow comme principal outil de création de sites web pour développer le projet",
+          "description_3": "- Participation à des réunions hebdomadaires pour faire le point sur l'avancement du projet",
+          "start": "31 Juillet 2023",
+          "end": "Aujourd'hui"
         }
       }
   ]
