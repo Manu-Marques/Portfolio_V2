@@ -70,6 +70,7 @@
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   text-decoration: none;
+  transition: color 300ms, text-shadow 300ms;
 }
 
 .home-experience:hover,
