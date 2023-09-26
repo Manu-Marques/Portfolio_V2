@@ -325,6 +325,10 @@
       border-color: #fffc44;
   }
 
+  .popup-close{
+    background-color: #1a1a1a
+  }
+
   .details-description-subtitle, .details-outils-subtitle{
     color: white;
   }
