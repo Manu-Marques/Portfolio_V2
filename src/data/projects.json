@@ -1,47 +1,50 @@
 [
-    {
-        "artisenbois": {
-          "id": 1,  
-          "title": "Artisenbois V2",
-          "description": "Site web crée pour une mission professionnelle. L'objectif était de créer un site web pour un artisan qui souhaitait mettre en avant ses créations. J'ai donc développé un site web responsive avec un design moderne et épuré. Il manque la data à jour, car le client n'a pas encore fourni les informations nécessaires.",
-          "stack": "HTML/CSS",
-          "stack_1": "Javascript",
-          "stack_2": "React",
-          "stack_3": "Media Queries",
-          "link": "https://projetartisenbois.vercel.app/"
-        },
-        "todolist": {
-          "id": 2,
-          "title": "Todolist",
-          "description": "Ce site web a été créé dans le cadre d'un projet personnel axé sur les opérations CRUD (Create/Read/Update/Delete). L'objectif principal était de concevoir une application web qui permettrait aux utilisateurs d'effectuer ces différentes opérations sur des données spécifiques.",
-          "stack": "HTML/CSS",
-          "stack_1": "Javascript",
-          "stack_2": "CRUD",
-          "stack_3": "Media Queries",
-          "link": "https://to-do-list-with-javascript.vercel.app/"
-        },
-        "pokemon": {
-          "id": 3,
-          "title": "Pokemon Finder",
-          "description": "Ce site web personnel a été créé pour consommer et manipuler une API en ligne. L'objectif était de récupérer des données et les afficher dynamiquement sur le site. Des tests unitaires ont également été mis en place pour garantir la fiabilité et le bon fonctionnement du code.",
-          "stack": "HTML/Tailwind",
-          "stack_1": "Javascript",
-          "stack_2": "React",
-          "stack_3": "Pokebuildapi",
-          "stack_4": "Jest",
-          "stack_5": "Media Queries",
-          "link": "https://pokemon-finders.vercel.app/"
-        },
-        "planetes": {
-          "title": "Planètes",
-          "description": "Ce site web a été créé dans le cadre d'un projet personnel. J'ai développé une application FullStack (Frontend et Backend) comprenant un système de connexion et d'inscription, ainsi qu'une récupération des données via des requêtes au Backend. ",
-          "stack": "HTML/CSS",
-          "stack_1": "TypeScript",
-          "stack_2": "React",
-          "stack_3": "Express.js",
-          "stack_4": "À venir",
-          "stack_5": "Media Queries",
-          "link": "https://github.com/Manu-Marques/Planetes/tree/master"
-        }
-      }
-  ]
+  {
+    "id": 1,
+    "title": "Artisenbois V2",
+    "description": "Site web créé pour une mission professionnelle. L'objectif était de créer un site web pour un artisan qui souhaitait mettre en avant ses créations. J'ai donc développé un site web responsive avec un design moderne et épuré. Il manque la data à jour, car le client n'a pas encore fourni les informations nécessaires.",
+    "stack": "HTML/CSS",
+    "stack_1": "Javascript",
+    "stack_2": "React",
+    "stack_3": "Media Queries",
+    "link": "https://projetartisenbois.vercel.app/",
+    "image": "artisenbois.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Todolist",
+    "description": "Ce site web a été créé dans le cadre d'un projet personnel axé sur les opérations CRUD (Create/Read/Update/Delete). L'objectif principal était de concevoir une application web qui permettrait aux utilisateurs d'effectuer ces différentes opérations sur des données spécifiques.",
+    "stack": "HTML/CSS",
+    "stack_1": "Javascript",
+    "stack_2": "CRUD",
+    "stack_3": "Media Queries",
+    "link": "https://to-do-list-with-javascript.vercel.app/",
+    "image": "todolist.png"
+  },
+  {
+    "id": 3,
+    "title": "Pokemon Finder",
+    "description": "Ce site web personnel a été créé pour consommer et manipuler une API en ligne. L'objectif était de récupérer des données et les afficher dynamiquement sur le site. Des tests unitaires ont également été mis en place pour garantir la fiabilité et le bon fonctionnement du code.",
+    "stack": "HTML/Tailwind",
+    "stack_1": "Javascript",
+    "stack_2": "React",
+    "stack_3": "Pokebuildapi",
+    "stack_4": "Jest",
+    "stack_5": "Media Queries",
+    "link": "https://pokemon-finders.vercel.app/",
+    "image": "pokemon.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Planètes",
+    "description": "Ce site web a été créé dans le cadre d'un projet personnel. J'ai développé une application FullStack (Frontend et Backend) comprenant un système de connexion et d'inscription, ainsi qu'une récupération des données via des requêtes au Backend.",
+    "stack": "HTML/CSS",
+    "stack_1": "TypeScript",
+    "stack_2": "React",
+    "stack_3": "Express.js",
+    "stack_4": "À venir",
+    "stack_5": "Media Queries",
+    "link": "https://github.com/Manu-Marques/Planetes/tree/master",
+    "image": "planetes.jpg"
+  }
+]

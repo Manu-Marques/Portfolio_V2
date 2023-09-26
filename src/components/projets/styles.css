@@ -1,97 +1,15 @@
-.projets-main {
-    position: relative;
-    z-index: 5;
-    padding-bottom: 200px;
-}
-
-.projets-title {
-    position: relative;
-    z-index: 5;
-    font-size: 3em;
-    text-align: center;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
-}
-
-.projets-table {
+.all-projects {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-bottom: 350px;
 }
 
-.projets-btn {
-    position: relative;
-    z-index: 7;
-}
-
-.btn {
-    padding: 10px 20px;
-    cursor: pointer;
-    background: transparent;
-    font-size: 1em;
-    color: #fff;
-    border: 2px solid #ffffff;
-    border-bottom: transparent;
-    font-size: 18px;
-}
-
-.btn.on {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-}
-
-.btn:hover {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    cursor: pointer;
-}
-
-.projets-contents {
-    padding: 20px;
-    color: #fff;
-    border: 4px solid #ffffff;
-    position: relative;
-    z-index: 6;
-}
-
-@media screen and (max-width: 1260px) {
-    .projets-table {
-        width: 99%;
-    }
-
-    .projets-main {
+@media screen and (max-width: 760px) {
+    .all-projects {
+        justify-content: center;
         padding-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+
     }
-
-}
-
-@media screen and (max-width: 585px) {
-    .btn {
-        padding: 8px 10px;
-        font-size: 0.8em;
-    }
-
-}
-
-@media screen and (max-width: 460px) {
-    .projets-title {
-        font-size: 2.5em;
-    }
-
-}
-
-@media  screen and (max-width: 390px) {
-    .btn {
-        padding: 6px 2px;
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .projets-title {
-        font-size: 2.5em;
-      }
 }

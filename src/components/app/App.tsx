@@ -16,7 +16,6 @@ import PlaceHolder from "../placeHolder";
 //Images
 import photo from '../../../src/assets/Moi.jpg';
 import logo from '../../../src/assets/logo.png';
-
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';
 import { useState, useEffect } from "react";
@@ -25,22 +24,24 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function App() {
 
+  
   //Loading
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
-
+  
   //Mobile menu
   const [isMobile, setIsMobile] = useState(false);
+
 
   const toggleMenu = () => {
     setIsMobile(!isMobile);
   };
-
+  
   useEffect(() => {
     if (isMobile) {
       const closeNav = document.getElementById('close-nav');
@@ -50,6 +51,7 @@ export default function App() {
     }
   }, [isMobile]);
 
+  
   //Placeholder
   const [isPlaceHolder, setIsPlaceHolder] = useState(false);
 
@@ -70,7 +72,7 @@ export default function App() {
               <span className="burger-bar"></span>
             </button>
             <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
-              <div className="home-logo">
+            <div className="home-logo">
                 <img className='home-logo-img' src={logo} loading="lazy" alt="logo" />
               </div>
               <div className="home-nav">
@@ -84,7 +86,7 @@ export default function App() {
                   <div className="home-category">Prestations</div>
                 </ScrollLink>
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
-                  <div className="home-category">Projets</div>
+                  <div className="home-category">Sites et Projets</div>
                 </ScrollLink>
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Formations</div>
@@ -114,19 +116,28 @@ export default function App() {
               </div>
             </div>
           </div>
-        </div><ScrollToTop /><Element name="projets">
+        </div>
+        <ScrollToTop />
+        <Element name="projets">
             <Projets />
-          </Element><Element name="skills">
+          </Element>
+          <Element name="skills">
             <Skills />
-          </Element><Element name="experience">
+          </Element>
+          <Element name="experience">
             <Experience />
-          </Element><Element name="formations">
+          </Element>
+          <Element name="formations">
             <Formations />
-          </Element><Element name="prestation">
+          </Element>
+          <Element name="prestation">
             <Prestation />
-          </Element><Arrow /><Element name="contact">
+          </Element>
+          <Arrow />
+          <Element name="contact">
             <Contact />
-          </Element><Footer /></>
+          </Element>
+          <Footer /></>
       )}
     </div>
   );

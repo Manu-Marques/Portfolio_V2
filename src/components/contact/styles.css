@@ -55,6 +55,7 @@
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.3s ease-out;
+    transition: color 300ms, background-color 300ms;
 }
 
 .contact-icon-envelope:hover .contact-envelope {

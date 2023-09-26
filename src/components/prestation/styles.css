@@ -188,7 +188,7 @@
     border-radius: 50px;
     margin-top: 10px;
     border: 2px solid #ffffff;
-
+    transition: color 300ms, background-color 300ms;
   }
 
   .prestation-contact-btn:hover {
