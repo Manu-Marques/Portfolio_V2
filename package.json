@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/generator": "^7.23.0",
+    "@babel/helper-simple-access": "^7.22.5",
     "@babel/traverse": "^7.23.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -19,7 +20,11 @@
     "@mui/material": "^5.14.10",
     "@mui/styled-engine-sc": "^5.14.10",
     "babel-plugin-styled-components": "^2.1.4",
+    "caniuse-lite": "^1.0.30001539",
     "css-to-react-native": "^3.2.0",
+    "electron-to-chromium": "^1.4.529",
+    "escalade": "^3.1.1",
+    "node-releases": "^2.0.13",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
@@ -28,7 +33,9 @@
     "react-type-animation": "^3.1.0",
     "shallowequal": "^1.1.0",
     "styled-components": "^5.3.11",
-    "supports-color": "^5.5.0"
+    "supports-color": "^5.5.0",
+    "update-browserslist-db": "^1.0.13",
+    "yallist": "^3.1.1"
   },
   "devDependencies": {
     "@babel/types": "^7.23.0",
