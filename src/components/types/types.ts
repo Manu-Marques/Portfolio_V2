@@ -20,6 +20,8 @@ export interface Project {
     stack_3: string;
     link: string;
     image: string;
+    recommandation: string;
+    recommandation_1: string;
   }
   
   

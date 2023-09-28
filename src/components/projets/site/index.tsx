@@ -19,8 +19,17 @@ export default function Site() {
     const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
     const [isPopupVisible, setIsPopupVisible] = useState<boolean>(false);
     const [isClosing, setIsClosing] = useState(false);
+    const [showImagePopUp, setShowImagePopUp] = useState<boolean>(false);
+    const [closeRecommandations, setCloseRecommandations] = useState(false);
 
+    const closeRecommandationsFunction = () => {
+        setCloseRecommandations(true);
 
+        setTimeout(() => {
+            setCloseRecommandations(false);
+            setShowImagePopUp(false);
+        }, 300);
+    };
 
     const handleImageClick = (projectId: number) => {
         setSelectedImageId(projectId);
@@ -94,6 +103,24 @@ export default function Site() {
                                         </div>
                                     </div>
                                 </div>
+                                {selectedImageId !== null && (
+                                    <div className="recommandations-content">
+                                        <div className="recommandations-content-img">
+                                            <div className="container-recommandations">
+                                                <img
+                                                    className="recommandations-image2"
+                                                    src={basePathToImages + Sites[selectedImageId - 1].recommandation_1}
+                                                    alt={`Image ${selectedImageId}`}
+                                                />
+                                                <img
+                                                    className="recommandations-image1"
+                                                    src={basePathToImages + Sites[selectedImageId - 1].recommandation}
+                                                    alt={`Image ${selectedImageId}`}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
                                 <Link
                                     to={Sites[selectedImageId - 1].link}
                                     target="_blank"

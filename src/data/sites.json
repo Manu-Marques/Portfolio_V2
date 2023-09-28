@@ -8,6 +8,8 @@
         "stack_2": "Webflow",
         "stack_3": "Figma",
         "link": "https://www.anazirgame.com",
-        "image": "anazir.png"
+        "image": "anazir.png",
+        "recommandation" :"recommandation1.png",
+        "recommandation_1" :"recommandation2.png"
     }
 ]

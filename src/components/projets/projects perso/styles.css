@@ -86,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 998;
 }
 
 @keyframes fadeInScale {
@@ -111,9 +111,10 @@
   overflow-y: auto;
 }
 
-.popup-container.closing .popup-content {
+.popup-container.closing {
   animation: fadeOutScale 0.3s ease-in-out forwards;
 }
+
 
 @keyframes fadeOutScale {
   from {
@@ -261,9 +262,17 @@
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+
+
+@media screen and (max-width: 1440px) {
   .popup-content {
     max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .popup-content {
+    max-width: 90%;
   }
 }
 
@@ -332,5 +341,15 @@
 
   .details-description-subtitle, .details-outils-subtitle{
     color: white;
+  }
+
+  .recommandations-image1,
+  .recommandations-image2 {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .details-description-text, .details-outils-stack {
+    margin-bottom: 15px;
   }
 }

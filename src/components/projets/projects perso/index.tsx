@@ -19,21 +19,20 @@ export default function ProjectPerso() {
     const [isPopupVisible, setIsPopupVisible] = useState<boolean>(false);
     const [isClosing, setIsClosing] = useState(false);
 
-
-
+    
     const handleImageClick = (projectId: number) => {
         setSelectedImageId(projectId);
         setIsPopupVisible(true);
     };
 
     const closePopup = () => {
-        setIsClosing(true); 
+        setIsClosing(true);
 
         setTimeout(() => {
             setSelectedImageId(null);
             setIsPopupVisible(false);
             setIsClosing(false);
-        }, 300); 
+        }, 300);
     };
 
 
@@ -42,27 +41,27 @@ export default function ProjectPerso() {
             <div className="container-project">
                 <h1 className="container-title">Projets Perso</h1>
                 <div className='grid-container'>
-                {ProjetsData.map((project: Project) => (
-                    <Fade
-                        key={project.id}
-                        direction="left"
-                        onVisibilityChange={handleVisibilityChange}
-                    >
-                        <div className="image-container">
-                            <div
-                                className={`image-content ${selectedImageId === project.id ? 'selected' : ''}`}
-                                onClick={() => handleImageClick(project.id)}
-                            >
-                                <img
-                                    className="image-img "
-                                    src={basePathToImages + project.image}
-                                    alt={`Image ${project.id}`}
-                                />
-                                <h1 className="image-title">{project.title}</h1>
+                    {ProjetsData.map((project: Project) => (
+                        <Fade
+                            key={project.id}
+                            direction="left"
+                            onVisibilityChange={handleVisibilityChange}
+                        >
+                            <div className="image-container">
+                                <div
+                                    className={`image-content ${selectedImageId === project.id ? 'selected' : ''}`}
+                                    onClick={() => handleImageClick(project.id)}
+                                >
+                                    <img
+                                        className="image-img "
+                                        src={basePathToImages + project.image}
+                                        alt={`Image ${project.id}`}
+                                    />
+                                    <h1 className="image-title">{project.title}</h1>
+                                </div>
                             </div>
-                        </div>
-                    </Fade>
-                ))}
+                        </Fade>
+                    ))}
                 </div>
             </div>
             {isPopupVisible && (
