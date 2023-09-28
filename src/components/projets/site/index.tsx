@@ -19,17 +19,7 @@ export default function Site() {
     const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
     const [isPopupVisible, setIsPopupVisible] = useState<boolean>(false);
     const [isClosing, setIsClosing] = useState(false);
-    const [showImagePopUp, setShowImagePopUp] = useState<boolean>(false);
-    const [closeRecommandations, setCloseRecommandations] = useState(false);
 
-    const closeRecommandationsFunction = () => {
-        setCloseRecommandations(true);
-
-        setTimeout(() => {
-            setCloseRecommandations(false);
-            setShowImagePopUp(false);
-        }, 300);
-    };
 
     const handleImageClick = (projectId: number) => {
         setSelectedImageId(projectId);
