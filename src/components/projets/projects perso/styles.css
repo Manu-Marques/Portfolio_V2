@@ -61,6 +61,7 @@
 .image-container {
   display: flex;
   align-items: center;
+  justify-content: center
 }
 
 
@@ -351,5 +352,11 @@
 
   .details-description-text, .details-outils-stack {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container-title {
+    font-size: 2.5em;
   }
 }

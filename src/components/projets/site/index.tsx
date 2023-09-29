@@ -39,7 +39,7 @@ export default function Site() {
     return (
         <div className="wrapper">
             <div className="container-site">
-                <h1 className="site-title">Sites</h1>
+                <h1 className="site-title">Projets Professionnels</h1>
                 {Sites.map((site: Site) => (
                     <Fade
                         key={site.id}

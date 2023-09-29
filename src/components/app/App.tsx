@@ -12,6 +12,7 @@ import ScrollToTop from "../scrollToTop";
 import Arrow from "../arrow";
 import Loader from "../loader";
 import PlaceHolder from "../placeHolder";
+import Experience2 from "../experience 2";
 
 //Images
 import photo from '../../../src/assets/Moi.jpg';
@@ -24,16 +25,16 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function App() {
 
-  
+
   //Loading
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
-  
+
   //Mobile menu
   const [isMobile, setIsMobile] = useState(false);
 
@@ -41,7 +42,9 @@ export default function App() {
   const toggleMenu = () => {
     setIsMobile(!isMobile);
   };
-  
+
+
+
   useEffect(() => {
     if (isMobile) {
       const closeNav = document.getElementById('close-nav');
@@ -51,7 +54,8 @@ export default function App() {
     }
   }, [isMobile]);
 
-  
+
+
   //Placeholder
   const [isPlaceHolder, setIsPlaceHolder] = useState(false);
 
@@ -72,7 +76,7 @@ export default function App() {
               <span className="burger-bar"></span>
             </button>
             <div className={`home-items ${isMobile ? 'menu-open' : ''}`} id="close-nav">
-            <div className="home-logo">
+              <div className="home-logo">
                 <img className='home-logo-img' src={logo} loading="lazy" alt="logo" />
               </div>
               <div className="home-nav">
@@ -94,12 +98,15 @@ export default function App() {
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Contact</div>
                 </ScrollLink>
+                <ScrollLink onClick={() => setIsMobile(false)} className="home-experience2" to="experience2" spy={true} smooth={true} offset={-50} duration={500}>
+                  <div className="home-category">Expériences 2</div>
+                </ScrollLink>
               </div>
             </div>
             <div className='home-resume'>
               <div className="home-image">
                 {isPlaceHolder ? (
-                <img className='home-img' src={photo} alt="moi" />
+                  <img className='home-img' src={photo} alt="moi" />
                 ) : (
                   <PlaceHolder width={200} height={150} />
                 )}
@@ -117,8 +124,8 @@ export default function App() {
             </div>
           </div>
         </div>
-        <ScrollToTop />
-        <Element name="projets">
+          <ScrollToTop />
+          <Element name="projets">
             <Projets />
           </Element>
           <Element name="skills">
@@ -126,6 +133,9 @@ export default function App() {
           </Element>
           <Element name="experience">
             <Experience />
+          </Element>
+          <Element name="experience2">
+            <Experience2 />
           </Element>
           <Element name="formations">
             <Formations />

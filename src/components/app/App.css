@@ -189,7 +189,7 @@
   }
 
   .home-logo {
-    width: 170px;
+    width: 155px;
   }
 
   .hamburger-btn {
@@ -258,6 +258,7 @@
     border-bottom: 2px solid white;
     border-radius: 5px;
     animation: slideIn 1s ease-in-out;
+    
   }
 
   @keyframes slideIn {
@@ -269,6 +270,10 @@
       transform: translateX(0);
     }
   }
+
+
+  
+  
 
   .home-experience,
   .home-skills,
@@ -348,6 +353,12 @@
   .home-image {
     width: 600px;
   }
+}
+
+@media screen and (max-width: 380px) {
+.home-logo{
+  width: 120px;
+}
 }
 
 @media screen and (max-width: 320px) {
