@@ -19,7 +19,7 @@ export default function ProjectPerso() {
     const [isPopupVisible, setIsPopupVisible] = useState<boolean>(false);
     const [isClosing, setIsClosing] = useState(false);
 
-    
+
     const handleImageClick = (projectId: number) => {
         setSelectedImageId(projectId);
         setIsPopupVisible(true);
@@ -43,6 +43,7 @@ export default function ProjectPerso() {
                 <div className='grid-container'>
                     {ProjetsData.map((project: Project) => (
                         <Fade
+                            delay={300}
                             key={project.id}
                             direction="left"
                             onVisibilityChange={handleVisibilityChange}

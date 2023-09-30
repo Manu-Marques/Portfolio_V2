@@ -186,7 +186,10 @@
   .home-prestation,
   .home-contact {
     font-size: 1.5em;
+    color: yellow;
+
   }
+
 
   .home-logo {
     width: 155px;
@@ -272,15 +275,13 @@
   }
 
 
-  
-  
-
   .home-experience,
   .home-skills,
   .home-projets,
   .home-formations,
   .home-prestation,
   .home-contact {
+    font-size: 1.5em;
     width: 100%;
     text-decoration: none;
     color: #333;

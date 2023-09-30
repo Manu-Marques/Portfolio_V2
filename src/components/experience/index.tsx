@@ -1,74 +1,142 @@
-import './styles.css';
-import ExperiencesData from "../../../src/data/experiences.json";
+import "./styles.css";
+import { useEffect, useRef, useState } from "react";
+import ExperiencesData from "../../data/experiences.json";
+import { Fade } from 'react-awesome-reveal';
+import { Experience } from "../types/types";
 
 
 export default function Experience() {
+
+    const [selectedExperienceId, setSelectedExperienceId] = useState<number | null>(null);
+
+    const handleClick = (experienceId: number) => {
+        setSelectedExperienceId(experienceId);
+      };
+
+    const linesRef = useRef<HTMLDivElement[]>([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('display');
+                } else {
+                    entry.target.classList.remove('display');
+                }
+            });
+        });
+        if (linesRef.current && linesRef.current.length > 0) {
+            linesRef.current.forEach((line) => {
+                if (line instanceof Element) {
+                    observer.observe(line);
+                }
+            });
+        }
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
+    const handleVisibilityChange = (_inView: boolean, _right: any) => { };
+
+
     return (
-        <div className="experience-main" id="experience">
-            <h1 className='experience-title'>Expériences</h1>
-            <div className="experience-table">
-                {ExperiencesData.map((info, i) => (
-                    <div key={i} className="experience-container">
+        <div className="experience-main">
+            <div className="experience-title">
+                <h1 className='experience-container-title'>Expériences</h1>
+            </div>
+            {ExperiencesData.map((info, i) => (
+                <div key={i} className="experience-container">
+                    <Fade
+                        delay={500}
+                        direction="left"
+                        onVisibilityChange={handleVisibilityChange}
+                    >
                         <div className="experience-left">
-                            <div className="experience-stage">
-                                <h1 className='experience-subtitle'>{info.stage.title}</h1>
-                                <h1 className='experience-stage-subtitle'>{info.stage.company} - {info.stage.city}</h1>
-                                <ul className='experience-stage-list'>
-                                    <li className='experience-item'>{info.stage.description}</li>
-                                    <li className='experience-item'>{info.stage.description_1}</li>
-                                    <li className='experience-item'>{info.stage.description_2}</li>
-                                    <li className='experience-item'>{info.stage.description_3}</li>
-                                </ul>
-                                <div className="experience-row">
-                                    <p className='experience-year'>{info.stage.start} à {info.stage.end}</p>
+                        <div className="experience-stage" onClick={() => handleClick(i)}>
+                                <div className="experience-stage-title">
+                                    <h2 className="stage-title">{info.stage.title}</h2>
+                                </div>
+                                <div className="experience-stage-container-line">
+                                    <div
+                                        className="experience-stage-line"
+                                        ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
+                                    </div>
+                                </div>
+                                <div className="experience-stage-date">
+                                    <h2 className="stage-date">{info.stage.start} - {info.stage.end}</h2>
+                                    <h2 className="stage-year">{info.stage.year}</h2>
                                 </div>
                             </div>
-                            <><div className="experience-dev">
-                                <h1 className='experience-subtitle'>{info.dev.title}</h1>
-                                <h1 className='experience-dev-subtitle'>{info.dev.company}</h1>
-                                <ul className='experience-dev-list'>
-                                    <li className='experience-item'>{info.dev.description}</li>
-                                    <li className='experience-item'>{info.dev.description_1}</li>
-                                    <li className='experience-item'>{info.dev.description_2}</li>
-                                    <li className='experience-item'>{info.dev.description_3}</li>
-                                </ul>
-                                <div className="experience-row">
-                                    <p className='experience-year'>{info.dev.start} à {info.dev.end} </p>
+                            <div className="experience-oclock" onClick={() => handleClick(i)}>
+                                <div className="experience-oclock-title">
+                                    <h2 className="oclock-title">{info.oclock.title}</h2>
+                                </div>
+                                <div className="experience-oclock-container-line">
+                                    <div
+                                        className="experience-oclock-line"
+                                        ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
+                                    </div>
+                                </div>
+                                <div className="experience-oclock-date">
+                                    <h2 className="oclock-date">{info.oclock.start} - {info.oclock.end}</h2>
+                                    <h2 className="oclock-year">{info.oclock.year}</h2>
                                 </div>
                             </div>
-                            </>
                         </div>
-                        <div className="experience-right">
-                            <div className='experience-oclock'>
-                                <h1 className='experience-subtitle'>{info.oclock.title}</h1>
-                                <h1 className='experience-oclock-subtitle'>{info.oclock.company} - {info.oclock.city}</h1>
-                                <ul className='experience-oclock-list'>
-                                    <li className='experience-item'>{info.oclock.description}</li>
-                                    <li className='experience-item'>{info.oclock.description_1}</li>
-                                    <li className='experience-item'>{info.oclock.description_2}</li>
-                                    <li className='experience-item'>{info.oclock.description_3}</li>
-                                </ul>
-                                <div className="experience-row">
-                                    <p className='experience-year'>{info.oclock.start} à {info.oclock.end}</p>
-                                </div>
-                            </div>
-                            <div className="experience-stavo">
-                                <h1 className='experience-subtitle'>{info.bus.title}</h1>
-                                <h1 className='experience-stavo-subtitle'>{info.bus.company} - {info.bus.city}</h1>
-                                <ul className='experience-stavo-list'>
-                                    <li className='experience-item'>{info.bus.description}</li>
-                                    <li className='experience-item'>{info.bus.description_1}</li>
-                                    <li className='experience-item'>{info.bus.description_2}</li>
-                                    <li className='experience-item'>{info.bus.description_3}</li>
-                                </ul>
-                                <div className="experience-row">
-                                    <p className='experience-year'>{info.bus.start} à {info.bus.end}</p>
-                                </div>
-                            </div>
+                    </Fade>
+                    <div className="experience-middle">
+                        <div
+                            className="experience-line-middle"
+                            ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
                         </div>
                     </div>
-                ))}
+                    <Fade
+                        delay={500}
+                        direction="right"
+                        onVisibilityChange={handleVisibilityChange}
+                    >
+                        <div className="experience-right">
+                        <div className="experience-mission" onClick={() => handleClick(i)}>
+                                <div className="experience-mission-title">
+                                    <h2 className="mission-title">{info.mission.title}</h2>
+                                </div>
+                                <div className="experience-line">
+                                    <div
+                                        className="experience-mission-line"
+                                        ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
+                                    </div>
+                                </div>
+                                <div className="experience-mission-date">
+                                    <h2 className="mission-date">{info.mission.start} - {info.mission.end}</h2>
+                                    <h2 className="mission-year">{info.mission.year}</h2>
+                                </div>
+                            </div>
+                            <div className="experience-bus" onClick={() => handleClick(i)}>
+                                <div className="experience-bus-title">
+                                    <h2 className="bus-title">{info.bus.title}</h2>
+                                </div>
+                                <div className="experience-bus-date">
+                                    <div className="experience-line">
+                                        <div
+                                            className="experience-bus-line"
+                                            ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
+                                        </div>
+                                    </div>
+                                    <div className="experience-bus-date">
+                                        <h2 className="bus-date">{info.bus.start} - {info.bus.end}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+            ))}
+      {/* {selectedExperienceId !== null && (
+            <div className="selected-experience-info">
+                <p>{ExperiencesData[selectedExperienceId].mission.description}</p>
             </div>
+        )} */}
         </div>
-    );
+    )
 }

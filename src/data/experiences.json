@@ -1,52 +1,55 @@
 [
-    {
-      "dev" : {
-        "id": 1,
-        "title": "Développeur Front-End",
-        "company": "Web support Marques",
-        "city": "Maurepas",
-        "description": "- Mission réalisée pour la société Artisenbois",
-        "description_1": "-  Documentation avec le client sur le choix de la charte graphique",
-        "description_2": "- Réalisation de maquettes sur Figma",
-        "description_3": "- Transition de la version V1 à V2",
-        "start": "Mai 2023",
-        "end": "Juillet 2023"
-      },
-        "oclock": {
-          "id": 1,
-          "title": "Développeur FullStack",
-          "company": "O'Clock",
-          "city": "Projet fin d'études",
-          "description": "- Développement en Front et Back",
-          "description_1": "- Utilisation de la méthode Scrum",
-          "description_2": "- Rédaction des documents personnels",
-          "description_3": "- Utilisation de la méthode Kanban",
-          "start": "Avril 2022",
-          "end": "Mai 2022"
-        },
-        "bus": {
-          "id": 2,
-          "title": "Chauffeur de Bus",
-          "company": "Stavo",
-          "city": "Plaisir",
-          "description": "- Transport de personnes",
-          "description_1": "- Respect des horaires",
-          "description_2": "- Respect des règles de sécurité et de conduite",
-          "description_3": "- Gestion de la relation client",
-          "start": "Décembre 2013",
-          "end": "Décembre 2021"
-        },
-        "stage": {
-          "id": 3,
-          "title": "Développeur Front-End",
-          "company": "THREEVISION",
-          "city": "Stage",
-          "description": "- Utilisation de HTML, CSS et JavaScript pour le développement web front-end",
-          "description_1": "- Collaboré avec l'équipe pour mettre en œuvre des corrections et des améliorations sur la maquette existante sur Figma",
-          "description_2": "- Utilisation de Webflow comme principal outil de création de sites web pour développer le projet",
-          "description_3": "- Participation à des réunions hebdomadaires pour faire le point sur l'avancement du projet",
-          "start": "31 Juillet 2023",
-          "end": "Aujourd'hui"
-        }
-      }
-  ]
+  {
+    "mission": {
+      "id": 1,
+      "title": "Développeur Front-End",
+      "company": "Web support Marques",
+      "city": "Maurepas",
+      "description": "- Mission réalisée pour la société Artisenbois",
+      "description_1": "-  Documentation avec le client sur le choix de la charte graphique",
+      "description_2": "- Réalisation de maquettes sur Figma",
+      "description_3": "- Transition de la version V1 à V2",
+      "start": "Mai ",
+      "end": "Juillet ",
+      "year": "2023"
+    },
+    "oclock": {
+      "id": 1,
+      "title": "Développeur FullStack",
+      "company": "O'Clock",
+      "city": "Projet fin d'études",
+      "description": "- Développement en Front et Back",
+      "description_1": "- Utilisation de la méthode Scrum",
+      "description_2": "- Rédaction des documents personnels",
+      "description_3": "- Utilisation de la méthode Kanban",
+      "start": "Avril ",
+      "end": "Mai ",
+      "year": "2022"
+    },
+    "bus": {
+      "id": 2,
+      "title": "Chauffeur de Bus",
+      "company": "Stavo",
+      "city": "Plaisir",
+      "description": "- Transport de personnes",
+      "description_1": "- Respect des horaires",
+      "description_2": "- Respect des règles de sécurité et de conduite",
+      "description_3": "- Gestion de la relation client",
+      "start": " 2013",
+      "end": " 2021"
+    },
+    "stage": {
+      "id": 3,
+      "title": "Développeur Front-End",
+      "company": "THREEVISION",
+      "city": "Stage",
+      "description": "- Utilisation de HTML, CSS et JavaScript pour le développement web front-end",
+      "description_1": "- Collaboré avec l'équipe pour mettre en œuvre des corrections et des améliorations sur la maquette existante sur Figma",
+      "description_2": "- Utilisation de Webflow comme principal outil de création de sites web pour développer le projet",
+      "description_3": "- Participation à des réunions hebdomadaires pour faire le point sur l'avancement du projet",
+      "start": "Juillet",
+      "end": "Septembre",
+      "year": "2023"
+    }
+  }
+]

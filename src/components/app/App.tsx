@@ -12,7 +12,6 @@ import ScrollToTop from "../scrollToTop";
 import Arrow from "../arrow";
 import Loader from "../loader";
 import PlaceHolder from "../placeHolder";
-import Experience2 from "../experience 2";
 
 //Images
 import photo from '../../../src/assets/Moi.jpg';
@@ -98,9 +97,6 @@ export default function App() {
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-contact" to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Contact</div>
                 </ScrollLink>
-                <ScrollLink onClick={() => setIsMobile(false)} className="home-experience2" to="experience2" spy={true} smooth={true} offset={-50} duration={500}>
-                  <div className="home-category">Expériences 2</div>
-                </ScrollLink>
               </div>
             </div>
             <div className='home-resume'>
@@ -133,9 +129,6 @@ export default function App() {
           </Element>
           <Element name="experience">
             <Experience />
-          </Element>
-          <Element name="experience2">
-            <Experience2 />
           </Element>
           <Element name="formations">
             <Formations />

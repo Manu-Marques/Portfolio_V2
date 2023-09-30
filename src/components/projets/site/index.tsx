@@ -42,6 +42,7 @@ export default function Site() {
                 <h1 className="site-title">Projets Professionnels</h1>
                 {Sites.map((site: Site) => (
                     <Fade
+                        delay={300}
                         key={site.id}
                         direction="right"
                         onVisibilityChange={handleVisibilityChange}
