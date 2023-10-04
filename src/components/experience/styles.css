@@ -41,6 +41,18 @@
     cursor: pointer;
 }
 
+.mission-title,
+.stage-title,
+.oclock-title,
+.stage-date,
+.mission-date,
+.oclock-date,
+.stage-year,
+.mission-year,
+.oclock-year {
+    color: #fff;
+}
+
 
 .experience-right {
     display: flex;
