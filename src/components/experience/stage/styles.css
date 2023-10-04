@@ -1,0 +1,128 @@
+.container-stage {
+    border-right: 3px solid #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    color: #FFF;
+    left: -100%;
+    opacity: 0;
+    transition : opacity 400ms ease, left 400ms ease;
+    z-index: 999;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.container-stage.display {
+    left: 0;
+    opacity: 1;
+}
+
+.container-info-stage{
+    padding: 20px;
+}
+
+.container-info-title{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px -3px 2px rgb(102 98 98), 0 0 0.2em rgb(212, 255, 0), 0 0 0em rgb(61 62 13);
+}
+
+.container-text-left-title,
+.container-text-right-title{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.container-text-left-title::after,
+.container-text-right-title::after{
+    content: "";
+  display: block;
+  height: 4px; 
+  background-color: yellow; 
+  width: 100px;
+  position: absolute;
+}
+
+.container-info-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container-info-images-left,
+.container-info-images-right {
+    width: 49%;
+}
+
+.container-info-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-info-text-left{
+    border-bottom: 1px dotted yellow;
+}
+
+.container-info-link{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    color: #fafafa;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    margin: 30px auto 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.25s;
+}
+
+.container-info-link:hover{
+    border-color: #fffc44;
+}
+
+.container-info-description{
+    list-style-type: none;
+    margin-left: 10px
+}
+
+.container-icon-description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container-info-stack{
+    background-color: #fffc44;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.container-all-stack{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fa-calendar{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .container-stage,
+    .container-mission,
+    .container-oclock{
+        width: 80%;
+    }
+}

@@ -43,10 +43,14 @@
         },
         "express": {
           "id": 10,
-          "name": "Express"
+          "name": "Express.js"
         }
       },
       "others": {
+        "aws": {
+          "id": 11,
+          "name": "AWS"
+        },
         "git": {
           "id": 11,
           "name": "Git"
@@ -58,6 +62,10 @@
         "figma": {
           "id": 13,
           "name": "Figma"
+        },
+        "webflow": {
+          "id": 14,
+          "name": "Webflow"
         }
       }
     },

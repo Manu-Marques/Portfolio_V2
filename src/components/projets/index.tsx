@@ -1,6 +1,6 @@
 import './styles.css';
 
-import Sites from "./site"
+import Sites from "./site";
 import ProjectPerso from "./projects perso";
 
 export default function Project() {

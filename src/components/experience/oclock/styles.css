@@ -1,0 +1,23 @@
+.container-oclock {
+    border-right: 3px solid #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    color: #FFF;
+    left: -100%;
+    opacity: 0;
+    transition : opacity 400ms ease, left 400ms ease;
+    z-index: 999;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.container-oclock.display {
+    left: 0;
+    opacity: 1;
+}
+
+.container-info-oclock{
+    padding: 20px;
+}

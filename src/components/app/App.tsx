@@ -25,6 +25,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function App() {
 
 
+
   //Loading
   const [loading, setLoading] = useState(true);
 
@@ -79,6 +80,9 @@ export default function App() {
                 <img className='home-logo-img' src={logo} loading="lazy" alt="logo" />
               </div>
               <div className="home-nav">
+                <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
+                  <div className="home-category">Sites et Projets</div>
+                </ScrollLink>
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Expériences</div>
                 </ScrollLink>
@@ -87,9 +91,6 @@ export default function App() {
                 </ScrollLink>
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-prestation" to="prestation" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Prestations</div>
-                </ScrollLink>
-                <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
-                  <div className="home-category">Sites et Projets</div>
                 </ScrollLink>
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-formations" to="formations" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Formations</div>
@@ -124,11 +125,11 @@ export default function App() {
           <Element name="projets">
             <Projets />
           </Element>
-          <Element name="skills">
-            <Skills />
-          </Element>
           <Element name="experience">
             <Experience />
+          </Element>
+          <Element name="skills">
+            <Skills />
           </Element>
           <Element name="formations">
             <Formations />

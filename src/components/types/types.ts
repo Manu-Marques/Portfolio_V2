@@ -78,3 +78,8 @@ export interface Experience {
     year: string;
   };
 }
+
+export interface DisplayProps {
+  addClassDisplay: boolean;
+  removeExtendClass: () => void
+}
