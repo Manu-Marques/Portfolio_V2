@@ -24,8 +24,11 @@ export default function Experience() {
 
         document.body.style.overflow = "hidden";
         document.body.style.transition = 'right 400ms ease';
-        document.body.style.right = "-25%"
+
+        if (window.innerWidth > 720) {
+            document.body.style.right = "-25%";
     };
+        }   
 
 
     const removeExtendClass = () => {
