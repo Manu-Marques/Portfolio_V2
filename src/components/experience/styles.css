@@ -1,6 +1,6 @@
 .experience-main {
     position: relative;
-    z-index: 5;
+    z-index: 2;
     padding-bottom: 150px;
     transition: 400ms ease;
 }
