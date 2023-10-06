@@ -81,7 +81,7 @@ export default function App() {
               </div>
               <div className="home-nav">
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-projets" to="projets" spy={true} smooth={true} offset={-50} duration={500}>
-                  <div className="home-category">Sites et Projets</div>
+                  <div className="home-category">Projets</div>
                 </ScrollLink>
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-experience" to="experience" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Expériences</div>

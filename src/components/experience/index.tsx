@@ -7,7 +7,7 @@ import { Experience } from "../types/types";
 //Components
 import Mission from "./mission";
 import Oclock from "./oclock";
-import Stage from "./stage";
+import Cdd from "./cdd";
 
 
 export default function Experience() {
@@ -66,8 +66,6 @@ export default function Experience() {
     const handleVisibilityChange = (_inView: boolean, _right: any) => { };
 
 
-
-
     return (
         <div className="main">
             <div className={`experience-main ${isExpanded ? 'extended' : ''}`}>
@@ -83,20 +81,20 @@ export default function Experience() {
                         >
                             <div className="experience-left">
                                 <div
-                                    className="experience-stage"
-                                    onClick={() => handleClick("stage")}>
-                                    <div className="experience-stage-title">
-                                        <h2 className="stage-title">{info.stage.title}</h2>
+                                    className="experience-cdd"
+                                    onClick={() => handleClick("cdd")}>
+                                    <div className="experience-cdd-title">
+                                        <h2 className="cdd-title">{info.cdd.title}</h2>
                                     </div>
-                                    <div className="experience-stage-container-line">
+                                    <div className="experience-cdd-container-line">
                                         <div
-                                            className="experience-stage-line"
+                                            className="experience-cdd-line"
                                             ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
                                         </div>
                                     </div>
-                                    <div className="experience-stage-date">
-                                        <h2 className="stage-date">{info.stage.start} - {info.stage.end}</h2>
-                                        <h2 className="stage-year">{info.stage.year}</h2>
+                                    <div className="experience-cdd-date">
+                                        <h2 className="cdd-date">{info.cdd.start} - {info.cdd.end}</h2>
+                                        <h2 className="cdd-year">{info.cdd.year}</h2>
                                     </div>
                                 </div>
                                 <div className="experience-oclock" onClick={() => handleClick("oclock")}>
@@ -148,8 +146,8 @@ export default function Experience() {
                     </div>
 
                 ))}
-                {selectedExperience === "stage" && (
-                    <Stage
+                {selectedExperience === "cdd" && (
+                    <Cdd
                         addClassDisplay={addClassDisplay}
                         removeExtendClass={removeExtendClass}
                     />

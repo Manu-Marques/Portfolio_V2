@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Artisenbois V2",
-    "description": "Site web créé pour une mission professionnelle. L'objectif était de créer un site web pour un artisan qui souhaitait mettre en avant ses créations. J'ai donc développé un site web responsive avec un design moderne et épuré. Il manque la data à jour, car le client n'a pas encore fourni les informations nécessaires.",
+    "description": "Site web d'abord crée pour un projet, et ensuite modifié pour une mission professionnelle. L'objectif était de créer un site web pour un artisan qui souhaitait mettre en avant ses créations. J'ai donc développé un site web avec React et TypeScript, afin de manipuler les différents états. Il est également responsive avec un design moderne et épuré. Il manque la data à jour, car le client n'a pas encore fourni les informations nécessaires.",
     "stack": "HTML/CSS",
     "stack_1": "Javascript",
     "stack_2": "React",

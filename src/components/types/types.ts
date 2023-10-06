@@ -64,7 +64,7 @@ export interface Experience {
     end: string;
     year: string;
   };
-  stage: {
+  cdd: {
     id: number;
     title: string;
     company: string;
@@ -81,5 +81,5 @@ export interface Experience {
 
 export interface DisplayProps {
   addClassDisplay: boolean;
-  removeExtendClass: () => void
+  removeExtendClass: () => void;
 }

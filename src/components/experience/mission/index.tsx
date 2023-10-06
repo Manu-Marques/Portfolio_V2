@@ -44,7 +44,6 @@ export default function Mission({ addClassDisplay, removeExtendClass }: DisplayP
                                     <i className="fa fa-check"></i>
                                     <li className="container-info-description">{info.mission.description_5}</li>
                                 </div>
-
                             </ul>
                         </section>
                         <section className="container-info-text-right">
@@ -57,6 +56,8 @@ export default function Mission({ addClassDisplay, removeExtendClass }: DisplayP
                                     <p className="container-info-stack">{info.mission.info_stack_2}</p>
                                     <p className="container-info-stack">{info.mission.info_stack_3}</p>
                                     <p className="container-info-stack">{info.mission.info_stack_4}</p>
+                                    <p className="container-info-stack">{info.mission.info_stack_5}</p>
+                                    <p className="container-info-stack">{info.mission.info_stack_6}</p>
                                 </div>
                         </section>
                     </section>

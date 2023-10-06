@@ -29,25 +29,25 @@
     margin-right: 20px;
 }
 
-.experience-stage {
-    margin-bottom: 180px;
+.experience-cdd {
+    margin-bottom: 300px;
     transition: color 300ms, text-shadow 300ms;
 }
 
 
-.experience-stage:hover {
+.experience-cdd:hover {
     color: #fff;
     text-shadow: 1px 1px 2px rgb(238, 255, 0), 0 0 1em rgb(238, 255, 0);
     cursor: pointer;
 }
 
 .mission-title,
-.stage-title,
+.cdd-title,
 .oclock-title,
-.stage-date,
+.cdd-date,
 .mission-date,
 .oclock-date,
-.stage-year,
+.cdd-year,
 .mission-year,
 .oclock-year {
     color: #fff;
@@ -61,7 +61,7 @@
 }
 
 .experience-mission {
-    margin-top: 165px;
+    margin-top: 240px;
     transition: color 300ms, text-shadow 300ms;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .experience-mission-title,
-.experience-stage-title,
+.experience-cdd-title,
 .experience-oclock-title {
     display: flex;
     flex-wrap: wrap;
@@ -109,18 +109,18 @@
     text-align: end;
 }
 
-.experience-stage-date,
+.experience-cdd-date,
 .experience-oclock-date {
     text-align: end;
 }
 
-.stage-year,
+.cdd-year,
 .mission-year,
 .oclock-year {
     margin: 0;
 }
 
-.stage-date,
+.cdd-date,
 .mission-date,
 .oclock-date,
 .bus-date {
@@ -144,13 +144,13 @@
     }
 }
 
-.experience-stage-container-line,
+.experience-cdd-container-line,
 .experience-oclock-container-line {
     display: flex;
     justify-content: end;
 }
 
-.experience-stage-line.display,
+.experience-cdd-line.display,
 .experience-oclock-line.display,
 .experience-mission-line.display {
     width: 200px;
@@ -189,7 +189,7 @@
 }
 
 @media screen and (max-width: 610px) {
-    .experience-stage {
+    .experience-cdd {
         margin-bottom: 250px;
     }
 
@@ -200,7 +200,7 @@
 
 @media screen and (max-width: 540px) {
 
-    .experience-stage-line.display,
+    .experience-cdd-line.display,
     .experience-oclock-line.display,
     .experience-mission-line.display {
         width: 100px;
@@ -210,19 +210,18 @@
 @media screen and (max-width: 440px) {
 
     .mission-title,
-    .stage-title,
+    .cdd-title,
     .oclock-title,
-    .stage-date,
+    .cdd-date,
     .mission-date,
     .oclock-date,
-    .stage-year,
+    .cdd-year,
     .mission-year,
     .oclock-year {
         font-size: 16px;
     }
 
-    .experience-line-middle.display{
+    .experience-line-middle.display {
         height: 540px;
     }
 }
-

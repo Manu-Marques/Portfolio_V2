@@ -1,4 +1,4 @@
-.container-stage {
+.container-cdd {
     border-right: 3px solid #ffffff;
     position: fixed;
     bottom: 0;
@@ -6,23 +6,23 @@
     color: #FFF;
     left: -100%;
     opacity: 0;
-    transition : opacity 400ms ease, left 400ms ease;
+    transition: opacity 400ms ease, left 400ms ease;
     z-index: 999;
     height: 100%;
     background-color: black;
     overflow-x: hidden;
 }
 
-.container-stage.display {
+.container-cdd.display {
     left: 0;
     opacity: 1;
 }
 
-.container-info-stage{
+.container-info-cdd {
     padding: 20px;
 }
 
-.container-info-title{
+.container-info-title {
     text-transform: uppercase;
     font-size: 2em;
     font-weight: bold;
@@ -31,21 +31,28 @@
 }
 
 .container-text-left-title,
-.container-text-right-title{
+.container-text-right-title,
+.container-recommandations-title {
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+}
+
+.container-recommandations-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .container-text-left-title::after,
-.container-text-right-title::after{
+.container-text-right-title::after,
+.container-recommandations-title::after {
     content: "";
-  display: block;
-  height: 4px; 
-  background-color: yellow; 
-  width: 100px;
-  position: absolute;
+    display: block;
+    height: 4px;
+    background-color: yellow;
+    width: 100px;
+    position: absolute;
 }
 
 .container-info-images {
@@ -59,16 +66,16 @@
     width: 49%;
 }
 
-.container-info-text{
+.container-info-text {
     display: flex;
     flex-direction: column;
 }
 
-.container-info-text-left{
+.container-info-text-left {
     border-bottom: 1px dotted yellow;
 }
 
-.container-info-link{
+.container-info-link {
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -84,22 +91,22 @@
     transition: border-color 0.25s;
 }
 
-.container-info-link:hover{
+.container-info-link:hover {
     border-color: #fffc44;
 }
 
-.container-info-description{
+.container-info-description {
     list-style-type: none;
     margin-left: 10px
 }
 
-.container-icon-description{
+.container-icon-description {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.container-info-stack{
+.container-info-stack {
     background-color: #fffc44;
     color: black;
     text-align: center;
@@ -107,22 +114,30 @@
     padding: 12px;
     border-radius: 20px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
-.container-all-stack{
+.container-all-stack {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.fa-calendar{
+.fa-calendar {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 1080px) {
+    .container-recommandations-image{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 720px) {
-    .container-stage,
+
+    .container-cdd,
     .container-mission,
-    .container-oclock{
+    .container-oclock {
         width: 100%;
     }
 }
