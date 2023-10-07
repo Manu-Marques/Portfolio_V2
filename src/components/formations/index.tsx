@@ -1,5 +1,7 @@
 import './styles.css';
 import FormationsData from "../../../src/data/formations.json";
+import { Fade } from 'react-awesome-reveal';
+
 
 
 export default function Formations() {
@@ -10,6 +12,10 @@ export default function Formations() {
             <div className="formations-table">
                 {FormationsData.map((info, i) => (
                     <div key={i} className="formations-container">
+                        <Fade
+                            delay={300}
+                            direction="left"
+                        >
                         <div className="formations-top">
                             <div className="formations-dev">
                                 <h1 className="formations-subtitle">{info.oclock.title}</h1>
@@ -58,6 +64,7 @@ export default function Formations() {
                                 </div>
                             </div>
                         </div>
+                        </Fade>
                     </div>
                 ))}
             </div>

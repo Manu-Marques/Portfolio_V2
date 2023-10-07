@@ -1,5 +1,7 @@
 import "./styles.css";
 import SkillsData from "../../../src/data/skills.json";
+import { Fade } from 'react-awesome-reveal';
+
 
 
 export default function Skills() {
@@ -9,6 +11,10 @@ export default function Skills() {
             <div className="skills-table">
                 {SkillsData.map((info) => (
                     <div key={info.id} className="skills-container">
+                        <Fade
+                            delay={300}
+                            direction="left"
+                        >
                         <div className="skills-stack">
                             <h1 className="skills-subtitle">Stack</h1>
                             <div className="skills-stack-list">
@@ -168,6 +174,7 @@ export default function Skills() {
                                 <li className="skills-item">{info.langues.portugais.title} : {info.langues.portugais.level}</li>
                             </ul>
                         </div>
+                        </Fade>
                     </div>
                 ))}
             </div>
