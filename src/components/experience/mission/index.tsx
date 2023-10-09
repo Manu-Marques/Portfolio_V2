@@ -44,6 +44,10 @@ export default function Mission({ addClassDisplay, removeExtendClass }: DisplayP
                                     <i className="fa fa-check"></i>
                                     <li className="container-info-description">{info.mission.description_5}</li>
                                 </div>
+                                <div className="container-icon-description">
+                                    <i className="fa fa-check"></i>
+                                    <li className="container-info-description">{info.mission.description_6}</li>
+                                    </div>
                             </ul>
                         </section>
                         <section className="container-info-text-right">
