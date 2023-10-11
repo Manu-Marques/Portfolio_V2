@@ -5,8 +5,9 @@
     "description": "Site web d'abord crée pour un projet, et ensuite modifié pour une mission professionnelle. L'objectif était de créer un site web pour un artisan qui souhaitait mettre en avant ses créations. J'ai donc développé un site web avec React et TypeScript, afin de manipuler les différents états. Il est également responsive avec un design moderne et épuré. Il manque la data à jour, car le client n'a pas encore fourni les informations nécessaires.",
     "stack": "HTML/CSS",
     "stack_1": "Javascript",
-    "stack_2": "React",
-    "stack_3": "Media Queries",
+    "stack_2": "TypeScript",
+    "stack_3": "React",
+    "stack_4": "Media Queries",
     "link": "https://projetartisenbois.vercel.app/",
     "image": "artisenbois.jpg"
   },
@@ -18,6 +19,7 @@
     "stack_1": "Javascript",
     "stack_2": "CRUD",
     "stack_3": "Media Queries",
+    "stack_4": "Local Storage",
     "link": "https://to-do-list-with-javascript.vercel.app/",
     "image": "todolist.png"
   },
@@ -30,7 +32,6 @@
     "stack_2": "React",
     "stack_3": "Pokebuildapi",
     "stack_4": "Jest",
-    "stack_5": "Media Queries",
     "link": "https://pokemon-finders.vercel.app/",
     "image": "pokemon.jpg"
   },

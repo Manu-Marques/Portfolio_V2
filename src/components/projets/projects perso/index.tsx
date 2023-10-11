@@ -95,6 +95,7 @@ export default function ProjectPerso() {
                                         <p className='details-text'>{ProjetsData[selectedImageId - 1].stack_1}</p>
                                         <p className='details-text'>{ProjetsData[selectedImageId - 1].stack_2}</p>
                                         <p className='details-text'>{ProjetsData[selectedImageId - 1].stack_3}</p>
+                                        <p className='details-text'>{ProjetsData[selectedImageId - 1].stack_4}</p>
                                     </div>
                                 </div>
                                 <Link
