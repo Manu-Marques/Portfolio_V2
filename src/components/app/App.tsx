@@ -1,17 +1,18 @@
 import "./App.css";
 
 //Components
-import Projets from "../projets";
+// import Projets from "../projets";
 import Skills from "../skills";
 import Experience from "../experience";
-import Prestation from "../prestation";
+// import Prestation from "../prestation";
 import Contact from "../contact";
 import Recommandations from "../recommandations";
 import Footer from "../footer";
 import ScrollToTop from "../scrollToTop";
 import Arrow from "../arrow";
-import Loader from "../loader";
-import PlaceHolder from "../placeHolder";
+// import Loader from "../loader";
+// import PlaceHolder from "../placeHolder";
+
 
 //Images
 import photo from '../../../src/assets/Moi.jpg';
