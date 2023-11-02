@@ -13,7 +13,7 @@ export default function Experience() {
     return (
         <div className="experience-main">
             <h1 className='experience-title'>Experiences</h1>
-            {ExperienceData.map((experience, i) => (
+            {ExperienceData.map((experience) => (
                 <section className="experience-container">
                     <div className='experience-left'>
                     <section className="container-info-text-left">
