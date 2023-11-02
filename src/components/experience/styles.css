@@ -1,227 +1,172 @@
-.experience-main {
-    position: relative;
-    z-index: 2;
-    padding-bottom: 150px;
-    transition: 400ms ease;
+.experience-main{
+  padding-bottom: 100px;
 }
 
-
-.experience-container-title {
-    margin-top: 0;
-    position: relative;
-    text-align: center;
-    font-size: 3em;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
+.experience-title{
+  text-align: center;
+  font-size: 3.5em;
+  color: #F5E147;
+  margin-bottom: 50px;
 }
 
 .experience-container {
-    display: flex;
-    justify-content: center;
-    margin-right: 10px;
-    margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.experience-right,
 .experience-left {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
+  width: 100%;
+  padding: 30px;
 }
 
-.experience-cdd {
-    margin-bottom: 300px;
-    transition: color 300ms, text-shadow 300ms;
+.experience-left{
+  border-bottom: 1px dotted #665417;
+  border-top: 1px dotted #665417;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-
-.experience-cdd:hover {
-    color: #fff;
-    text-shadow: 1px 1px 2px rgb(238, 255, 0), 0 0 1em rgb(238, 255, 0);
-    cursor: pointer;
+.container-experience-description{
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.6px;
 }
 
-.mission-title,
-.cdd-title,
-.oclock-title,
-.cdd-date,
-.mission-date,
-.oclock-date,
-.cdd-year,
-.mission-year,
-.oclock-year {
-    color: #fff;
+.container-experience-calendar{
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.6px;
 }
 
-
-.experience-right {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+.container-text-left-title,
+.container-text-right-title,
+.experience-company,
+.container-recommandations-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
-.experience-mission {
-    margin-top: 240px;
-    transition: color 300ms, text-shadow 300ms;
+.container-recommandations-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.experience-mission:hover {
-    color: #fff;
-    text-shadow: 1px 1px 2px rgb(238, 255, 0), 0 0 1em rgb(238, 255, 0);
-    cursor: pointer;
+.container-text-left-title::after,
+.container-text-right-title::after,
+.container-recommandations-title::after,
+.experience-company::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #836A21;
+  width: 100px;
+  position: absolute;
 }
 
-.experience-mission-title,
-.experience-cdd-title,
-.experience-oclock-title {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.experience-bus {
-    margin-top: 180px;
-    transition: color 300ms, text-shadow 300ms;
-}
-
-.experience-bus:hover {
-    color: #fff;
-    text-shadow: 1px 1px 2px rgb(238, 255, 0), 0 0 1em rgb(238, 255, 0);
-    cursor: pointer;
-}
-
-.experience-bus-date {
-    display: flex;
-    flex-direction: column;
+.container-info-text {
+  display: flex;
+  flex-direction: column;
 }
 
 
-.experience-oclock {
-    transition: color 300ms, text-shadow 300ms;
+.container-info-link {
+  font-family: Coustard, sans-serif ;
+  letter-spacing: 0.6px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 150px;
+  margin: 30px auto 20px;
+  border: 2px solid #524202;
+  transition: background-color 0.25s;
 }
 
-.experience-oclock:hover {
-    color: #fff;
-    text-shadow: 1px 1px 2px rgb(238, 255, 0), 0 0 1em rgb(238, 255, 0);
-    cursor: pointer;
+.container-info-link:hover {
+  background-color: #362B00;
 }
 
-.experience-oclock-title {
-    text-align: end;
+.container-info-description {
+  list-style-type: none;
+  margin-left: 10px;
+  font-size: 1.3em;
+  letter-spacing: 0.6px;
 }
 
-.experience-cdd-date,
-.experience-oclock-date {
-    text-align: end;
+.container-icon-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.cdd-year,
-.mission-year,
-.oclock-year {
-    margin: 0;
+.container-info-stack {
+  background-color: #FFE629;
+  color: black;
+  text-align: center;
+  margin: 10px;
+  padding: 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.cdd-date,
-.mission-date,
-.oclock-date,
-.bus-date {
-    margin-bottom: 0;
+.container-all-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.experience-line-middle.display {
-    width: 3px;
-    height: 650px;
-    background-color: rgb(255, 255, 255);
-    animation: line-display 5s ease-in-out forwards;
-}
-
-@keyframes line-display {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.experience-cdd-container-line,
-.experience-oclock-container-line {
-    display: flex;
-    justify-content: end;
-}
-
-.experience-cdd-line.display,
-.experience-oclock-line.display,
-.experience-mission-line.display {
-    width: 200px;
-    height: 3px;
-    background-color: #fffc44;
-    animation: line-display 2s ease-in-out forwards;
-}
-
-.experience-bus-line.display {
-    width: 130px;
-    height: 3px;
-    background-color: #fffc44;
-    animation: line-display 2s ease-in-out forwards;
-}
-
-@keyframes line-display {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.fa-calendar {
+  margin-right: 10px;
 }
 
 .experience-right {
-    display: flex;
-    flex-direction: column;
+  background-color: #433500;
+  border-bottom: 1px dotted #14120B;
 }
 
-@media screen and (max-width: 720px) {
-    .experience-left {
-        text-align: end;
-    }
-
+.experience-company {
+  color: #F6EEB4;
+  position: relative;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 610px) {
-    .experience-cdd {
-        margin-bottom: 250px;
-    }
-
-    .experience-mission {
-        margin-top: 200px;
-    }
+.experience-company::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #836A21;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-@media screen and (max-width: 540px) {
-
-    .experience-cdd-line.display,
-    .experience-oclock-line.display,
-    .experience-mission-line.display {
-        width: 100px;
-    }
+.experience-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width: 440px) {
+.experience-image {
+  width: 700px;
+  margin: 20px;
+}
 
-    .mission-title,
-    .cdd-title,
-    .oclock-title,
-    .cdd-date,
-    .mission-date,
-    .oclock-date,
-    .cdd-year,
-    .mission-year,
-    .oclock-year {
-        font-size: 16px;
-    }
-
-    .experience-line-middle.display {
-        height: 540px;
-    }
+@media screen and (max-width: 1024px) {
+  .experience-container {
+      flex-direction: column;
+  }
+  
 }

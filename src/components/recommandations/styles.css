@@ -1,0 +1,42 @@
+.recommandations{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.recommandations-titles{
+    margin-bottom: 50px;
+}
+
+.recommandations-swiper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.recommandations-title{
+    text-align: center;
+    font-size: 3em;
+    color: #F5E147;
+}
+
+.recommandations-image{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.swiper-button-prev.swiper-button-prev{
+    color: #F5E147;
+}
+
+.swiper-button-next.swiper-button-next{
+    color: #F5E147;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet{
+    background-color: #ffc400;
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #F5E147;
+}

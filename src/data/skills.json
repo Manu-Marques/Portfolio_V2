@@ -15,13 +15,15 @@
           "id": 3,
           "name": "JavaScript"
         },
-        "react": {
-          "id": 4,
-          "name": "React"
-        },
         "typescript": {
           "id": 5,
           "name": "TypeScript"
+        }
+      },
+      "framework": {
+        "react": {
+          "id": 4,
+          "name": "React"
         },
         "tailwind": {
           "id": 6,
@@ -32,20 +34,6 @@
           "name": "Bootstrap"
         }
       },
-      "back": {
-        "node": {
-          "id": 8,
-          "name": "Node.js"
-        },
-        "postgresql": {
-          "id": 9,
-          "name": "PostgreSQL"
-        },
-        "express": {
-          "id": 10,
-          "name": "Express.js"
-        }
-      },
       "others": {
         "aws": {
           "id": 11,
@@ -53,7 +41,7 @@
         },
         "git": {
           "id": 11,
-          "name": "Git"
+          "name": "Git & Github"
         },
         "jest": {
           "id": 12,
@@ -63,43 +51,10 @@
           "id": 13,
           "name": "Figma"
         },
-        "webflow": {
+        "vscode": {
           "id": 14,
-          "name": "Webflow"
+          "name": "VScode"
         }
-      }
-    },
-    "savoir_faire": {
-      "id": 14,
-      "description": "- Méthode Agile",
-      "description_1": "- Concevoir une maquette de présentation",
-      "description_2": "- Établir un cahier des charges",
-      "description_3": "- Planifier les étapes d'un projet",
-      "description_4": "- Analyser le besoin du client"
-    },
-    "savoir_etre": {
-      "id": 15,
-      "description": "- Autonome",
-      "description_1": "- Travail en équipe",
-      "description_2": "- Capacité d'adaptation",
-      "description_3": "- Sens de communication",
-      "description_4": "- Curiosité"
-    },
-    "langues": {
-      "france": {
-        "id": 16,
-        "title": "- Français",
-        "level": "Bilingue"
-      },
-      "anglais": {
-        "id": 17,
-        "title": "- Anglais",
-        "level": "Niveau B2"
-      },
-      "portugais": {
-        "id": 18,
-        "title": "- Portugais",
-        "level": "Langue maternelle"
       }
     }
   }

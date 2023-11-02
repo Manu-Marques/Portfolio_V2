@@ -1,16 +1,13 @@
 .skills-main {
     position: relative;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
-
 
 .skills-title {
     position: relative;
     text-align: center;
     font-size: 3em;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
+    color: #F5E147;
 }
 
 .skills-table {
@@ -19,29 +16,16 @@
     position: relative;
 }
 
-.skills-container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    color: #fff;
-}
 
 .skills-left{
     display: flex;
     flex-direction: column;
 }
 
-.skills-right{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
 .skills-expertise,
 .skills-stack,
 .skills-soft,
 .skills-languages {
-    border: 2px solid #ffffff;
     margin: 20px;
     list-style: none;
 }
@@ -58,7 +42,6 @@
 .skills-front,
 .skills-back,
 .skills-others {
-  border: #ffffff 2px solid;
   margin: 10px;
   padding: 5px;
 }
@@ -67,15 +50,13 @@
     text-align: center;
     color: #ffffff;
     text-shadow: 1px -3px 2px rgb(5, 5, 5), 0 0 0.2em rgb(212, 255, 0), 0 0 0em rgb(61, 63, 6);
-    text-decoration: underline;
 }
 
 .skills-front-title,
 .skills-back-title,
 .skills-others-title {
     font-size: 1.5em;
-    text-align: center;
-    text-decoration: underline;
+    margin-bottom: 30px;
 }
 
 .skills-item {
@@ -92,7 +73,7 @@
 .skills-item-icon {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1345px) {

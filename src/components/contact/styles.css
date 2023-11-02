@@ -1,205 +1,40 @@
-.contact {
-    z-index: 2;
-    margin-top: 15px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.contact-container {
-    display: flex;
-}
-
-.contact-icon-envelope,
-.contact-icon-phone,
-.contact-icon-linkdin,
-.contact-icon-git {
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 0 5px;
-    overflow: hidden;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-out;
-    color: white;
-    border: 2px solid rgb(238, 255, 0);
-}
-
-.contact-icon-envelope:hover {
-    width: 400px;
-}
-
-.contact-icon-phone:hover {
-    width: 250px;
-}
-
-.contact-icon-linkdin:hover {
-    width: 160px;
-}
-
-.contact-icon-git:hover {
-    width: 140px;
-}
-
-.contact-envelope,
-.contact-phone,
-.contact-git,
-.contact-linkdin {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-    transition: color 300ms, background-color 300ms;
-}
-
-.contact-icon-envelope:hover .contact-envelope {
-    background: rgb(216, 14, 14);
-}
-
-.contact-icon-phone:hover .contact-phone {
-    background: #2b9935;
-}
-
-.contact-icon-linkdin:hover .contact-linkdin {
-    background: #0a66c2;
-}
-
-.contact-icon-git:hover .contact-git {
-    background: #333;
-}
-
 .fa-2x {
     font-size: 25px;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-
-.contact-icon-envelope:hover .fa-2x,
-.contact-icon-phone:hover .fa-2x,
-.contact-icon-linkdin:hover .fa-2x,
-.contact-icon-git:hover .fa-2x {
-    color: #fff
-}
-
-.contact-info {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 5px;
     transition: all 0.3s ease-out;
     color: white;
-}
+  }
 
-a:link {
+  .contact-info {
+    font-size: 20px;
+    color: white;
+    font-family: Coustard, sans-serif ;
     text-decoration: none;
+  }
+
+  a {
+  display: inline-block;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 1485px) {
-    .contact {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        margin-top: auto;
+.home-contact-info{
+    border: 1px solid #524202;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .home-contact-info:hover {
+    background-color: #362B00;
+    cursor: pointer;
+  }
+  
+  .contact-envelope,
+  .contact-phone,
+  .contact-git,
+  .contact-linkdin {
+      display: inline-block;
+      margin-right: 10px;
     }
-}
-
-@media screen and (max-width: 620px) {
-
-    .contact-icon-envelope:hover {
-        width: 300px;
-    }
-
-    .contact-icon-phone:hover {
-        width: 200px;
-    }
-
-    .contact-icon-linkdin:hover {
-        width: 135px;
-    }
-
-    .contact-icon-git:hover {
-        width: 130px;
-    }
-
-    .contact-info {
-        font-size: 14px;
-    }
-
-    .contact-container {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .contact-left {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-right {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-icon-envelope,
-    .contact-icon-phone,
-    .contact-icon-linkdin,
-    .contact-icon-git {
-        margin: 5px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    .contact-icon-envelope:hover {
-        width: 250px;
-    }
-
-    .contact-icon-phone:hover {
-        width: 180px;
-    }
-
-    .contact-icon-linkdin:hover,
-    .contact-icon-git:hover {
-        width: 122px;
-    }
-
-    .contact-icon-git:hover {
-        width: 115px;
-    }
-
-    .contact-info {
-        font-size: 11px;
-        margin-left: 5px
-    }
-
-    .contact-container {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .contact-left {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-right {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-icon-envelope,
-    .contact-icon-phone,
-    .contact-icon-linkdin,
-    .contact-icon-git {
-        margin: 5px;
-    }
-}

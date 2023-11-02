@@ -9,9 +9,7 @@
     z-index: 6;
     text-align: center;
     font-size: 3em;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    text-shadow: 1px -5px 2px rgb(233, 249, 8), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 246, 0);
+    color: #F5E147;
 }
 
 .prestation-table {

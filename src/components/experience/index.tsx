@@ -1,170 +1,83 @@
-import "./styles.css";
-import { useEffect, useRef, useState } from "react";
-import ExperiencesData from "../../data/experiences.json";
-import { Fade } from 'react-awesome-reveal';
-import { Experience } from "../types/types";
+import './styles.css';
+import ExperienceData from "../../../src/data/experiences.json";
+import { Link } from 'react-router-dom';
 
-//Components
-import Mission from "./mission";
-import Oclock from "./oclock";
-import Cdd from "./cdd";
+
+const basePathToImages = '/images/';
+
 
 
 export default function Experience() {
 
 
-    const [addClassDisplay, setAddClassToDisplay] = useState(false);
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [selectedExperience, setSelectedExperience] = useState<string | null>(null);
-
-    const handleClick = (experienceType: string) => {
-        setSelectedExperience(experienceType);
-        setIsExpanded(true);
-        setAddClassToDisplay(true);
-
-        document.body.style.overflow = "hidden";
-        document.body.style.transition = 'right 400ms ease';
-
-        if (window.innerWidth > 720) {
-            document.body.style.right = "-25%";
-    };
-        }   
-
-
-    const removeExtendClass = () => {
-        setAddClassToDisplay(false);
-        setIsExpanded(false);
-
-        document.body.style.overflow = "auto";
-        document.body.style.right = "0%"
-    }
-
-    const linesRef = useRef<HTMLDivElement[]>([]);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('display');
-                } else {
-                    entry.target.classList.remove('display');
-                }
-            });
-        });
-        if (linesRef.current && linesRef.current.length > 0) {
-            linesRef.current.forEach((line) => {
-                if (line instanceof Element) {
-                    observer.observe(line);
-                }
-            });
-        }
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
-
-    const handleVisibilityChange = (_inView: boolean, _right: any) => { };
-
-
     return (
-        <div className="main">
-            <div className={`experience-main ${isExpanded ? 'extended' : ''}`}>
-                <div className="experience-title">
-                    <h1 className='experience-container-title'>Expériences</h1>
-                </div>
-                {ExperiencesData.map((info, i) => (
-                    <div key={i} className="experience-container">
-                        <Fade
-                            delay={500}
-                            direction="left"
-                            onVisibilityChange={handleVisibilityChange}
-                        >
-                            <div className="experience-left">
-                                <div
-                                    className="experience-cdd"
-                                    onClick={() => handleClick("cdd")}>
-                                    <div className="experience-cdd-title">
-                                        <h2 className="cdd-title">{info.cdd.title}</h2>
-                                    </div>
-                                    <div className="experience-cdd-container-line">
-                                        <div
-                                            className="experience-cdd-line"
-                                            ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
-                                        </div>
-                                    </div>
-                                    <div className="experience-cdd-date">
-                                        <h2 className="cdd-date">{info.cdd.start} - {info.cdd.end}</h2>
-                                        <h2 className="cdd-year">{info.cdd.year}</h2>
-                                    </div>
+        <div className="experience-main">
+            <h1 className='experience-title'>Experiences</h1>
+            {ExperienceData.map((experience, i) => (
+                <section className="experience-container">
+                    <div className='experience-left'>
+                    <section className="container-info-text-left">
+                            <h2 className="container-text-left-title">{experience.number} Développement - {experience.status}</h2>
+                            <p className='container-experience-description'>{experience.description}</p>
+                            <p className='container-experience-description'>{experience.description_1}</p>
+                            <ul>
+                                <div className="container-icon-description">
+                                    <i className="fa fa-check"></i>
+                                    <li className="container-info-description">{experience.description_2}</li>
                                 </div>
-                                <div className="experience-oclock" onClick={() => handleClick("oclock")}>
-                                    <div className="experience-oclock-title">
-                                        <h2 className="oclock-title">{info.oclock.title}</h2>
-                                    </div>
-                                    <div className="experience-oclock-container-line">
-                                        <div
-                                            className="experience-oclock-line"
-                                            ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
-                                        </div>
-                                    </div>
-                                    <div className="experience-oclock-date">
-                                        <h2 className="oclock-date">{info.oclock.start} - {info.oclock.end}</h2>
-                                        <h2 className="oclock-year">{info.oclock.year}</h2>
-                                    </div>
+                                <div className="container-icon-description">
+                                    <i className="fa fa-check"></i>
+                                    <li className="container-info-description">{experience.description_3}</li>
                                 </div>
-                            </div>
-                        </Fade>
-                        <div className="experience-middle">
-                            <div
-                                className="experience-line-middle"
-                                ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
-                            </div>
-                        </div>
-                        <Fade
-                            delay={500}
-                            direction="right"
-                            onVisibilityChange={handleVisibilityChange}
-                        >
-                            <div className="experience-right">
-                                <div className="experience-mission" onClick={() => handleClick("mission")}>
-                                    <div className="experience-mission-title">
-                                        <h2 className="mission-title">{info.mission.title}</h2>
-                                    </div>
-                                    <div className="experience-line">
-                                        <div
-                                            className="experience-mission-line"
-                                            ref={(el) => linesRef.current.push(el as HTMLDivElement)}>
-                                        </div>
-                                    </div>
-                                    <div className="experience-mission-date">
-                                        <h2 className="mission-date">{info.mission.start} - {info.mission.end}</h2>
-                                        <h2 className="mission-year">{info.mission.year}</h2>
-                                    </div>
+                                <div className="container-icon-description">
+                                    <i className="fa fa-check"></i>
+                                    <li className="container-info-description">{experience.description_4}</li>
                                 </div>
-                            </div>
-                        </Fade>
+                                <div className="container-icon-description">
+                                    <i className="fa fa-check"></i>
+                                    <li className="container-info-description">{experience.description_5}</li>
+                                </div>
+                                <div className="container-icon-description">
+                                    <i className="fa fa-check"></i>
+                                    <li className="container-info-description">{experience.description_6}</li>
+                                </div>
+                            </ul>
+                        </section>
+                        <section className="container-info-text-right">
+                            <h2 className="container-text-right-title">Infos Projet</h2>
+                                    <p className="container-experience-calendar">
+                                        <i className="fa fa-calendar fa-2x"></i>{experience.start} - {experience.end} {experience.year}
+                                        </p>
+                                <div className="container-all-stack">
+                                    <p className="container-info-stack">{experience.info_stack}</p>
+                                    <p className="container-info-stack">{experience.info_stack_1}</p>
+                                    <p className="container-info-stack">{experience.info_stack_2}</p>
+                                    <p className="container-info-stack">{experience.info_stack_3}</p>
+                                    <p className="container-info-stack">{experience.info_stack_4}</p>
+                                    <p className="container-info-stack">{experience.info_stack_5}</p>
+                                    <p className="container-info-stack">{experience.info_stack_6}</p>
+                                </div>
+                        </section>
+                        {experience.link &&
+                        <Link
+                        to={experience.link}
+                        target="_blank"
+                        className="container-info-link">Voir le site</Link>
+                        }
+                        <section>
+                        </section>
                     </div>
-
-                ))}
-                {selectedExperience === "cdd" && (
-                    <Cdd
-                        addClassDisplay={addClassDisplay}
-                        removeExtendClass={removeExtendClass}
-                    />
-                )}
-                {selectedExperience === "oclock" && (
-                    <Oclock
-                        addClassDisplay={addClassDisplay}
-                        removeExtendClass={removeExtendClass}
-                    />
-                )}
-                {selectedExperience === "mission" && (
-                    <Mission
-                        addClassDisplay={addClassDisplay}
-                        removeExtendClass={removeExtendClass}
-                    />
-                )}
-            </div>
+                    <div className='experience-right'>
+                        <h1 className='experience-company'>{experience.company}</h1>
+                        <section className='experience-images'>
+                            <img
+                            className='experience-image'
+                                src={basePathToImages + experience.image}
+                                alt="" />                              
+                        </section>
+                    </div>
+                </section>
+            ))}
         </div>
     )
 }

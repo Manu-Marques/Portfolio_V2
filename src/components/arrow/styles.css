@@ -9,11 +9,11 @@
 }
 
 .fa-1x {
-    border: 1px solid rgb(251, 255, 0);
+    border: 2px solid #836A21;
     border-radius: 20px;
     box-sizing: border-box;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     transition: all 0.3s ease-out;
     float: right;
 }

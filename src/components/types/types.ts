@@ -25,58 +25,21 @@ export interface Site {
 }
 
 export interface Experience {
-  mission: {
-    id: number;
-    title: string;
-    company: string;
-    city: string;
-    description: string;
-    description_1: string;
-    description_2: string;
-    description_3: string;
-    start: string;
-    end: string;
-    year: string;
-  };
-  oclock: {
-    id: number;
-    title: string;
-    company: string;
-    city: string;
-    description: string;
-    description_1: string;
-    description_2: string;
-    description_3: string;
-    start: string;
-    end: string;
-    year: string;
-  };
-  bus: {
-    id: number;
-    title: string;
-    company: string;
-    city: string;
-    description: string;
-    description_1: string;
-    description_2: string;
-    description_3: string;
-    start: string;
-    end: string;
-    year: string;
-  };
-  cdd: {
-    id: number;
-    title: string;
-    company: string;
-    city: string;
-    description: string;
-    description_1: string;
-    description_2: string;
-    description_3: string;
-    start: string;
-    end: string;
-    year: string;
-  };
+  id: number;
+  number: number;
+  title: string;
+  status: string;
+  company: string;
+  city: string;
+  description: string;
+  description_1: string;
+  description_2: string;
+  description_3: string;
+  image: string;
+  start: string;
+  end: string;
+  year: string;
+  recommandation: string;
 }
 
 export interface DisplayProps {

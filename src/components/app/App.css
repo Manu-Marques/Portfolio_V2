@@ -5,8 +5,7 @@
   flex-direction: column;
   scroll-snap-type: y mandatory;
   overflow: hidden;
-  background-color: #000000;
-
+  background-color: #14120B;
 }
 
 .home {
@@ -38,9 +37,6 @@
   align-items: center;
 }
 
-.home-me {
-  width: 50%;
-}
 
 .home-menu {
   display: flex;
@@ -55,48 +51,69 @@
   align-items: center;
   width: 90%;
   height: 100%;
+  margin-top: 100px;
 }
 
 
 .home-experience,
 .home-skills,
+.home-recommandations,
 .home-projets,
-.home-formations,
-.home-prestation,
-.home-contact {
+.home-prestation{
+  color: #F5E147;
   position: relative;
   font-size: 1.5em;
   font-weight: 500;
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
   text-decoration: none;
   transition: color 300ms, text-shadow 300ms;
+  letter-spacing: 1.7px;
+  font-family: Coustard, sans-serif ;
 }
 
 .home-experience:hover,
 .home-skills:hover,
+.home-recommandations:hover,
 .home-projets:hover,
-.home-formations:hover,
-.home-prestation:hover,
-.home-contact:hover {
-  color: #fff;
-  text-shadow: 1px 1px 2px rgb(238, 255, 0), 0 0 1em rgb(238, 255, 0);
+.home-prestation:hover {
   cursor: pointer;
+  color :  #665417;
+  opacity: 0.9;
 }
 
 
 .home-presentation {
-  -webkit-text-stroke: 1px #fff;
-  color: #edff04e8;
-  ;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25vw;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  line-height: 1.25;
+  color: #ffffffe8;
+  margin: 0;
 }
 
-.presentation-word {
-  font-size: 1.2em;
-  font-weight: 500;
+.home-hello,
+.home-dev {
+  font-size: 50px;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
-  text-decoration: none;
+  font-family: Trispace, sans-serif;
+  margin: 10px 0;
+}
+
+.home-hello{
+  font-size: 30px;
+}
+
+.home-name {
+  font-size: 80px;
+  margin: 10px 0;
+  font-family: Coustard, sans-serif ;
+  margin-left: -3px;
+}
+
+.home-text{
+  font-family: Coustard, sans-serif ;
 }
 
 .home-image {
@@ -105,19 +122,19 @@
 }
 
 .home-img {
-  width: 60%;
+  width: 40%;
   height: 60%;
   object-fit: cover;
   margin: 20px;
+  border-radius: 50% ;
 }
 
 
 .home-experience,
 .home-skills,
+.home-recommandations,
 .home-projets,
-.home-formations,
-.home-prestation,
-.home-contact {
+.home-prestation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,8 +169,8 @@
 
   .home-experience,
   .home-skills,
+  .home-recommandations,
   .home-projets,
-  .home-formations,
   .home-prestation,
   .home-contact {
     font-size: 1.2em;
@@ -179,9 +196,9 @@
 
 @media screen and (max-width: 1020px) {
 
-  .home-formations,
   .home-skills,
   .home-projets,
+  .home-recommandations,
   .home-experience,
   .home-prestation,
   .home-contact {
@@ -261,7 +278,7 @@
     border-bottom: 2px solid white;
     border-radius: 5px;
     animation: slideIn 1s ease-in-out;
-    
+
   }
 
   @keyframes slideIn {
@@ -278,7 +295,7 @@
   .home-experience,
   .home-skills,
   .home-projets,
-  .home-formations,
+  .home-recommandations,
   .home-prestation,
   .home-contact {
     font-size: 1.5em;
@@ -357,9 +374,9 @@
 }
 
 @media screen and (max-width: 380px) {
-.home-logo{
-  width: 120px;
-}
+  .home-logo {
+    width: 120px;
+  }
 }
 
 @media screen and (max-width: 320px) {
