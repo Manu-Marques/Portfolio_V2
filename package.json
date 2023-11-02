@@ -20,6 +20,7 @@
     "@babel/helper-validator-option": "^7.22.15",
     "@babel/helpers": "^7.23.1",
     "@babel/traverse": "^7.23.0",
+    "@emotion/unitless": "^0.8.1",
     "babel-plugin-styled-components": "^2.1.4",
     "browserslist": "^4.21.11",
     "caniuse-lite": "^1.0.30001539",
