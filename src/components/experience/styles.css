@@ -32,12 +32,14 @@
   font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.6px;
+  color: white;
 }
 
 .container-experience-calendar{
   font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.6px;
+  color: white;
 }
 
 .container-text-left-title,
@@ -47,6 +49,7 @@
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 40px;
+  color: white;
 }
 
 .container-recommandations-title {
@@ -98,6 +101,7 @@
   margin-left: 10px;
   font-size: 1.3em;
   letter-spacing: 0.6px;
+  color: white;
 }
 
 .container-icon-description {

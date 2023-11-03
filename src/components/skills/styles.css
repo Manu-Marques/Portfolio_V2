@@ -57,12 +57,14 @@
 .skills-others-title {
     font-size: 1.5em;
     margin-bottom: 30px;
+    color: white;
 }
 
 .skills-item {
     font-size: 22px;
     margin: 10px;
     list-style-type: none;
+    color: white;
 }
 
 .skills-languages {
