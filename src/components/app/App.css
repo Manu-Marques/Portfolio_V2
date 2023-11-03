@@ -54,6 +54,10 @@
   margin-top: 100px;
 }
 
+.home-mobile-logo{
+  display: none;
+}
+
 
 .home-experience,
 .home-skills,
@@ -177,11 +181,6 @@
     padding: 10px;
   }
 
-  .home-me {
-    width: 100%;
-  }
-
-
   .home-presentation {
     font-size: 20px;
   }
@@ -204,13 +203,8 @@
   .home-contact {
     font-size: 1.5em;
     color: yellow;
-
   }
 
-
-  .home-logo {
-    width: 155px;
-  }
 
   .hamburger-btn {
     display: flex;
@@ -223,7 +217,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #665417;
+  }
+
+  .hamburger-btn.menu-open{
+    position: fixed;
   }
 
   .burger-bar,
@@ -233,7 +231,7 @@
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: white;
+    background-color: #665417;
     display: block;
     margin: 1px auto;
     border-radius: 3px;
@@ -270,15 +268,12 @@
 
 
   .home-nav {
-    background-color: #0d0d0d;
+    background-color: #2D2305;
     display: none;
     flex-direction: column;
     padding: 10px;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
     border-radius: 5px;
     animation: slideIn 1s ease-in-out;
-
   }
 
   @keyframes slideIn {
@@ -291,6 +286,13 @@
     }
   }
 
+  .home-mobile-logo{
+    display: block;
+  }
+
+  .home-mobile-img{
+    width: 200px;
+  }
 
   .home-experience,
   .home-skills,
@@ -301,34 +303,29 @@
     font-size: 1.5em;
     width: 100%;
     text-decoration: none;
-    color: #333;
+    color: white;
   }
 
   .menu-open .home-nav {
     display: flex;
     align-items: center;
-    height: 300px;
+    height: 100%;
     padding-top: 50px;
-  }
-
-  .menu-open.home-items {
-    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    justify-content: space-evenly;
   }
 
 
   .home-resume {
     flex-direction: column;
     width: 100%;
+    margin-top: 0;
   }
 
-  .home-image {
-    order: 2;
-  }
-
-  .home-me {
-    height: 210px;
-    order: 1;
-  }
+.home{
+  padding-bottom: 100px;
+}
 
   .home-image {
     width: 700px
@@ -336,7 +333,7 @@
 
   .home-img,
   .home-me {
-    width: 50%;
+    margin: 10px;
   }
 }
 
@@ -348,15 +345,6 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-
-  .home-me {
-    width: 70%;
-  }
-
-
-}
-
 @media screen and (max-width: 445px) {
 
   .home-presentation,
@@ -364,8 +352,12 @@
     font-size: 20px;
   }
 
-  .home-me {
-    width: 80%;
+  .home-name{
+    font-size: 60px;
+  }
+
+  .contact-info {
+    font-size: 15px !important;
   }
 
   .home-image {
@@ -376,6 +368,11 @@
 @media screen and (max-width: 380px) {
   .home-logo {
     width: 120px;
+  }
+
+  .home-me{
+    width: 98%;
+  
   }
 }
 

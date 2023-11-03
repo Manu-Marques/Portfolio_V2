@@ -149,6 +149,17 @@
 
 }
 
+@media screen and (max-width: 600px) {
+
+    .skills-stack-list {
+        flex-direction: column;
+    }
+
+    .skills-title {
+        font-size: 2.5em;
+    }
+
+}
 @media screen and (max-width: 500px) {
 
     .skills-item {
@@ -159,16 +170,4 @@
     .skills-subtitle {
         font-size: 1.5em;
     }
-}
-
-@media screen and (max-width: 460px) {
-
-    .skills-stack-list {
-        flex-direction: column;
-    }
-
-    .skills-title {
-        font-size: 2.5em;
-    }
-
 }

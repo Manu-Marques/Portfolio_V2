@@ -61,13 +61,13 @@ export default function App() {
   //Placeholder
   // const [isPlaceHolder, setIsPlaceHolder] = useState(false);
 
-  useEffect(() => {
-    const image = new Image();
-    image.src = photo;
-    image.onload = () => {
-      // setIsPlaceHolder(true);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const image = new Image();
+  //   image.src = photo;
+  //   image.onload = () => {
+  //   setIsPlaceHolder(true);
+  //   };
+  // }, []);
 
   return (
     <div className="App">
@@ -93,6 +93,9 @@ export default function App() {
                 <ScrollLink onClick={() => setIsMobile(false)} className="home-recommandations" to="recommandations" spy={true} smooth={true} offset={-50} duration={500}>
                   <div className="home-category">Recommandations</div>
                 </ScrollLink>
+                <div className="home-mobile-logo">
+                <img className='home-mobile-img' src={logo} loading="lazy" alt="logo" />
+              </div>
               </div>
             </div>
             <div className='home-resume'>
@@ -103,11 +106,7 @@ export default function App() {
                   <PlaceHolder width={200} height={150} />
                 )} */}
               </div>
-              <Fade
-                delay={300}
-                direction="left"
-                onVisibilityChange={handleVisibilityChange}
-              >
+
                 <div className="home-me">
                   <section className="home-presentation">
                     <div>
@@ -127,7 +126,6 @@ export default function App() {
                   </section>
                 </section>
             </div>
-                    </Fade>
           </div>
         </div>
         </div>

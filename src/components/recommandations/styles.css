@@ -40,3 +40,32 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background-color: #F5E147;
 }
+
+@media screen and (max-width: 920px) {
+
+    .recommandations{
+        width: 98%;
+    }
+    .recommandations-img{
+        width: 100%;
+        max-width: 1000px;
+    
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .recommandations-title{
+        font-size: 2.5em;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .recommandations-title{
+        font-size: 2em;
+    }
+    
+}
