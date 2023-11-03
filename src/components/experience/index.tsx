@@ -20,7 +20,7 @@ export default function Experience() {
                             <h2 className="container-text-left-title">{experience.number} Développement - {experience.status}</h2>
                             <p className='container-experience-description'>{experience.description}</p>
                             <p className='container-experience-description'>{experience.description_1}</p>
-                            <ul>
+                            <ul className='container-list-info'>
                                 <div className="container-icon-description">
                                     <i className="fa fa-check"></i>
                                     <li className="container-info-description">{experience.description_2}</li>

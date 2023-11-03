@@ -1,8 +1,8 @@
-.experience-main{
+.experience-main {
   padding-bottom: 100px;
 }
 
-.experience-title{
+.experience-title {
   text-align: center;
   font-size: 3.5em;
   color: #F5E147;
@@ -20,7 +20,7 @@
   padding: 30px;
 }
 
-.experience-left{
+.experience-left {
   border-bottom: 1px dotted #665417;
   border-top: 1px dotted #665417;
   display: flex;
@@ -28,14 +28,14 @@
   justify-content: space-around;
 }
 
-.container-experience-description{
+.container-experience-description {
   font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.6px;
   color: white;
 }
 
-.container-experience-calendar{
+.container-experience-calendar {
   font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.6px;
@@ -76,7 +76,7 @@
 
 
 .container-info-link {
-  font-family: Coustard, sans-serif ;
+  font-family: Coustard, sans-serif;
   letter-spacing: 0.6px;
   display: flex;
   justify-content: center;
@@ -127,7 +127,7 @@
   flex-wrap: wrap;
 }
 
-.fa{
+.fa {
   color: white;
 }
 
@@ -174,21 +174,23 @@
 
 @media screen and (max-width: 1300px) {
   .experience-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .experience-right,
   .experience-left {
-      width: auto;
+    width: auto;
   }
-  
+
 }
 
 @media screen and (max-width: 720px) {
   .experience-image {
     width: 100vw;
     max-width: 1000px;
-  ;
   }
-  
+
+  .container-list-info {
+    padding-left: 15px;
+  }
 }
