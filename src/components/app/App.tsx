@@ -20,12 +20,10 @@ import logo from '../../../src/assets/logo.png';
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';
 import { useState, useEffect } from "react";
-import { Fade } from 'react-awesome-reveal';
 
 
 export default function App() {
 
-  const handleVisibilityChange = (_inView: boolean, _right: any) => { };
 
 
   //Loading
