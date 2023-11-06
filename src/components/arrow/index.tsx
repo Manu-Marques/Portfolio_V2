@@ -26,7 +26,7 @@ export default function Arrow() {
         <div className="scroll-to-top">
             {isVisible && (
                 <div onClick={scrollToTop}>
-                    <i className="fa fa-arrow-up fa-1x">
+                    <i className="fa fa-arrow-up fa-2x">
                     </i>
                 </div>
             )}

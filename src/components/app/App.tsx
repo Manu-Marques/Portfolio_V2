@@ -15,7 +15,7 @@ import Arrow from "../arrow";
 
 
 //Images
-import photo from '../../../src/assets/Moi.jpg';
+import photo from '../../../src/assets/Moi.png';
 import logo from '../../../src/assets/logo.png';
 //React
 import { Link as ScrollLink, Element } from 'react-scroll';

@@ -8,12 +8,13 @@
     padding-bottom: 20px;
 }
 
-.fa-1x {
+.fa-2x {
     border: 2px solid #836A21;
     border-radius: 20px;
     box-sizing: border-box;
     color: white;
-    font-size: 35px;
+    font-size: 33px;
     transition: all 0.3s ease-out;
     float: right;
+    background-color: #665417;
 }
