@@ -24,14 +24,6 @@ export default function Contact() {
                     </div>
                         </Link>
                         <Link to="tel:0665240860">
-                    <div className="home-contact-phone">
-                      <div className="home-contact-info">
-                          <div className="contact-phone">
-                              <i className="fa fa-phone fa-2x"></i>
-                          </div>
-                          <span className="contact-info"> 06 65 24 08 60</span>
-                      </div>
-                    </div>
                         </Link>
                         <Link to="mailto:le.marques.emanuel@gmail.com" target="_blank">
                     <div className="home-contact-info">

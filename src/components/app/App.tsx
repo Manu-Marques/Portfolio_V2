@@ -108,7 +108,7 @@ export default function App() {
                 <div className="home-me">
                   <section className="home-presentation">
                     <div>
-                      <h1 className="home-hello">Bonjour, je m'appel</h1>
+                      <h1 className="home-hello">Bonjour, je m'appelle</h1>
                     </div>
                     <div>
                       <h1 className="home-name">Emanuel</h1>

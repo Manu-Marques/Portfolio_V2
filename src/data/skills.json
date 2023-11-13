@@ -29,30 +29,38 @@
           "id": 6,
           "name": "Tailwind"
         },
-        "bootstrap": {
+        "redux": {
           "id": 7,
-          "name": "Bootstrap"
+          "name": "Redux"
+        },
+        "vite": {
+          "id": 9,
+          "name": "Vite"
         }
       },
       "others": {
-        "aws": {
+        "github": {
           "id": 11,
-          "name": "AWS"
+          "name": "Github"
         },
         "git": {
           "id": 11,
-          "name": "Git & Github"
+          "name": "Git"
         },
         "jest": {
           "id": 12,
           "name": "Jest"
         },
-        "figma": {
+        "eslint": {
           "id": 13,
+          "name": "ESlint"
+        },
+        "figma": {
+          "id": 14,
           "name": "Figma"
         },
         "vscode": {
-          "id": 14,
+          "id": 15,
           "name": "VScode"
         }
       }
